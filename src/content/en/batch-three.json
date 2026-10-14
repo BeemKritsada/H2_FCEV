@@ -1,0 +1,45 @@
+{
+  "eyebrow": "Hydrogen vehicle market",
+  "source": "Supplied presentation · slide {{slide}} · figures retained as provided",
+  "assetNote": "Concept vehicles · not verified makes or official vehicle designs",
+  "fleet": {
+    "title": "Hydrogen Vehicle Deployment in China",
+    "context": "Latest Reference Context: {{year}}",
+    "period": "By the end of {{year}}",
+    "approximate": "Approximately",
+    "accumulated": "Accumulated hydrogen fuel cell vehicles",
+    "nearly": "Nearly",
+    "monthlyUnit": "/ month",
+    "sales": "Monthly sales at the end of {{year}}",
+    "rank": "The supplied content describes China as the world's largest accumulated market.",
+    "vehicleLabel": "Hydrogen heavy-duty logistics"
+  },
+  "transition": {
+    "title": "Hydrogen Vehicle Market Transition",
+    "late": "Late",
+    "early": "Early",
+    "momentum": "Policy-driven momentum",
+    "momentumDetail": "Policy support drove a surge in sales in late {{year}}.",
+    "adjustment": "Market adjustment",
+    "adjustmentDetail": "Production and sales declined significantly in early {{year}}.",
+    "outcome": "A more rational commercial phase",
+    "outcomeDetail": "The market entered a period of commercial adjustment.",
+    "diagramAlt": "A qualitative journey from late-2025 policy-driven momentum to early-2026 adjustment. The line shows phases, not measured sales or production values.",
+    "qualitative": "Qualitative market phases · no measured trend scale or decline percentage"
+  },
+  "structure": {
+    "title": "Hydrogen Vehicle Market Structure",
+    "scope": "Share of the overall hydrogen vehicle market",
+    "commercial": "Commercial vehicles",
+    "passenger": "Passenger cars",
+    "commercialShare": "Over {{value}}% of the overall market",
+    "passengerShare": "Under {{value}}% of the overall market",
+    "heavyDuty": "Heavy-duty trucks",
+    "withinCommercial": "Over {{value}}% within commercial vehicles",
+    "denominatorNote": "The truck share uses commercial vehicles as its base, not the whole vehicle market.",
+    "bus": "Other commercial types · example: bus",
+    "busAlt": "Simplified conceptual bus, shown as another commercial vehicle category.",
+    "carAlt": "Simplified conceptual passenger car, shown without brand or model claims.",
+    "hierarchyNote": "Category illustration · vehicle sizes do not encode exact market shares"
+  }
+}

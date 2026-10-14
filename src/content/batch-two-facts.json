@@ -1,0 +1,17 @@
+{
+  "sourceSectionId": "hydrogen-infrastructure",
+  "sourceSlides": [4, 19],
+  "completed": 557,
+  "publicPercentApproximate": 60,
+  "remainderPercentDerived": 40,
+  "plannedOrConstruction": 177,
+  "projectedLowerBoundExclusive": 650,
+  "projectionYear": 2026,
+  "retailStorageTransportSharePercent": [30, 40],
+  "regions": [
+    { "id": "bay", "anchor": [113.25, 23.1166667], "anchorMeaning": "Guangzhou city reference, not a station", "source": "https://www.geonames.org/advanced-search.html?q=Guangzhou" },
+    { "id": "capital", "anchor": [116.397228240967, 39.9074977414405], "anchorMeaning": "Beijing city reference, not a station", "source": "https://www.geonames.org/search.html?q=beijing" },
+    { "id": "delta", "anchor": [121.4580556, 31.2222222], "anchorMeaning": "Shanghai city reference, not a station", "source": "https://www.geonames.org/search.html?country=CN&q=shanghai" },
+    { "id": "west", "anchor": [105.31218835, 30.11346335], "anchorMeaning": "Midpoint of Chengdu [104.0666667,30.6666667] and Chongqing [106.55771,29.56026], not a station", "source": "https://www.geonames.org/search.html?country=CN" }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "batch": "Phase 4 / Batch 3 / Scenes 09–11",
+  "assets": [
+    {
+      "path": "images/hydrogen-truck.jpg",
+      "status": "Reused project concept image; not an official vehicle or verified make/model",
+      "origin": "AI-generated in the previous phase; original prompt and provenance in docs/visual-assets.md and assets/manifest.json",
+      "dimensions": [1536, 1024],
+      "animation": "Whole-image drift, separate light accent and energy guide; no fake wheel rotation",
+      "attribution": "Visible concept note in the scene footer; original translated image alt remains intact",
+      "replacement": "Licensed, verified heavy-duty hydrogen truck photograph or layered render on a light background, preferably at least 2400px wide. A reviewed GLB with separate wheels is required before adding mechanical wheel motion."
+    },
+    {
+      "path": "src/components/presentation/batch3/VehicleArtwork.tsx",
+      "status": "Project-authored layered SVG bus and passenger-car category references",
+      "rights": "Original procedural artwork; no manufacturer branding or official-model claim",
+      "limitations": "Illustrative geometry and scale. Vehicle sizes do not encode exact market shares.",
+      "replacement": "Licensed bus and passenger-car side/three-quarter renders or GLB models, with consistent lighting and camera angle. Keep labels outside artwork and confirm technical fidelity before naming a real make/model."
+    }
+  ],
+  "externalRuntimeRequests": false
+}

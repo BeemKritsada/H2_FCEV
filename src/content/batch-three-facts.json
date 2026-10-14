@@ -1,0 +1,11 @@
+{
+  "sourceSectionId": "vehicle-deployment",
+  "sourceSlide": 5,
+  "referenceYear": 2026,
+  "fleet": { "value": 40000, "qualifier": "approximately", "year": 2025, "period": "year-end", "measure": "accumulated-vehicles" },
+  "monthlySales": { "value": 3600, "qualifier": "nearly", "year": 2025, "period": "year-end", "measure": "vehicles-per-month" },
+  "transition": { "momentumYear": 2025, "adjustmentYear": 2026, "kind": "qualitative", "timeSeriesAvailable": false },
+  "commercial": { "threshold": 95, "comparison": "greater-than", "denominator": "all-hydrogen-vehicles" },
+  "passenger": { "threshold": 5, "comparison": "less-than", "denominator": "all-hydrogen-vehicles" },
+  "heavyDuty": { "threshold": 65, "comparison": "greater-than", "denominator": "commercial-hydrogen-vehicles" }
+}

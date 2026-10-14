@@ -1,0 +1,16 @@
+[
+  {"id":"fcev","term":"FCEV","translation":"รถยนต์ไฟฟ้าเซลล์เชื้อเพลิง","note":"ยานยนต์ไฟฟ้าที่ใช้เซลล์เชื้อเพลิงผลิตไฟฟ้าสำหรับขับเคลื่อน"},
+  {"id":"h2","term":"H2","translation":"ไฮโดรเจน","note":"ใช้เป็นสัญลักษณ์ทางเคมีของโมเลกุลไฮโดรเจนในชื่อเรื่องและข้อความ"},
+  {"id":"fuel-cell-stack","term":"fuel cell stack","translation":"ชุดเซลล์เชื้อเพลิง"},
+  {"id":"green-hydrogen","term":"green hydrogen","translation":"ไฮโดรเจนสีเขียว","note":"ในเอกสารนี้หมายถึงไฮโดรเจนจากการแยกน้ำโดยใช้พลังงานลมหรือแสงอาทิตย์ตามต้นฉบับ"},
+  {"id":"grey-hydrogen","term":"grey hydrogen","translation":"ไฮโดรเจนสีเทา","note":"ต้นฉบับระบุว่าได้จากถ่านหิน; คงคำอธิบายตามต้นฉบับ"},
+  {"id":"electrolyser","term":"water electrolyser","translation":"เครื่องแยกน้ำ"},
+  {"id":"hrs","term":"HRS","translation":"สถานีเติมไฮโดรเจน","note":"สถานีสำหรับเติมเชื้อเพลิงไฮโดรเจนให้ยานพาหนะ"},
+  {"id":"mpa","term":"MPa","translation":"เมกะปาสกาล","note":"หน่วยความดัน; คงค่าตัวเลขและหน่วยตามต้นฉบับ"},
+  {"id":"bev","term":"BEV","translation":"รถยนต์ไฟฟ้าแบตเตอรี่"},
+  {"id":"heavy-duty-truck","term":"heavy-duty truck","translation":"รถบรรทุกหนัก"},
+  {"id":"hydrogen-metallurgy","term":"hydrogen metallurgy","translation":"โลหวิทยาไฮโดรเจน"},
+  {"id":"green-ammonia","term":"green ammonia","translation":"แอมโมเนียสีเขียว"},
+  {"id":"fuel-cell-electric-tram","term":"hydrogen tram","translation":"รถรางพลังงานไฮโดรเจน"},
+  {"id":"hydrogen-refueling","term":"hydrogen refueling","translation":"การเติมเชื้อเพลิงไฮโดรเจน"}
+]

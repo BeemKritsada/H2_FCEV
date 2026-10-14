@@ -1,0 +1,396 @@
+[
+  {
+    "id": "china-hydrogen-overview",
+    "sourceSectionNumber": 2,
+    "sourceSlideNumber": 2,
+    "narrativeGroup": "industry-overview",
+    "heading": "Hydrogen energy in China",
+    "subheading": "Latest data referenced to 2026",
+    "paragraphs": [
+      "China has built the world's most complete hydrogen-energy industry chain, covering production, storage, transport, refueling, and end use.",
+      "Annual hydrogen production exceeds 36.5 million tonnes, ranking first in the world."
+    ],
+    "editorialNoteIds": [
+      "source-citations"
+    ]
+  },
+  {
+    "id": "hydrogen-production-structure",
+    "sourceSectionNumber": 3,
+    "sourceSlideNumber": 3,
+    "narrativeGroup": "hydrogen-supply",
+    "heading": "Hydrogen production structure",
+    "paragraphs": [
+      "Low-carbon green hydrogen is produced by using wind and solar power to split water."
+    ],
+    "bulletLists": [
+      {
+        "label": "Production shares stated in the source",
+        "items": [
+          "Grey hydrogen (produced from coal): 56%",
+          "Hydrogen from industrial by-products: 21%",
+          "Hydrogen from natural gas: 21%"
+        ]
+      },
+      {
+        "items": [
+          "2. Green hydrogen capacity is expanding rapidly. Operating projects have capacity of 250,000 tonnes per year, with a further 900,000 tonnes under construction. The northwestern areas of Xinjiang, Inner Mongolia, and Gansu have abundant wind and solar resources, and are planning large wind-and-solar integrated hydrogen projects.",
+          "3. The domestic manufacturing rate for core equipment—water electrolysers, high-pressure hydrogen storage tanks, and fuel cell stacks—is more than 90%. The source describes the technology as comparable to global standards."
+        ]
+      }
+    ],
+    "editorialNoteIds": [
+      "production-share-total",
+      "production-method-definition",
+      "source-citations"
+    ]
+  },
+  {
+    "id": "hydrogen-infrastructure",
+    "sourceSectionNumber": 4,
+    "sourceSlideNumber": 4,
+    "narrativeGroup": "hydrogen-supply",
+    "heading": "Hydrogen infrastructure",
+    "paragraphs": [
+      "A total of 557 hydrogen refueling stations have been completed nationwide, the largest number in the world. They are concentrated in 4 major urban clusters: the Guangdong-Hong Kong-Macao Greater Bay Area, Beijing-Tianjin-Hebei, the Yangtze River Delta, and Chengdu-Chongqing.",
+      "About 60% of stations provide regular public refueling; the rest are demonstration stations serving industrial parks. A further 177 projects are under construction or planned. The forecast is more than 650 stations by the end of 2026.",
+      "Pilot hydrogen pipelines have entered operation, but main cross-regional trunk pipelines remain scarce. Hydrogen storage and transport costs account for 30%–40% of the retail hydrogen price and are a major barrier."
+    ],
+    "editorialNoteIds": [
+      "station-count-repeat",
+      "source-citations"
+    ]
+  },
+  {
+    "id": "vehicle-deployment",
+    "sourceSectionNumber": 5,
+    "sourceSlideNumber": 5,
+    "narrativeGroup": "vehicle-deployment",
+    "heading": "Hydrogen fuel cell vehicle deployment in China",
+    "subheading": "Latest data referenced to 2026",
+    "paragraphs": [
+      "1. Fleet size: At the end of 2025, the cumulative national fleet of hydrogen fuel cell vehicles was about 40,000, ranking first worldwide. At the end of 2025, sales surged to nearly 3,600 vehicles per month, driven by policy support. In early 2026, the industry entered an adjustment period: production and sales fell sharply, and the market returned to a more rational commercial phase.",
+      "Commercial vehicles are the main group, accounting for more than 95% of the market; passenger cars account for less than 5%."
+    ],
+    "bulletLists": [
+      {
+        "items": [
+          "Hydrogen heavy-duty trucks are the main product, accounting for more than 65% of commercial vehicles."
+        ]
+      }
+    ],
+    "editorialNoteIds": [
+      "early-2026-typo",
+      "truck-share-denominator",
+      "source-citations"
+    ]
+  },
+  {
+    "id": "four-application-sectors-transport",
+    "sourceSectionNumber": 6,
+    "sourceSlideNumber": 6,
+    "narrativeGroup": "applications",
+    "heading": "Use across 4 major sectors",
+    "subheading": "(1) Transport: the most commercially developed sector and the main pathway",
+    "paragraphs": [
+      "1. Hydrogen commercial vehicles are the main group, accounting for more than 95% of the market. About 40,000 fuel cell vehicles are in operation, of which heavy-duty trucks account for 85%."
+    ],
+    "bulletLists": [
+      {
+        "items": [
+          "Hydrogen heavy-duty trucks are widely used in mines, ports, steel mills, and intercity freight. Refueling takes 3–5 minutes; range is 600–1,000 kilometers; and operation remains stable at temperatures as low as -30°C. Their payload capacity is better than that of battery electric vehicles. Large truck convoys carrying 10,000 tonnes of freight operate regularly in Inner Mongolia, Shanxi, Foshan, and Shanghai.",
+          "City and passenger buses are in use in dozens of cities nationwide. A hydrogen tram in Foshan has been in commercial service for 7 years. Hydrogen commuter trains in Changchun and Chengdu regularly run on demonstration routes.",
+          "Special-purpose vehicles include garbage trucks, refrigerated freight vehicles, airport shuttles, and port container tractors. Local government agencies are replacing diesel vehicles with hydrogen-powered vehicles.",
+          "New transport modes in trial operation include hydrogen-powered river cargo vessels, mine locomotives, drones, and small tourist trains."
+        ]
+      }
+    ],
+    "editorialNoteIds": [
+      "truck-share-denominator",
+      "freight-tonnage-context",
+      "source-citations"
+    ]
+  },
+  {
+    "id": "industrial-hydrogen-applications",
+    "sourceSectionNumber": 6,
+    "sourceSlideNumber": 7,
+    "narrativeGroup": "applications",
+    "heading": "Hydrogen use in industry",
+    "subheading": "(2) Industry: the sector with the greatest growth opportunity and a key area for carbon reduction",
+    "paragraphs": [
+      "Industry has long been a major hydrogen consumer. The shift from fossil-based hydrogen to green hydrogen is accelerating."
+    ],
+    "bulletLists": [
+      {
+        "items": [
+          "1. Hydrogen metallurgy (steel production): Baowu's Zhanjiang steel plant opened a million-tonne-scale zero-carbon production line. It uses green hydrogen instead of coke to reduce iron ore, helping to cut steelmaking emissions substantially. Steel plants in Hebei and Shandong are planning multiple large hydrogen-based ore-reduction projects.",
+          "2. Chemical synthesis: Wind- and solar-powered green hydrogen projects in Inner Mongolia and Xinjiang produce green ammonia and green methanol to replace conventional coal-based grey hydrogen. Fertilizer, polypropylene, and refining plants are gradually shifting to lower-carbon feedstocks. A single plant could reduce carbon emissions by more than 100,000 tonnes per year.",
+          "3. Building materials and non-ferrous metal refining: promoted in small-scale trials."
+        ]
+      }
+    ],
+    "editorialNoteIds": [
+      "source-citations"
+    ]
+  },
+  {
+    "id": "power-and-energy-storage",
+    "sourceSectionNumber": 7,
+    "sourceSlideNumber": 8,
+    "narrativeGroup": "applications",
+    "heading": "Power generation and energy storage",
+    "subheading": "(3) A new form of controllable energy",
+    "bulletLists": [
+      {
+        "items": [
+          "1. Integrated wind-solar-hydrogen-storage systems: Northwestern wind and solar bases use surplus off-peak electricity to split water and produce hydrogen for long-duration storage. During peak electricity demand, fuel cells generate power for the grid, addressing wind and solar curtailment.",
+          "2. Distributed power generation: Hydrogen fuel cell backup systems are installed on remote islands, at border military camps, and in data centers. Community-level hydrogen combined heat and power projects are being tested.",
+          "3. Hydrogen blending: Small amounts of hydrogen are blended into coal-fired power plant boilers to reduce carbon emissions from coal-fired generation."
+        ]
+      }
+    ],
+    "editorialNoteIds": [
+      "source-citations"
+    ]
+  },
+  {
+    "id": "heavy-duty-truck-logistics",
+    "sourceSectionNumber": 8,
+    "sourceSlideNumber": 9,
+    "narrativeGroup": "commercial-logistics",
+    "heading": "Hydrogen heavy-duty truck logistics",
+    "bulletLists": [
+      {
+        "label": "Operating scenarios",
+        "items": [
+          "Container transport at ports, mine earth haulage, short-distance transport inside steel plants, and main intercity freight routes."
+        ]
+      },
+      {
+        "label": "Advantages and deployment",
+        "items": [
+          "Refueling takes 3–5 minutes, range is 600–1,000 kilometers, and range loss is small even at temperatures as low as -30°C. The vehicle is lighter and can carry more freight than a battery electric heavy-duty truck.",
+          "Large convoys carrying 10,000 tonnes operate in Inner Mongolia, Shanxi, Hebei, Foshan (Guangdong), and at the Port of Shanghai. Operations are most established on fixed routes and within closed industrial zones."
+        ]
+      }
+    ],
+    "editorialNoteIds": [
+      "freight-tonnage-context",
+      "source-citations"
+    ]
+  },
+  {
+    "id": "passenger-rail",
+    "sourceSectionNumber": 9,
+    "sourceSlideNumber": 10,
+    "narrativeGroup": "rail-transport",
+    "heading": "Hydrogen-powered passenger rail",
+    "subheading": "1. Commuter trains and trams",
+    "bulletLists": [
+      {
+        "items": [
+          "In 2022, the world's first hydrogen-powered commuter train was produced in Chengdu. CRRC Changchun Railway Vehicles developed it as a production model.",
+          "The train has 4 cars, a maximum speed of 160 kilometers per hour, a range of more than 1,000 kilometers per refueling, and a refueling time of 15 minutes.",
+          "The hydrogen tram in Gaoming District, Foshan, was China's first hydrogen tram route to enter commercial service, starting in 2019. The route is 6.5 kilometers long; one refueling supports 100 kilometers of travel for daily passenger service.",
+          "The Chuan Chun Hao train in Changchun and the Chuan Song Hao train in Jilin are hydrogen-powered tourist trams. They began carrying passengers in 2026 for park tours. The source states that they produce no pollution and leave only pure water from operation."
+        ]
+      }
+    ],
+    "editorialNoteIds": [
+      "rail-product-names",
+      "world-first-claim",
+      "source-citations"
+    ]
+  },
+  {
+    "id": "freight-and-mining-locomotives",
+    "sourceSectionNumber": 10,
+    "sourceSlideNumber": 11,
+    "narrativeGroup": "rail-transport",
+    "heading": "Hydrogen locomotives for freight and mining",
+    "subheading": "2. Freight locomotives",
+    "bulletLists": [
+      {
+        "items": [
+          "1. High-power 2,400 kW hydrogen locomotive (latest model, 2026): Put into service at the Batu Ta mine in Inner Mongolia, it can haul a 10,000-tonne freight train on level track. A full hydrogen tank supports more than 12 hours of continuous operation. The source describes it as China's most powerful hydrogen locomotive.",
+          "2. Medium and small locomotives rated at 700 kW and 1,400 kW are regularly tested on several mine railway lines in Liaoning, Inner Mongolia, and Hebei. Compared with a diesel locomotive, each unit can reduce carbon emissions by several hundred tonnes per year."
+        ]
+      }
+    ],
+    "paragraphs": [
+      "Cities with service listed in the source: Foshan, Changchun, Jilin, Chengdu, Yibin, Baotou, Qinzhou, Qingdao, Tangshan, and others. Demonstration routes for regular passenger and freight service are operating in several locations nationwide."
+    ],
+    "editorialNoteIds": [
+      "batu-ta-mine-name",
+      "locomotive-city-name-variants",
+      "freight-tonnage-context",
+      "source-citations"
+    ]
+  },
+  {
+    "id": "adoption-barriers",
+    "sourceSectionNumber": 11,
+    "sourceSlideNumber": 12,
+    "narrativeGroup": "advantages-limitations",
+    "heading": "3 major barriers",
+    "bulletLists": [
+      {
+        "items": [
+          "High vehicle purchase cost: Prices start at 300,000 yuan, 1.5–4 times the cost of a gasoline vehicle or battery electric vehicle.",
+          "Inconvenient refueling: Most hydrogen refueling stations use 35 MPa systems designed for commercial fleets. High-pressure 70 MPa stations suitable for private cars are rare, and service is almost unavailable in counties and townships.",
+          "High operating cost: The average end-user hydrogen price is 44.5 yuan per kilogram, making the cost per 100 kilometers much higher than charging an electric vehicle at home."
+        ]
+      }
+    ],
+    "editorialNoteIds": [
+      "price-repeat",
+      "source-citations"
+    ]
+  },
+  {
+    "id": "fcev-advantages",
+    "sourceSectionNumber": 12,
+    "sourceSlideNumber": 13,
+    "narrativeGroup": "advantages-limitations",
+    "heading": "Main advantages of hydrogen vehicles",
+    "bulletLists": [
+      {
+        "items": [
+          "1. Refueling is as fast as filling a gasoline vehicle, avoiding long battery charging waits.",
+          "2. Strong performance at low temperatures: winter range loss in northern China is much lower than for lithium-battery vehicles.",
+          "3. Long range and high payload make them suitable for long-distance heavy freight, mines, and ports—sectors that are difficult to electrify.",
+          "4. The stated exhaust by-product is pure water, with no exhaust pollution; this can help industrial plants comply with carbon-reduction policies."
+        ]
+      }
+    ],
+    "editorialNoteIds": [
+      "source-citations"
+    ]
+  },
+  {
+    "id": "refrigerated-transport",
+    "sourceSectionNumber": 13,
+    "sourceSlideNumber": 14,
+    "narrativeGroup": "commercial-logistics",
+    "heading": "FCEV benefits for refrigerated food transport",
+    "bulletLists": [
+      {
+        "items": [
+          "BEVs use substantial electricity for both propulsion and refrigeration.",
+          "BEV weight reduces payload, while FCEVs can carry more because H2 is very light.",
+          "Refueling with H2 takes only 10–15 minutes; a BEV truck needs at least 1–2 hours.",
+          "One H2 refueling supports 500–800 kilometers of travel, farther than an EV."
+        ]
+      }
+    ],
+    "editorialNoteIds": [
+      "refrigerated-transport-typos",
+      "source-citations"
+    ]
+  },
+  {
+    "id": "hydrogen-industry-advantages",
+    "sourceSectionNumber": 14,
+    "sourceSlideNumber": 15,
+    "narrativeGroup": "advantages-limitations",
+    "heading": "Main advantages of the hydrogen energy industry",
+    "bulletLists": [
+      {
+        "items": [
+          "1. No exhaust pollution: The stated by-product of the fuel cell reaction is pure water.",
+          "2. Fast refueling: Hydrogen refueling time is comparable to diesel refueling and avoids long battery charging waits for electric vehicles.",
+          "3. Strong performance at low temperatures and under heavy loads: The source highlights advantages in cold regions, mines, and long-distance freight.",
+          "4. Long-duration energy storage: Hydrogen can be stored for several months, addressing the short storage duration attributed to lithium batteries in the source.",
+          "5. Suitable for industries that are difficult to electrify: The source presents hydrogen as a carbon-reduction option for steelmaking, chemicals, long-distance heavy trucks, and shipping, which cannot rely on electricity alone."
+        ]
+      }
+    ],
+    "editorialNoteIds": [
+      "source-citations"
+    ]
+  },
+  {
+    "id": "industry-barriers",
+    "sourceSectionNumber": 15,
+    "sourceSlideNumber": 16,
+    "narrativeGroup": "advantages-limitations",
+    "heading": "Industry disadvantages and barriers",
+    "bulletLists": [
+      {
+        "items": [
+          "1. High total cost: Vehicle purchases and hydrogen refueling are expensive, making it difficult for company fleets to become profitable without government subsidies.",
+          "2. Uneven infrastructure: There are too few hydrogen stations and limited access for private vehicles. This creates a cycle: without vehicles, stations are not built; without stations, buyers hesitate to purchase vehicles.",
+          "3. Low green hydrogen share: Most hydrogen is grey hydrogen produced from coal, limiting its contribution to carbon-neutrality goals.",
+          "4. Incomplete after-sales service: Few maintenance centers serve hydrogen passenger cars, and spare parts take a long time to arrive.",
+          "5. Market demand fell in 2026. The industry still needs time to reduce reliance on policy subsidies and achieve profitable commercial operations."
+        ]
+      }
+    ],
+    "editorialNoteIds": [
+      "duplicated-word-slide-16",
+      "source-citations"
+    ]
+  },
+  {
+    "id": "remaining-challenges",
+    "sourceSectionNumber": 16,
+    "sourceSlideNumber": 17,
+    "narrativeGroup": "advantages-limitations",
+    "heading": "Remaining industry challenges",
+    "bulletLists": [
+      {
+        "items": [
+          "1. High total cost: The average retail hydrogen price is 44.5 yuan per kilogram. The source says it could compete with fossil fuels when the price falls to 25–30 yuan per kilogram. Hydrogen vehicles also cost more to purchase than diesel vehicles.",
+          "2. Storage and transport barriers: Long-distance hydrogen transport is expensive and nationwide pipelines remain scarce, creating a supply-demand mismatch: the west produces green hydrogen while the east is the main consumption area.",
+          "3. Uneven infrastructure distribution: Stations cluster in industrial cities, with limited coverage in counties, townships, and intercity highway rest stops.",
+          "4. Low green hydrogen share: Most hydrogen is still high-carbon grey hydrogen produced from coal. A full transition to a carbon-neutral system requires long-term investment.",
+          "5. Policy-dependent business models: Passenger hydrogen cars and distributed hydrogen supply do not yet have self-sustaining profitable operating models."
+        ]
+      }
+    ],
+    "editorialNoteIds": [
+      "price-repeat",
+      "source-citations"
+    ]
+  },
+  {
+    "id": "regional-deployment",
+    "sourceSectionNumber": 17,
+    "sourceSlideNumber": 18,
+    "narrativeGroup": "regional-deployment",
+    "heading": "Regional deployment",
+    "subheading": "Deployment clusters in 4 major hydrogen demonstration regions, plus other areas",
+    "bulletLists": [
+      {
+        "items": [
+          "1. Guangdong-Hong Kong-Macao Greater Bay Area (Guangdong Province): Described as China's leading hydrogen-industry cluster. Foshan has the densest station network and supports buses, trams, heavy trucks, and hydrogen two-wheelers. Guangzhou, Shenzhen, and Dongguan are developing hydrogen freight fleets around local ports. The province has 69 hydrogen refueling stations.",
+          "2. Beijing-Tianjin-Hebei: Built on the Winter Olympics demonstration infrastructure. Zhangjiakou, Tangshan, and Handan in Hebei promote hydrogen heavy-duty trucks for mine transport; Beijing focuses on hydrogen street-cleaning vehicles and buses.",
+          "3. Yangtze River Delta (Shanghai, Shandong, Zhejiang, Jiangsu): Shanghai focuses on port freight and trials of passenger cars. The source names Qingdong and Zibo for hydrogen heavy trucks at ports; Jiaxing and Ningbo are deploying hydrogen urban freight vehicles.",
+          "4. Chengdu-Chongqing (western hydrogen corridor): Focuses on city buses and intercity hydrogen refrigerated freight.",
+          "5. Other areas: Inner Mongolia, Shanxi, and Nannan focus on heavy trucks for mines. The Northeast and Southwest have only small, dispersed demonstration projects and insufficient hydrogen refueling infrastructure."
+        ]
+      }
+    ],
+    "editorialNoteIds": [
+      "yangtze-delta-shandong",
+      "regional-place-name-ambiguities",
+      "source-citations"
+    ]
+  },
+  {
+    "id": "station-counts-and-service-cities",
+    "sourceSectionNumber": 18,
+    "sourceSlideNumber": 19,
+    "narrativeGroup": "regional-deployment",
+    "heading": "Hydrogen refueling station counts and cities with service",
+    "subheading": "National totals attributed to GGII, April 2026",
+    "paragraphs": [
+      "A total of 557 hydrogen refueling stations have been completed nationwide, the largest number in the world. A further 177 projects are under construction or planned. The forecast is more than 650 stations by the end of 2026."
+    ],
+    "editorialNoteIds": [
+      "city-list-missing-slide-19",
+      "station-count-repeat"
+    ]
+  }
+]

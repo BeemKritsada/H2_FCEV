@@ -1,0 +1,25 @@
+{
+  "phase": "4-batch-1",
+  "scenes": ["scene-green-hydrogen", "scene-equipment-technology"],
+  "status": "implemented-with-explicit-temporary-concept-models",
+  "reusedAssets": ["fonts/inter-latin.woff2", "fonts/noto-sans-thai.woff2", "lucide-react icons"],
+  "generatedGeometry": {
+    "file": "src/components/presentation/batch1/IndustrialModels.tsx",
+    "rights": "Original code-authored conceptual geometry for this project",
+    "objects": ["wind turbine", "solar array", "electrolyzer", "hydrogen storage tank", "fuel cell stack"],
+    "accuracy": "Simplified category-level illustrations; no real manufacturer, site, cell count, dimensions or pressure rating is represented"
+  },
+  "fallback": {
+    "file": "src/components/presentation/batch1/ConceptFallback.tsx",
+    "type": "original-layered-svg",
+    "status": "temporary-concept-illustration"
+  },
+  "replacementRequirements": [
+    { "scene": "04", "asset": "Licensed, verified green hydrogen facility imagery or model", "mustShow": "wind, solar, electrolysis and hydrogen storage", "constraint": "Any actual mechanical animation requires a 3D component, layered asset or verified video" },
+    { "scene": "05", "asset": "Technically reviewed electrolyzer GLB/GLTF or transparent product render" },
+    { "scene": "05", "asset": "Technically reviewed high-pressure hydrogen tank GLB/GLTF or transparent product render" },
+    { "scene": "05", "asset": "Technically reviewed fuel cell stack GLB/GLTF or transparent product render" }
+  ],
+  "localization": "All captions and data remain editable DOM text in existing TH/EN common.json resources",
+  "report": "docs/phase-4-batch-1.md"
+}

@@ -1,0 +1,20 @@
+{
+  "sourceSectionId": "hydrogen-production-structure",
+  "sourceSlide": 3,
+  "greenHydrogen": {
+    "operatingCapacity": { "value": 250000, "unitKey": "batchOne.green.annualUnit", "status": "supplied-value-reporting-period-unverified" },
+    "underConstruction": { "value": 900000, "unitKey": "batchOne.green.tonnesUnit", "status": "supplied-value-annual-unit-unconfirmed" },
+    "regionKeys": ["batchOne.green.xinjiang", "batchOne.green.innerMongolia", "batchOne.green.gansu"],
+    "processKeys": ["batchOne.green.renewables", "batchOne.green.electricity", "batchOne.green.electrolysis", "batchOne.green.hydrogen"]
+  },
+  "equipment": {
+    "localizationLowerBound": 90,
+    "comparison": "greater-than",
+    "status": "supplied-claim-scope-and-date-unverified",
+    "items": [
+      { "id": "electrolyzer", "labelKey": "batchOne.equipment.electrolyzer", "detailKey": "batchOne.equipment.electrolyzerDetail" },
+      { "id": "tank", "labelKey": "batchOne.equipment.tank", "detailKey": "batchOne.equipment.tankDetail" },
+      { "id": "fuelCell", "labelKey": "batchOne.equipment.fuelCell", "detailKey": "batchOne.equipment.fuelCellDetail" }
+    ]
+  }
+}

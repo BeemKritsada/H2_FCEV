@@ -1,0 +1,32 @@
+{
+  "overview": {
+    "sourceSectionId": "china-hydrogen-overview",
+    "sourceSlide": 2,
+    "originalReferenceYear": 2026,
+    "annualProductionMillionTonnes": 36.5,
+    "comparison": "greater-than",
+    "globalRank": 1,
+    "verifiedDataYear": 2024,
+    "reportYear": 2025,
+    "verificationStatus": "historical-value-supported-2026-period-unverified"
+  },
+  "productionMix": {
+    "sourceSectionId": "hydrogen-production-structure",
+    "sourceSlide": 3,
+    "verifiedDataYear": 2024,
+    "scaleMaximum": 100,
+    "items": [
+      { "id": "coal", "value": 56, "labelKey": "reference.mix.coal", "detailKey": "reference.mix.coalDetail" },
+      { "id": "byproduct", "value": 21, "labelKey": "reference.mix.byproduct", "detailKey": "reference.mix.byproductDetail" },
+      { "id": "gas", "value": 21, "labelKey": "reference.mix.gas", "detailKey": "reference.mix.gasDetail" }
+    ],
+    "verificationStatus": "three-source-shares-retained-no-extra-category"
+  },
+  "source": {
+    "id": "nea-hydrogen-development-2025",
+    "url": "https://www.nea.gov.cn/20250430/96022785b3a747248288ad1c57d3a025/2025043096022785b3a747248288ad1c57d3a025_35aeee443346424eb4a3da029cb007003c.pdf",
+    "productionPdfPage": 16,
+    "rankPdfPage": 5,
+    "checkedOn": "2026-10-14"
+  }
+}

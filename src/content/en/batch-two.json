@@ -1,0 +1,48 @@
+{
+  "eyebrow": "Hydrogen infrastructure",
+  "source": "Supplied presentation · slides 4 / 19 · figures retained as provided",
+  "network": {
+    "title": "China's Hydrogen Refueling Network",
+    "completed": "Completed refueling stations",
+    "scale": "Described as the world's largest network in the supplied source.",
+    "public": "Public refueling",
+    "industrial": "Demonstration / industrial",
+    "remainder": "Approximate remainder, derived from the public share.",
+    "mapAlt": "China map highlighting four regional clusters, with city-based geographical reference points.",
+    "mapNote": "Regional references, not station locations. Signals are conceptual, not verified connections.",
+    "regionsLabel": "Four major regional clusters",
+    "regions": {
+      "bay": "Guangdong–Hong Kong–Macao Greater Bay Area",
+      "capital": "Beijing–Tianjin–Hebei",
+      "delta": "Yangtze River Delta",
+      "west": "Chengdu–Chongqing"
+    }
+  },
+  "expansion": {
+    "title": "Hydrogen Refueling Infrastructure Expansion",
+    "subtitle": "A completed network. A pipeline of projects. A projected total.",
+    "completed": "Completed stations",
+    "planned": "Planned / under construction",
+    "projected": "Projected by end of {{year}}",
+    "completedNote": "Existing completed infrastructure",
+    "plannedNote": "Additional projects · completion dates vary",
+    "projectedNote": "Expected total · more than {{value}} stations",
+    "diagramAlt": "Three infrastructure milestones aligned from left to right: completed stations, planned or under-construction projects, and the projected future total. These represent different statuses, not cumulative observations.",
+    "note": "Different project statuses, not a cumulative historical series. Planned projects are not all assumed operational by the forecast date."
+  },
+  "transport": {
+    "title": "Hydrogen Storage and Transportation Challenges",
+    "production": "Production",
+    "storage": "Storage",
+    "transportation": "Transportation",
+    "refueling": "Refueling station",
+    "pilot": "Pilot pipelines operating",
+    "interregional": "Major interregional pipelines remain limited",
+    "cost": "Storage and Transport Share of Retail Price",
+    "impact": "These costs constrain wider hydrogen adoption.",
+    "concept": "Conceptual equipment and flow · not a real facility or pipeline route",
+    "pressure": "Pressure indicator: illustrative, no measured value",
+    "visualAlt": "Conceptual industrial system: electrolyzer, pressure tanks, tube trailer, local pilot pipeline and refueling station. No national pipeline network is depicted.",
+    "source": "Supplied presentation · slide 4 · cost share according to the supplied data"
+  }
+}

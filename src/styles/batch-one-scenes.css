@@ -1,0 +1,127 @@
+/* All selectors are scoped to Batch 1: approved references retain their CSS. */
+.batch-one-scene { gap: clamp(14px, 1.65svh, 18px); padding-top: clamp(24px, 3svh, 36px); padding-bottom: 20px; }
+.batch-one-scene .batch-heading h1 span { color: var(--accent); }
+.batch-one-scene .batch-heading p { margin: 14px 0 0; color: var(--muted); font-size: var(--body-size); line-height: 1.55; max-width: 1250px; }
+.batch-one-scene .batch-heading h1 { font-size: var(--scene-title); }
+.batch-one-scene .batch-dot { width: 7px; height: 7px; display: inline-block; flex: none; border-radius: 50%; }
+.batch-one-scene .batch-dot--green { background: var(--green); }
+.batch-one-scene .batch-dot--blue { background: var(--accent); }
+.batch-one-scene .batch-dot--orange { background: var(--orange); }
+.batch-one-scene .batch-visual-label { display: block; color: var(--muted); font-size: var(--note-size); letter-spacing: .025em; }
+.batch-one-scene .batch-stage { position: relative; width: 100%; }
+.batch-one-scene .batch-stage__renderer, .batch-one-scene .batch-stage canvas, .batch-one-scene .batch-concept-svg { display: block; width: 100%; height: 100%; }
+.batch-one-scene .batch-source { margin-top: auto; display: flex; align-items: baseline; justify-content: space-between; gap: 24px; border-top: 1px solid var(--line); padding-top: 15px; font-size: var(--note-size); line-height: 1.65; color: var(--muted); }
+.batch-one-scene .batch-source > span:first-child { flex: 1; }
+.batch-one-scene .batch-concept-note { max-width: 45%; text-align: right; }
+
+.green-expansion-scene .green-composition { display: grid; grid-template-columns: minmax(0, 1.9fr) minmax(0, 1fr); gap: clamp(24px, 3.5vw, 66px); align-items: center; flex: 1; }
+.green-expansion-scene .green-facility { min-width: 0; }
+.green-expansion-scene .green-facility__visual { margin: 0; position: relative; background: radial-gradient(ellipse at 50% 65%, #f4f9fc, #fff 72%); }
+.green-expansion-scene .batch-stage--facility { height: clamp(240px, 28svh, 330px); }
+.green-expansion-scene .green-facility__legend { display: flex; justify-content: flex-end; gap: 22px; margin-top: -12px; font-size: var(--note-size); color: var(--muted); }
+.green-expansion-scene .green-facility__legend > span { display: inline-flex; gap: 8px; align-items: center; }
+.green-expansion-scene .green-process { list-style: none; padding: 18px 0 0; margin: 14px 0 0; display: grid; grid-template-columns: 1.25fr 1fr 1.2fr 1fr; border-top: 1px solid var(--line); gap: 22px; }
+.green-expansion-scene .green-process li { position: relative; display: flex; flex-direction: column; gap: 10px; color: var(--ink); font-size: var(--label-size); line-height: 1.5; }
+.green-expansion-scene .green-process svg { color: var(--green); }
+.green-expansion-scene .green-process__renewables { display: flex; gap: 7px; height: 24px; }
+.green-expansion-scene .green-process__h2 { color: var(--accent); height: 24px; font-size: 23px; line-height: 1; font-weight: 650; }
+.green-expansion-scene .green-process .green-process__arrow { position: absolute; right: 2px; top: 3px; color: #8aa7bb; }
+.green-expansion-scene .green-metrics { display: grid; gap: clamp(28px, 4.4svh, 46px); border-left: 1px solid var(--line); padding-left: clamp(24px, 3vw, 52px); }
+.green-expansion-scene .green-metric { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }
+.green-expansion-scene .green-metric__status { display: inline-flex; align-items: center; gap: 10px; font-size: var(--label-size); color: var(--muted); }
+.green-expansion-scene .green-metric strong { font-size: clamp(66px, min(5.05vw, 9svh), 98px); letter-spacing: -.065em; font-weight: 600; font-variant-numeric: tabular-nums; line-height: 1.15; margin-top: 12px; color: var(--accent); white-space: nowrap; }
+.green-expansion-scene .green-metric--operating strong { color: #128458; }
+.green-expansion-scene .green-metric__unit { font-size: clamp(22px, 1.55vw, 30px); margin-top: 6px; }
+.green-expansion-scene .green-metric__caution { font-size: var(--note-size); color: #956215; line-height: 1.6; margin: 10px 0 0; max-width: 370px; }
+.green-expansion-scene .green-regions { display: flex; align-items: center; justify-content: space-between; gap: 26px; padding-top: 18px; border-top: 1px solid var(--line); }
+.green-expansion-scene .green-regions__context { display: flex; gap: 12px; align-items: flex-start; color: var(--ink); font-size: var(--label-size); line-height: 1.5; }
+.green-expansion-scene .green-regions__context svg { color: var(--green); flex: none; margin-top: 3px; }
+.green-expansion-scene .green-regions__context small { display: block; font-size: var(--note-size); color: var(--muted); margin-top: 4px; }
+.green-expansion-scene .green-regions ul { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 13px 26px; list-style: none; margin: 0; padding: 0; color: var(--navy); font-size: var(--label-size); }
+.green-expansion-scene .green-regions li { padding-bottom: 4px; border-bottom: 2px solid #b9decf; }
+
+.equipment-technology-scene .equipment-heading { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); align-items: center; gap: 36px; }
+.equipment-technology-scene .batch-heading h1 span { display: block; }
+.equipment-technology-scene .equipment-localization { display: flex; align-items: center; gap: 24px; }
+.equipment-technology-scene .equipment-localization strong { display: block; color: var(--accent); font-size: var(--number-size); letter-spacing: -.075em; font-weight: 650; line-height: 1; white-space: nowrap; }
+.equipment-technology-scene .equipment-localization strong > span { font-size: .6em; letter-spacing: -.045em; }
+.equipment-technology-scene .equipment-localization > span { max-width: 210px; color: var(--muted); font-size: var(--label-size); line-height: 1.5; }
+.equipment-technology-scene .equipment-showcase { flex: 1; display: flex; flex-direction: column; justify-content: center; min-width: 0; }
+.equipment-technology-scene .batch-stage--equipment { height: clamp(230px, 30svh, 360px); }
+.equipment-technology-scene .equipment-captions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px; list-style: none; padding: 0; margin: 0; }
+.equipment-technology-scene .equipment-captions li { position: relative; border-top: 1px solid var(--line); padding-top: 17px; text-align: center; }
+.equipment-technology-scene .equipment-captions__index { color: #627b94; font-size: var(--note-size); display: block; margin-bottom: 9px; }
+.equipment-technology-scene .equipment-captions h2 { margin: 0; font-size: clamp(23px, 1.7vw, 32px); font-weight: 550; line-height: 1.4; letter-spacing: -.025em; color: var(--navy); }
+.equipment-technology-scene .equipment-captions p { color: var(--muted); margin: 8px auto 0; font-size: var(--label-size); line-height: 1.6; max-width: 400px; }
+.equipment-technology-scene .equipment-standard { display: flex; align-items: baseline; justify-content: center; gap: 13px; margin: 0; font-size: var(--body-size); color: var(--ink); line-height: 1.65; text-align: center; }
+.equipment-technology-scene .equipment-standard > span { width: 22px; height: 2px; flex: none; background: var(--accent); }
+
+.batch-one-scene .batch-turbine-rotor { transform-origin: 0 0; animation: batch-one-rotor 13s linear infinite; }
+.batch-one-scene .batch-svg-flow { animation: batch-one-flow 3.4s linear infinite; }
+.batch-one-scene .batch-svg-scan { animation: batch-one-scan 7s ease-in-out infinite alternate; }
+@keyframes batch-one-rotor { to { transform: rotate(360deg); } }
+@keyframes batch-one-flow { to { stroke-dashoffset: -92; } }
+@keyframes batch-one-scan { to { transform: translateY(68px); opacity: .12; } }
+.batch-one-scene[data-motion="paused"] .batch-turbine-rotor,
+.batch-one-scene[data-motion="paused"] .batch-svg-flow,
+.batch-one-scene[data-motion="paused"] .batch-svg-scan { animation-play-state: paused; }
+
+@media (min-width: 1101px) and (max-height: 800px) {
+  .batch-one-scene { gap: 16px; }
+  .batch-one-scene .batch-heading h1 { font-size: clamp(38px, 3.4vw, 48px); }
+  .batch-one-scene .batch-heading p { margin-top: 9px; }
+  .green-expansion-scene .batch-stage--facility { height: 255px; }
+  .green-expansion-scene .green-metrics { gap: 22px; }
+  .green-expansion-scene .green-metric strong { font-size: 66px; margin-top: 5px; }
+  .green-expansion-scene .green-process { margin-top: 10px; padding-top: 12px; }
+  .green-expansion-scene .green-regions { padding-top: 12px; }
+  .equipment-technology-scene .batch-stage--equipment { height: 225px; }
+  .equipment-technology-scene .equipment-localization strong { font-size: 96px; }
+  .equipment-technology-scene .equipment-captions li { padding-top: 10px; }
+  .equipment-technology-scene .equipment-captions p { font-size: 18px; margin-top: 5px; }
+  .equipment-technology-scene .equipment-standard { font-size: 20px; }
+}
+@media (max-width: 1100px) {
+  .green-expansion-scene .green-composition { grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 24px; }
+  .green-expansion-scene .green-metrics { padding-left: 24px; }
+  .green-expansion-scene .green-metric strong { font-size: clamp(48px, 6.2vw, 68px); }
+  .green-expansion-scene .green-regions { align-items: flex-start; }
+  .green-expansion-scene .green-regions ul { max-width: 45%; gap: 10px 18px; }
+  .green-expansion-scene .green-process { gap: 12px; }
+  .green-expansion-scene .green-process li { font-size: 17px; }
+  .equipment-technology-scene .equipment-localization { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .equipment-technology-scene .equipment-localization > span { max-width: none; }
+  .equipment-technology-scene .equipment-captions { gap: 22px; }
+}
+@media (max-width: 760px) {
+  .batch-one-scene .batch-heading h1 { font-size: clamp(34px, 7vw, 46px); }
+  .batch-one-scene .batch-heading p { font-size: 20px; }
+  .batch-one-scene .batch-source { flex-direction: column; gap: 9px; font-size: 15px; }
+  .batch-one-scene .batch-concept-note { max-width: none; text-align: left; }
+  .batch-one-scene .batch-visual-label { font-size: 15px; }
+  .green-expansion-scene .green-composition { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .green-expansion-scene .batch-stage--facility { height: clamp(230px, 65vw, 400px); }
+  .green-expansion-scene .green-facility__legend { font-size: 15px; }
+  .green-expansion-scene .green-process { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 24px; }
+  .green-expansion-scene .green-process li { font-size: 18px; }
+  .green-expansion-scene .green-metrics { border-left: 0; border-top: 1px solid var(--line); padding: 22px 0 0; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+  .green-expansion-scene .green-metric strong { font-size: clamp(39px, 10.8vw, 65px); }
+  .green-expansion-scene .green-metric__status { font-size: 16px; gap: 6px; }
+  .green-expansion-scene .green-metric__unit { font-size: 20px; }
+  .green-expansion-scene .green-metric__caution { font-size: 15px; }
+  .green-expansion-scene .green-regions { flex-direction: column; gap: 18px; }
+  .green-expansion-scene .green-regions ul { max-width: none; justify-content: flex-start; }
+  .equipment-technology-scene .equipment-heading { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .equipment-technology-scene .equipment-localization { flex-direction: row; align-items: center; gap: 22px; }
+  .equipment-technology-scene .equipment-localization strong { font-size: 96px; }
+  .equipment-technology-scene .equipment-localization > span { font-size: 18px; }
+  .equipment-technology-scene .batch-stage--equipment { height: clamp(145px, 32vw, 250px); }
+  .equipment-technology-scene .equipment-captions { gap: 12px; }
+  .equipment-technology-scene .equipment-captions h2 { font-size: clamp(17px, 3.4vw, 24px); overflow-wrap: anywhere; }
+  .equipment-technology-scene .equipment-captions p { font-size: 16px; }
+  .equipment-technology-scene .equipment-captions__index { font-size: 14px; }
+  .equipment-technology-scene .equipment-standard { font-size: 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .batch-one-scene .batch-turbine-rotor, .batch-one-scene .batch-svg-flow, .batch-one-scene .batch-svg-scan { animation: none; }
+}

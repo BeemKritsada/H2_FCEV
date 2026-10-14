@@ -1,0 +1,28 @@
+{
+  "phase": "reference-scenes-02-03",
+  "assets": [
+    {
+      "scene": "scene-china-scale",
+      "existing": ["maps/china-source.geojson", "maps/china-outline.svg"],
+      "implementation": "src/components/presentation/LivingChinaMap.tsx",
+      "type": "extruded-geographic-geometry",
+      "source": "Natural Earth CHN feature retained in existing asset manifest",
+      "rights": "Public domain source geometry; new code-authored visualization",
+      "status": "implemented-needs-browser-visual-review",
+      "fallback": "maps/china-outline.svg",
+      "motion": "GSAP entrance and outline illumination; R3F camera-relative drift, regional node rings and energy particles",
+      "accuracy": "Decorative regional nodes and connections are conceptual; they are not individual facilities or documented routes"
+    },
+    {
+      "scene": "scene-production-mix",
+      "implementation": "src/components/presentation/ReferenceScenes.tsx",
+      "type": "accessible-html-css-chart",
+      "data": "src/content/reference-facts.json",
+      "status": "implemented-needs-browser-visual-review",
+      "motion": "GSAP common-scale growth with restrained CSS energy shimmer",
+      "accuracy": "Three independent bars use one 0–100% scale; original shares total 98%"
+    }
+  ],
+  "missingAssetsReport": "docs/reference-scenes-audit.md",
+  "language": "All language-dependent text is DOM content supplied by existing i18next resources"
+}

@@ -1,0 +1,39 @@
+{
+  "phase": "4.1",
+  "created": "2026-10-12",
+  "documentation": "docs/visual-assets.md",
+  "assets": [
+    {
+      "path": "images/hydrogen-truck.jpg",
+      "source": "Built-in Imagegen; prompt in docs/visual-assets.md",
+      "rights": "AI-generated concept illustration; no third-party stock/model license asserted",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 265312,
+      "status": "Temporary conceptual vehicle; not a verified make/model",
+      "replacement": "HeroTruck media slot accepts future reviewed GLB/GLTF renderer"
+    },
+    {
+      "path": "maps/china-outline.svg",
+      "sourceData": "maps/china-source.geojson",
+      "source": "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_110m_admin_0_countries.geojson",
+      "license": "Public domain",
+      "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "status": "Geographic silhouette only; no operational pins or routes"
+    },
+    {
+      "path": "fonts/inter-latin.woff2",
+      "source": "https://cdn.jsdelivr.net/fontsource/fonts/inter:vf@latest/latin-wght-normal.woff2",
+      "license": "SIL Open Font License 1.1",
+      "licenseFile": "licenses/Inter-OFL.txt",
+      "bytes": 48256
+    },
+    {
+      "path": "fonts/noto-sans-thai.woff2",
+      "source": "https://cdn.jsdelivr.net/fontsource/fonts/noto-sans-thai:vf@latest/thai-wght-normal.woff2",
+      "license": "SIL Open Font License 1.1",
+      "licenseFile": "licenses/NotoSansThai-OFL.txt",
+      "bytes": 26924
+    }
+  ]
+}

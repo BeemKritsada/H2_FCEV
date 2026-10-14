@@ -1,0 +1,23 @@
+{
+  "batch": "Phase 4 / Batch 2 / Scenes 06–08",
+  "reviewed": "2026-10-14",
+  "map": {
+    "reusedData": "maps/china-source.geojson",
+    "outlineSource": "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_110m_admin_0_countries.geojson",
+    "outlineRights": "Natural Earth, public domain",
+    "projection": "Equirectangular, standard parallel 35 N; identical projection for outline and anchors",
+    "anchorData": "src/content/batch-two-facts.json",
+    "anchorSource": "GeoNames.org, WGS84 city references; source URLs recorded for each anchor",
+    "anchorRights": "Creative Commons Attribution 4.0; https://www.geonames.org/about.html; https://creativecommons.org/licenses/by/4.0/",
+    "derivation": "Chengdu–Chongqing uses the mean of the two city coordinates; other clusters use a named city reference. Cluster halos and signal arcs are illustrative, not boundaries or verified connections.",
+    "attribution": "Visible Natural Earth and GeoNames links below the map; provenance in this manifest",
+    "limitations": "Not station coordinates, density or measured connectivity. Low-resolution geographic overview. No runtime data requests."
+  },
+  "logistics": {
+    "source": "Project-authored procedural geometry and layered SVG",
+    "reused": "Batch 1 ElectrolyzerModel and StorageTankModel; unchanged",
+    "added": "Simplified tube trailer, dispenser/canopy, local pilot pipe, illustrative pressure gauge",
+    "status": "Conceptual, not a verified facility, manufacturer, pressure specification or pipeline route",
+    "replacementRequirements": "Licensed, technically reviewed GLB/GLTF models of a hydrogen tube trailer, refueling dispenser and local pilot pipeline assembly. Separate moving parts, metre-based scale, modest polygon/material count, and static fallback render. Avoid manufacturer markings unless rights are supplied."
+  }
+}

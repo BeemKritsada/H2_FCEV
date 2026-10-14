@@ -1,0 +1,455 @@
+{
+  "files": [
+    {
+      "path": "src/components/presentation/ReferenceScenes.tsx",
+      "hash": "3a642109fe011eb791de00768a799b6082d81f538c60b22c5a7feb5643bd2f82"
+    },
+    {
+      "path": "src/components/presentation/LivingChinaMap.tsx",
+      "hash": "73bb040bc044c18d7b11a114d167bbc5edaa6ee7e9c6f642fab496454d8f7c11"
+    },
+    {
+      "path": "src/components/presentation/AnimatedNumber.tsx",
+      "hash": "0c9c2ea27ff3a6373619cd2201071bab38a887bee8fd706609b74af07149f950"
+    },
+    {
+      "path": "src/components/motion/useSceneMotion.ts",
+      "hash": "5daebc36a861c4c5534432e71cdce035a121b65617c33f404800e63f82135d2e"
+    },
+    {
+      "path": "src/components/motion/MotionProvider.tsx",
+      "hash": "87d5e7ca74c1391f5179a0aa5c38f87736a075d18063ed56e53b25f7da54de5b"
+    },
+    {
+      "path": "src/components/motion/motion-context.ts",
+      "hash": "b67e8a55bb26a03409520031e8500186327ebb3c84371b6d0c5f25b4b9cf4189"
+    },
+    {
+      "path": "src/styles/global.css",
+      "hash": "a629cc432687fc964cafa1e54296be55602e42dda7220de2b7e68aa09ba58d8b"
+    },
+    {
+      "path": "src/styles/reference-scenes.css",
+      "hash": "318f390cb691d7b01567ce48f580bd2ca485b6e3bd60bbdfc298896fa314c416"
+    },
+    {
+      "path": "src/content/reference-facts.json",
+      "hash": "392c667f30ad32f6b911511e7ba336d66a9cc698042a08eeb480e055fbe15dd0"
+    },
+    {
+      "path": "src/content/en/sections/index.json",
+      "hash": "6c0b9b6cc5120bc540cc432b5051731c04a80e07ec10c7a5de124d4986597c14"
+    },
+    {
+      "path": "src/content/th/sections/index.json",
+      "hash": "fd267784d5fd2fd1b109ca428c429882ab350bc27c7dda4dc434f574db0c2f7a"
+    },
+    {
+      "path": "src/app/App.tsx",
+      "hash": "fb859cdd1e1e609e43950b457e1105ed4f0317f9e9d83b6afd82b01c05d16905"
+    },
+    {
+      "path": "src/components/navigation/TopNavigation.tsx",
+      "hash": "bda0fa48adff9e7f1ac919a53e5864faa6c579033d42e24b102e1c7a0c7c856c"
+    },
+    {
+      "path": "src/components/presentation/PresentationControls.tsx",
+      "hash": "cfb2af58770a52a4758a3c1f7fc3b0a2de833b6ebff79ee73ca8b2358b6b4ac8"
+    },
+    {
+      "path": "src/components/presentation/batch1/BatchOneScenes.tsx",
+      "hash": "2b7c9e762a34f084a945d444d2489cbdc7e62db50e4955b25d280fbfcbb7cf75"
+    },
+    {
+      "path": "src/components/presentation/batch1/ConceptFallback.tsx",
+      "hash": "33896262cd29bf9fe221fdcaf02de2d33fc64383d45f7cb63fd945f2377b5b79"
+    },
+    {
+      "path": "src/components/presentation/batch1/HydrogenStage.tsx",
+      "hash": "341d44ddb4facd8ab1f402c5b5fbbfed3ce65a07f6162f8d33742eb452b1aee2"
+    },
+    {
+      "path": "src/components/presentation/batch1/IndustrialModels.tsx",
+      "hash": "c19f31d1244661c45e2394d112984536bad9f922ba35a0ceb8751e60c3195b76"
+    },
+    {
+      "path": "src/styles/batch-one-scenes.css",
+      "hash": "a6a0585f747f618bde84332f513ffd1b9abddaed0610c00dc2adc0c56c00e8ac"
+    },
+    {
+      "path": "src/content/batch-one-facts.json",
+      "hash": "6abded3940fbbbc3a31e0387b2d6477ef0f6e77bca274db52b3ed842f8c6321a"
+    },
+    {
+      "path": "src/components/presentation/batch2/BatchTwoScenes.tsx",
+      "hash": "e0bae16d2c0e9d15e1baa91bdf3157dfa4837aedd54bccc81f1bccc39d70b844"
+    },
+    {
+      "path": "src/components/presentation/batch2/LogisticsFallback.tsx",
+      "hash": "45d4e08c2f7fe3d7c7c1c88e90c8b115497595826950d5873b42f082402dc88f"
+    },
+    {
+      "path": "src/components/presentation/batch2/LogisticsStage.tsx",
+      "hash": "60e6e3968d3c915dac7ff39f9895079791c52a34e26eabee7085ee1a20954669"
+    },
+    {
+      "path": "src/components/presentation/batch2/RegionalNetworkMap.tsx",
+      "hash": "fa729831acfb5582a4e2f4dd4c3b6f178c11272dfd33129e90f4e733ceece226"
+    },
+    {
+      "path": "src/components/presentation/batch2/regionProjection.ts",
+      "hash": "53c9cdcb808d961175857d250fa6e9ba7b5c1bcab2bc0dfcd580db3eac254238"
+    },
+    {
+      "path": "src/components/presentation/batch2/useInfrastructureMotion.ts",
+      "hash": "4c91135282c129ca75c1b0e07a2fa904e9a83afef66a9a4d6cafb8d429ceff42"
+    },
+    {
+      "path": "src/components/presentation/HeroTruck.tsx",
+      "hash": "17e5f6eb5b7f4ea4a4565f2e1ae134cc589ffee1afcae0c6395f3612d200329f"
+    },
+    {
+      "path": "src/styles/batch-two-scenes.css",
+      "hash": "3a82c708c0fa27e5021a9dd2b0d9f02a42db5229928c503a697c8c6f0b7e8589"
+    },
+    {
+      "path": "src/content/batch-two-facts.json",
+      "hash": "a0a49421c8bc4f75cd4f9917f2bdd3f0cb22da4a93107032445dd5e5a9eb7d02"
+    },
+    {
+      "path": "src/content/en/batch-two.json",
+      "hash": "acc7cdf7525cd77c3ad42c9458e1a73311630ed6253f889abd8dabedecb5ba17"
+    },
+    {
+      "path": "src/content/th/batch-two.json",
+      "hash": "6b75f7af55ca3736a9cbd6b100269018449eda82dc363b10e3c09ad0f803978b"
+    }
+  ],
+  "sceneConfig": "export type SceneVisualKind =\n  | 'abstract'\n  | 'truck'\n  | 'production'\n  | 'renewable'\n  | 'equipment'\n  | 'station'\n  | 'fleet'\n  | 'cold-chain'\n  | 'industry'\n  | 'power'\n  | 'rail'\n  | 'map'\n  | 'barriers'\n\nexport type SceneContentPreview =\n  | { sectionId: string; kind: 'paragraph'; index: number }\n  | { sectionId: string; kind: 'list'; index: number }\n  | { sectionId: string; kind: 'bullet'; listIndex: number; itemIndex: number }\n\nexport interface PresentationScene {\n  id: string\n  labelKey: string\n  contentIds: readonly string[]\n  visual: SceneVisualKind\n  previews?: readonly SceneContentPreview[]\n}\n\nexport const presentationScenes = [\n  { id: 'scene-opening', labelKey: 'sceneLabels.opening', contentIds: [], visual: 'truck' },\n  {\n    id: 'scene-china-scale',\n    labelKey: 'sceneLabels.chinaScale',\n    contentIds: ['china-hydrogen-overview'],\n    visual: 'map',\n    previews: [{ sectionId: 'china-hydrogen-overview', kind: 'paragraph', index: 1 }],\n  },\n  {\n    id: 'scene-production-mix',\n    labelKey: 'sceneLabels.productionMix',\n    contentIds: ['hydrogen-production-structure'],\n    visual: 'production',\n    previews: [{ sectionId: 'hydrogen-production-structure', kind: 'list', index: 0 }],\n  },\n  {\n    id: 'scene-green-hydrogen',\n    labelKey: 'sceneLabels.greenHydrogen',\n    contentIds: ['hydrogen-production-structure'],\n    visual: 'renewable',\n    previews: [\n      { sectionId: 'hydrogen-production-structure', kind: 'paragraph', index: 0 },\n      { sectionId: 'hydrogen-production-structure', kind: 'bullet', listIndex: 1, itemIndex: 0 },\n    ],\n  },\n  {\n    id: 'scene-equipment-technology',\n    labelKey: 'sceneLabels.equipment',\n    contentIds: ['hydrogen-production-structure'],\n    visual: 'equipment',\n  },\n  {\n    id: 'scene-infrastructure',\n    labelKey: 'sceneLabels.infrastructure',\n    contentIds: ['hydrogen-infrastructure', 'station-counts-and-service-cities'],\n    visual: 'station',\n    previews: [{ sectionId: 'hydrogen-infrastructure', kind: 'paragraph', index: 1 }],\n  },\n  {\n    id: 'scene-infrastructure-expansion',\n    labelKey: 'batchTwo.expansion.title',\n    contentIds: ['hydrogen-infrastructure'],\n    visual: 'station',\n  },\n  {\n    id: 'scene-hydrogen-transport',\n    labelKey: 'batchTwo.transport.title',\n    contentIds: ['hydrogen-infrastructure'],\n    visual: 'industry',\n  },\n  {\n    id: 'scene-vehicle-deployment',\n    labelKey: 'sceneLabels.vehicleDeployment',\n    contentIds: ['vehicle-deployment'],\n    visual: 'fleet',\n    previews: [{ sectionId: 'vehicle-deployment', kind: 'paragraph', index: 1 }],\n  },\n  {\n    id: 'scene-heavy-duty-logistics',\n    labelKey: 'sceneLabels.heavyDutyLogistics',\n    contentIds: ['four-application-sectors-transport', 'heavy-duty-truck-logistics'],\n    visual: 'truck',\n    previews: [\n      { sectionId: 'four-application-sectors-transport', kind: 'bullet', listIndex: 0, itemIndex: 0 },\n      { sectionId: 'heavy-duty-truck-logistics', kind: 'bullet', listIndex: 1, itemIndex: 0 },\n    ],\n  },\n  {\n    id: 'scene-refrigerated-logistics',\n    labelKey: 'sceneLabels.refrigeratedLogistics',\n    contentIds: ['refrigerated-transport'],\n    visual: 'cold-chain',\n    previews: [{ sectionId: 'refrigerated-transport', kind: 'list', index: 0 }],\n  },\n  {\n    id: 'scene-industry',\n    labelKey: 'sceneLabels.industry',\n    contentIds: ['industrial-hydrogen-applications'],\n    visual: 'industry',\n    previews: [{ sectionId: 'industrial-hydrogen-applications', kind: 'paragraph', index: 0 }],\n  },\n  {\n    id: 'scene-power-storage',\n    labelKey: 'sceneLabels.powerStorage',\n    contentIds: ['power-and-energy-storage'],\n    visual: 'power',\n    previews: [{ sectionId: 'power-and-energy-storage', kind: 'bullet', listIndex: 0, itemIndex: 0 }],\n  },\n  {\n    id: 'scene-rail-specialized',\n    labelKey: 'sceneLabels.railSpecialized',\n    contentIds: [\n      'four-application-sectors-transport',\n      'passenger-rail',\n      'freight-and-mining-locomotives',\n    ],\n    visual: 'rail',\n    previews: [\n      { sectionId: 'passenger-rail', kind: 'bullet', listIndex: 0, itemIndex: 0 },\n      { sectionId: 'freight-and-mining-locomotives', kind: 'paragraph', index: 0 },\n    ],\n  },\n  {\n    id: 'scene-regions',\n    labelKey: 'sceneLabels.regions',\n    contentIds: ['regional-deployment'],\n    visual: 'map',\n    previews: [{ sectionId: 'regional-deployment', kind: 'paragraph', index: 0 }],\n  },\n  {\n    id: 'scene-advantages',\n    labelKey: 'sceneLabels.advantages',\n    contentIds: ['fcev-advantages', 'hydrogen-industry-advantages'],\n    visual: 'production',\n    previews: [{ sectionId: 'fcev-advantages', kind: 'list', index: 0 }],\n  },\n  {\n    id: 'scene-challenges',\n    labelKey: 'sceneLabels.challenges',\n    contentIds: ['adoption-barriers', 'industry-barriers', 'remaining-challenges'],\n    visual: 'barriers',\n    previews: [\n      { sectionId: 'adoption-barriers', kind: 'bullet', listIndex: 0, itemIndex: 0 },\n      { sectionId: 'remaining-challenges', kind: 'bullet', listIndex: 0, itemIndex: 0 },\n    ],\n  },\n  { id: 'scene-closing', labelKey: 'sceneLabels.closing', contentIds: [], visual: 'truck' },\n] as const satisfies readonly PresentationScene[]\r\n",
+  "locales": {
+    "th": {
+      "batchOne": {
+        "conceptNote": "โมเดลแนวคิดชั่วคราว · ไม่ใช่อุปกรณ์หรือสถานที่จริง",
+        "green": {
+          "eyebrow": "การขยายกำลังผลิตไฮโดรเจนสีเขียว",
+          "title": "ขยายกำลังผลิต",
+          "titleAccent": "ไฮโดรเจนสีเขียว",
+          "subtitle": "ใช้ไฟฟ้าจากลมและแสงอาทิตย์แยกน้ำ เพื่อผลิตไฮโดรเจนสีเขียว",
+          "visualLabel": "โรงงานผลิตไฮโดรเจนร่วมกับพลังงานหมุนเวียน · ภาพแนวคิด",
+          "visualAlt": "ภาพแนวคิดโรงงานที่มีกังหันลม แผงโซลาร์เซลล์ เครื่องแยกน้ำ และถังเก็บไฮโดรเจน ไฟฟ้าสีเขียวไหลสู่เครื่องแยกน้ำ และไฮโดรเจนสีน้ำเงินไหลไปยังถังเก็บ เป็นภาพชั่วคราว ไม่ใช่โรงงานจริงในจีน",
+          "processLabel": "กระบวนการจากไฟฟ้าหมุนเวียนสู่ไฮโดรเจนสีเขียว",
+          "renewables": "ลม + แสงอาทิตย์",
+          "electricity": "ไฟฟ้า",
+          "electrolysis": "การแยกน้ำ",
+          "hydrogen": "ไฮโดรเจนสีเขียว",
+          "capacityLabel": "ตัวเลขโครงการไฮโดรเจนสีเขียวตามต้นฉบับ",
+          "operating": "กำลังผลิตที่เปิดใช้งาน",
+          "construction": "อยู่ระหว่างก่อสร้าง",
+          "annualUnit": "ตัน / ปี",
+          "tonnesUnit": "ตัน",
+          "unitNote": "ยังต้องยืนยันว่าตัวเลขนี้เป็นกำลังผลิตต่อปีหรือไม่",
+          "northwest": "ภาคตะวันตกเฉียงเหนือของจีน",
+          "resourceNote": "ทรัพยากรลมและแสงอาทิตย์อุดมสมบูรณ์ รองรับโครงการบูรณาการขนาดใหญ่",
+          "regionsLabel": "ภูมิภาคสำคัญ",
+          "xinjiang": "ซินเจียง",
+          "innerMongolia": "อินเนอร์มองโกเลีย",
+          "gansu": "กานซู",
+          "sourceNote": "ตัวเลขตามสไลด์ต้นฉบับ {{slide}} · ช่วงเวลาของข้อมูลยังต้องตรวจสอบ"
+        },
+        "equipment": {
+          "eyebrow": "เทคโนโลยีอุปกรณ์ไฮโดรเจน",
+          "title": "เทคโนโลยีหลัก",
+          "titleAccent": "ผลิตได้ในประเทศ",
+          "localization": "การผลิตอุปกรณ์ไฮโดรเจนหลักภายในประเทศ",
+          "visualLabel": "อุปกรณ์หลักสามประเภท · ภาพจำลองผลิตภัณฑ์เชิงแนวคิด",
+          "visualAlt": "โมเดลแนวคิดอย่างง่ายสามชนิด ได้แก่ เครื่องแยกน้ำพร้อมฐาน ถังเก็บไฮโดรเจนความดันสูง และชุดเซลล์เชื้อเพลิง ใช้เป็นภาพชั่วคราวโดยไม่อ้างอิงสเปกของผู้ผลิตรายใด",
+          "electrolyzer": "เครื่องแยกน้ำด้วยไฟฟ้า",
+          "electrolyzerDetail": "ใช้ไฟฟ้าแยกน้ำเพื่อผลิตไฮโดรเจน",
+          "tank": "ถังเก็บ H₂ ความดันสูง",
+          "tankDetail": "เก็บไฮโดรเจนภายใต้ความดัน",
+          "fuelCell": "ชุดเซลล์เชื้อเพลิง",
+          "fuelCellDetail": "เปลี่ยนไฮโดรเจนและออกซิเจนเป็นไฟฟ้า",
+          "standardClaim": "ต้นฉบับระบุว่าเทคโนโลยีเทียบเท่ามาตรฐานระดับโลก",
+          "sourceNote": "สไลด์ต้นฉบับ {{slide}} · ยังต้องยืนยันขอบเขตและปีของสัดส่วนผลิตในประเทศ รวมถึงเกณฑ์เปรียบเทียบเทคโนโลยี"
+        }
+      },
+      "reference": {
+        "sourceLink": "รายงานอ้างอิง NEA",
+        "dataYear": "ปีข้อมูล · {{year}}",
+        "overview": {
+          "eyebrow": "ภาพรวมพลังงานไฮโดรเจน",
+          "title": "จีนกับพลังงาน",
+          "titleAccent": "ไฮโดรเจน",
+          "production": "ปริมาณการผลิตไฮโดรเจนต่อปี",
+          "unit": "ล้านตัน / ปี",
+          "rank": "ผู้ผลิตรายใหญ่ที่สุดของโลก",
+          "rankContext": "ขนาดการผลิต · ปี {{year}}",
+          "mapAlt": "ภาพภูมิศาสตร์ประเทศจีนสามมิติ จุดและเส้นเคลื่อนไหวเป็นภาพแนวคิด ไม่ใช่ตำแหน่งโรงงานหรือเส้นทางปฏิบัติงานจริง",
+          "mapCaption": "เครือข่ายพลังงานเชิงแนวคิด · ไม่ใช่ตำแหน่งสถานีหรือเส้นทางจริง",
+          "fallback": "ภาพรวมภูมิศาสตร์",
+          "sourceNote": "ปีอ้างอิงการนำเสนอ: {{edition}} · NEA ยืนยันตัวเลขนี้สำหรับปี {{year}} ส่วนช่วงข้อมูลปี 2026 ยังต้องตรวจสอบ"
+        },
+        "mix": {
+          "eyebrow": "สัดส่วนการผลิตไฮโดรเจน",
+          "title": "ไฮโดรเจนของจีนมาจากไหน",
+          "subtitle": "ถ่านหินยังเป็นแหล่งผลิตไฮโดรเจนหลัก",
+          "coal": "ไฮโดรเจนจากถ่านหิน",
+          "coalDetail": "ต้นฉบับจัดเป็นไฮโดรเจนสีเทา",
+          "byproduct": "ผลพลอยได้จากอุตสาหกรรม",
+          "byproductDetail": "ไฮโดรเจนจากกระบวนการอุตสาหกรรม",
+          "gas": "ไฮโดรเจนจากก๊าซธรรมชาติ",
+          "gasDetail": "ใช้ก๊าซธรรมชาติเป็นวัตถุดิบ",
+          "chartLabel": "สัดส่วนแหล่งผลิตไฮโดรเจน บนมาตราส่วนเดียวกันตั้งแต่ศูนย์ถึงหนึ่งร้อยเปอร์เซ็นต์",
+          "totalNote": "สามหมวดตามต้นฉบับรวม {{total}}% โดยไม่เพิ่มหมวดใหม่",
+          "scaleNote": "มาตราส่วนร่วม · 0–100%",
+          "sourceNote": "คงค่าตัวเลขจากต้นฉบับ · รายงาน NEA ระบุโครงสร้างการผลิตที่ตรงกันเป็นข้อมูลปี {{year}}"
+        }
+      },
+      "opening": {
+        "caption": "ยานยนต์ไฟฟ้าเซลล์เชื้อเพลิงไฮโดรเจน",
+        "chapter": "พลังงาน · โครงสร้างพื้นฐาน · การขนส่ง",
+        "themes": "แนวคิดหลักของการนำเสนอ",
+        "cleaner": "การขนส่งที่สะอาดขึ้น",
+        "efficiency": "ประสิทธิภาพที่สูงขึ้น",
+        "sustainable": "จีนที่ยั่งยืนยิ่งขึ้น"
+      },
+      "visuals": {
+        "truckAlt": "ภาพแนวคิดรถบรรทุกหนักไฮโดรเจนสีขาวและเงิน มุมเฉียงด้านหน้า ในลานโลจิสติกส์ที่มีแสงกลางวัน",
+        "conceptVehicle": "ภาพแนวคิด · ไม่ระบุรุ่นรถจริง",
+        "mapAlt": "ภาพเงาภูมิศาสตร์ประเทศจีนสีฟ้า จาก Natural Earth",
+        "china": "จีน",
+        "mapNote": "ภาพรวมภูมิศาสตร์ · ไม่แสดงตำแหน่งสถานีหรือเส้นทางปฏิบัติงาน",
+        "energyAndLogistics": "พลังงานและโลจิสติกส์",
+        "shareNote": "สัดส่วนตามต้นทางรวม 98% โดยไม่ได้ระบุส่วนที่เหลือ แถบใช้มาตราส่วน 0–100%",
+        "schematic": "แผนภาพประกอบ · ไม่ใช่ข้อกำหนดทางวิศวกรรม",
+        "station": "โครงสร้างพื้นฐานการเติมไฮโดรเจน",
+        "passengerRail": "รถไฟโดยสาร",
+        "freightRail": "หัวรถจักรขนส่งสินค้าและเหมือง",
+        "hydrogen": "ไฮโดรเจน",
+        "fuelCell": "เซลล์เชื้อเพลิง",
+        "battery": "แบตเตอรี่",
+        "propulsion": "การขับเคลื่อน",
+        "refrigeration": "ระบบทำความเย็น",
+        "renewables": "พลังงานลมและแสงอาทิตย์",
+        "electrolysis": "การแยกน้ำด้วยไฟฟ้า",
+        "storage": "การกักเก็บไฮโดรเจน",
+        "grid": "โครงข่ายไฟฟ้า",
+        "steel": "การผลิตเหล็ก",
+        "chemicals": "การสังเคราะห์สารเคมี",
+        "vehicleCost": "ต้นทุนซื้อยานยนต์",
+        "stationAccess": "การเข้าถึงสถานีเติมเชื้อเพลิง",
+        "hydrogenCost": "ต้นทุนการใช้ไฮโดรเจน",
+        "refueling": "การเติมเชื้อเพลิง",
+        "coldOperation": "การใช้งานในอากาศหนาว",
+        "heavyFreight": "การขนส่งสินค้าหนัก",
+        "water": "น้ำจากปฏิกิริยา"
+      },
+      "brand": {
+        "name": "H2 FCEV",
+        "descriptor": "โลจิสติกส์ / จีน"
+      },
+      "navigation": {
+        "pauseMotion": "หยุดการเคลื่อนไหว",
+        "resumeMotion": "เล่นการเคลื่อนไหวต่อ",
+        "reducedMotion": "ปิดการเคลื่อนไหวตามการตั้งค่าลด motion ของอุปกรณ์",
+        "sceneOverview": "ฉากทั้งหมด",
+        "closeOverview": "ปิดภาพรวมฉาก",
+        "language": "ภาษา",
+        "enterFullscreen": "แสดงเต็มหน้าจอ",
+        "exitFullscreen": "ออกจากเต็มหน้าจอ",
+        "scenePreview": "ตัวอย่างงานภาพ",
+        "sourceSlides": "สไลด์ต้นทาง"
+      },
+      "controls": {
+        "previous": "ฉากก่อนหน้า",
+        "next": "ฉากถัดไป",
+        "progress": "ความคืบหน้าการนำเสนอ",
+        "scenePosition": "ฉากที่ {{current}} จาก {{total}}"
+      },
+      "content": {
+        "unavailable": "ไม่มีเนื้อหาสำหรับฉากนี้ในภาษาที่เลือก",
+        "presentationTitle": "H2 FCEV สำหรับโลจิสติกส์ในจีน"
+      },
+      "sceneLabels": {
+        "opening": "เปิดเรื่อง",
+        "chinaScale": "ระบบไฮโดรเจนของจีน",
+        "productionMix": "การผลิตไฮโดรเจน",
+        "greenHydrogen": "ไฮโดรเจนสีเขียว",
+        "equipment": "อุปกรณ์ไฮโดรเจน",
+        "infrastructure": "โครงสร้างพื้นฐาน",
+        "vehicleDeployment": "การใช้งานยานยนต์",
+        "heavyDutyLogistics": "โลจิสติกส์รถบรรทุกหนัก",
+        "refrigeratedLogistics": "ขนส่งสินค้าเย็น",
+        "industry": "การใช้งานในอุตสาหกรรม",
+        "powerStorage": "พลังงานและการกักเก็บ",
+        "railSpecialized": "รถไฟและยานพาหนะเฉพาะทาง",
+        "regions": "การใช้งานตามภูมิภาค",
+        "advantages": "ข้อได้เปรียบและการใช้งาน",
+        "challenges": "ต้นทุนและอุปสรรค",
+        "closing": "ปิดเรื่อง"
+      }
+    },
+    "en": {
+      "batchOne": {
+        "conceptNote": "Temporary concept models · not actual equipment or a documented site",
+        "green": {
+          "eyebrow": "GREEN HYDROGEN EXPANSION",
+          "title": "Scaling up",
+          "titleAccent": "green hydrogen.",
+          "subtitle": "Wind and solar electricity power water electrolysis to produce green hydrogen.",
+          "visualLabel": "Integrated renewable hydrogen facility · concept",
+          "visualAlt": "Conceptual facility with wind turbines, solar panels, an electrolyzer and hydrogen storage. Green electricity flows toward electrolysis; blue hydrogen flows toward storage. This is a temporary illustration, not a documented Chinese facility.",
+          "processLabel": "Renewable electricity to green hydrogen",
+          "renewables": "Wind + solar",
+          "electricity": "Electricity",
+          "electrolysis": "Electrolysis",
+          "hydrogen": "Green hydrogen",
+          "capacityLabel": "Source-stated green hydrogen project figures",
+          "operating": "Operational capacity",
+          "construction": "Under construction",
+          "annualUnit": "tonnes / year",
+          "tonnesUnit": "tonnes",
+          "unitNote": "Whether this is an annual capacity figure still requires confirmation.",
+          "northwest": "Northwest China",
+          "resourceNote": "Abundant wind and solar resources support large integrated projects.",
+          "regionsLabel": "Key regions",
+          "xinjiang": "Xinjiang",
+          "innerMongolia": "Inner Mongolia",
+          "gansu": "Gansu",
+          "sourceNote": "Supplied figures · source slide {{slide}}; reporting date requires verification."
+        },
+        "equipment": {
+          "eyebrow": "HYDROGEN EQUIPMENT TECHNOLOGY",
+          "title": "Core technology.",
+          "titleAccent": "Made domestically.",
+          "localization": "Domestic production of key hydrogen equipment",
+          "visualLabel": "Three core equipment categories · conceptual product study",
+          "visualAlt": "Three simplified conceptual models: a skid-mounted electrolyzer, a high-pressure hydrogen storage tank and a fuel cell stack. Temporary placeholders without manufacturer-specific specifications.",
+          "electrolyzer": "Electrolyzer",
+          "electrolyzerDetail": "Electricity turns water into hydrogen.",
+          "tank": "High-pressure H₂ tank",
+          "tankDetail": "Stores hydrogen under pressure.",
+          "fuelCell": "Fuel cell stack",
+          "fuelCellDetail": "Converts hydrogen and oxygen into electricity.",
+          "standardClaim": "The supplied material describes the technology as comparable to global standards.",
+          "sourceNote": "Source slide {{slide}} · localization scope, date and technology comparison require verification."
+        }
+      },
+      "reference": {
+        "sourceLink": "NEA source report",
+        "dataYear": "Data year · {{year}}",
+        "overview": {
+          "eyebrow": "THE HYDROGEN LANDSCAPE",
+          "title": "China. Hydrogen",
+          "titleAccent": "at scale.",
+          "production": "Annual hydrogen production",
+          "unit": "million tonnes / year",
+          "rank": "World's largest producer",
+          "rankContext": "Production scale · {{year}}",
+          "mapAlt": "Three-dimensional geographic silhouette of China. Animated nodes and links are conceptual and do not represent facilities or operating routes.",
+          "mapCaption": "Illustrative energy network · not station locations or actual routes",
+          "fallback": "Geographic overview",
+          "sourceNote": "Presentation reference: {{edition}} · NEA supports this production figure for {{year}}; the 2026 reporting period remains unverified."
+        },
+        "mix": {
+          "eyebrow": "HYDROGEN PRODUCTION MIX",
+          "title": "Where hydrogen comes from",
+          "subtitle": "Coal remains the largest source of hydrogen.",
+          "coal": "Coal-based hydrogen",
+          "coalDetail": "Grey hydrogen in the supplied material",
+          "byproduct": "Industrial by-product",
+          "byproductDetail": "Recovered from industrial processes",
+          "gas": "Natural-gas-based",
+          "gasDetail": "Hydrogen produced from natural gas",
+          "chartLabel": "Hydrogen production shares on a common scale from zero to one hundred percent",
+          "totalNote": "The three source-stated categories total {{total}}%. No additional category is added.",
+          "scaleNote": "Common scale · 0–100%",
+          "sourceNote": "Supplied values retained · NEA report identifies the matching production structure as {{year}} data."
+        }
+      },
+      "opening": {
+        "caption": "Hydrogen fuel cell electric vehicles",
+        "chapter": "Energy. Infrastructure. Mobility.",
+        "themes": "Presentation themes",
+        "cleaner": "Cleaner Transport",
+        "efficiency": "Higher Efficiency",
+        "sustainable": "A More Sustainable China"
+      },
+      "visuals": {
+        "truckAlt": "Concept illustration of a white and silver hydrogen heavy-duty truck in a bright logistics yard, viewed from the front three-quarter angle.",
+        "conceptVehicle": "Concept illustration · generic vehicle",
+        "mapAlt": "Light-blue geographic silhouette of China, from Natural Earth.",
+        "china": "CHINA",
+        "mapNote": "Geographic overview · no station locations or operational routes shown",
+        "energyAndLogistics": "Energy & logistics",
+        "shareNote": "Source-stated shares total 98%. The remainder is not specified; bars use a 0–100% scale.",
+        "schematic": "Illustrative schematic · not an engineering specification",
+        "station": "Hydrogen refueling infrastructure",
+        "passengerRail": "Passenger rail",
+        "freightRail": "Freight & mining locomotives",
+        "hydrogen": "Hydrogen",
+        "fuelCell": "Fuel cell",
+        "battery": "Battery",
+        "propulsion": "Propulsion",
+        "refrigeration": "Refrigeration",
+        "renewables": "Wind & solar power",
+        "electrolysis": "Water electrolysis",
+        "storage": "Hydrogen storage",
+        "grid": "Power grid",
+        "steel": "Steel production",
+        "chemicals": "Chemical synthesis",
+        "vehicleCost": "Vehicle purchase cost",
+        "stationAccess": "Refueling access",
+        "hydrogenCost": "Hydrogen operating cost",
+        "refueling": "Refueling",
+        "coldOperation": "Cold-weather operation",
+        "heavyFreight": "Heavy freight",
+        "water": "Water by-product"
+      },
+      "brand": {
+        "name": "H2 FCEV",
+        "descriptor": "LOGISTICS / CHINA"
+      },
+      "navigation": {
+        "pauseMotion": "Pause motion",
+        "resumeMotion": "Resume motion",
+        "reducedMotion": "Motion disabled by your reduced-motion preference",
+        "sceneOverview": "Scenes",
+        "closeOverview": "Close overview",
+        "language": "Language",
+        "enterFullscreen": "Enter fullscreen",
+        "exitFullscreen": "Exit fullscreen",
+        "scenePreview": "VISUAL STUDY",
+        "sourceSlides": "SOURCE SLIDES"
+      },
+      "controls": {
+        "previous": "Previous scene",
+        "next": "Next scene",
+        "progress": "Presentation progress",
+        "scenePosition": "Scene {{current}} of {{total}}"
+      },
+      "content": {
+        "unavailable": "Content for this scene is unavailable in the selected language.",
+        "presentationTitle": "H2 FCEV for Logistics in China"
+      },
+      "sceneLabels": {
+        "opening": "Opening",
+        "chinaScale": "China's hydrogen system",
+        "productionMix": "Hydrogen production",
+        "greenHydrogen": "Green hydrogen",
+        "equipment": "Hydrogen equipment",
+        "infrastructure": "Infrastructure",
+        "vehicleDeployment": "Vehicle deployment",
+        "heavyDutyLogistics": "Heavy-duty logistics",
+        "refrigeratedLogistics": "Refrigerated freight",
+        "industry": "Industrial applications",
+        "powerStorage": "Power and storage",
+        "railSpecialized": "Rail and specialized transport",
+        "regions": "Regional deployment",
+        "advantages": "Advantages and use cases",
+        "challenges": "Costs and barriers",
+        "closing": "Closing"
+      }
+    }
+  }
+}

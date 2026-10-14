@@ -1,0 +1,295 @@
+{
+  "capturedBeforeImplementation": true,
+  "files": [
+    {
+      "Path": "src/components/presentation/ReferenceScenes.tsx",
+      "Hash": "3A642109FE011EB791DE00768A799B6082D81F538C60B22C5A7FEB5643BD2F82"
+    },
+    {
+      "Path": "src/components/presentation/LivingChinaMap.tsx",
+      "Hash": "73BB040BC044C18D7B11A114D167BBC5EDAA6EE7E9C6F642FAB496454D8F7C11"
+    },
+    {
+      "Path": "src/components/presentation/AnimatedNumber.tsx",
+      "Hash": "0C9C2EA27FF3A6373619CD2201071BAB38A887BEE8FD706609B74AF07149F950"
+    },
+    {
+      "Path": "src/components/motion/useSceneMotion.ts",
+      "Hash": "5DAEBC36A861C4C5534432E71CDCE035A121B65617C33F404800E63F82135D2E"
+    },
+    {
+      "Path": "src/components/motion/MotionProvider.tsx",
+      "Hash": "87D5E7CA74C1391F5179A0AA5C38F87736A075D18063ED56E53B25F7DA54DE5B"
+    },
+    {
+      "Path": "src/components/motion/motion-context.ts",
+      "Hash": "B67E8A55BB26A03409520031E8500186327EBB3C84371B6D0C5F25B4B9CF4189"
+    },
+    {
+      "Path": "src/styles/global.css",
+      "Hash": "A629CC432687FC964CAFA1E54296BE55602E42DDA7220DE2B7E68AA09BA58D8B"
+    },
+    {
+      "Path": "src/styles/reference-scenes.css",
+      "Hash": "318F390CB691D7B01567CE48F580BD2CA485B6E3BD60BBDFC298896FA314C416"
+    },
+    {
+      "Path": "src/content/reference-facts.json",
+      "Hash": "392C667F30AD32F6B911511E7BA336D66A9CC698042A08EEB480E055FBE15DD0"
+    },
+    {
+      "Path": "src/content/en/sections/index.json",
+      "Hash": "6C0B9B6CC5120BC540CC432B5051731C04A80E07EC10C7A5DE124D4986597C14"
+    },
+    {
+      "Path": "src/content/th/sections/index.json",
+      "Hash": "FD267784D5FD2FD1B109CA428C429882AB350BC27C7DDA4DC434F574DB0C2F7A"
+    },
+    {
+      "Path": "src/app/App.tsx",
+      "Hash": "FB859CDD1E1E609E43950B457E1105ED4F0317F9E9D83B6AFD82B01C05D16905"
+    },
+    {
+      "Path": "src/components/navigation/TopNavigation.tsx",
+      "Hash": "BDA0FA48ADFF9E7F1AC919A53E5864FAA6C579033D42E24B102E1C7A0C7C856C"
+    },
+    {
+      "Path": "src/components/presentation/PresentationControls.tsx",
+      "Hash": "CFB2AF58770A52A4758A3C1F7FC3B0A2DE833B6EBFF79EE73CA8B2358B6B4AC8"
+    }
+  ],
+  "locales": {
+    "th": {
+      "reference": {
+        "sourceLink": "รายงานอ้างอิง NEA",
+        "dataYear": "ปีข้อมูล · {{year}}",
+        "overview": {
+          "eyebrow": "ภาพรวมพลังงานไฮโดรเจน",
+          "title": "จีนกับพลังงาน",
+          "titleAccent": "ไฮโดรเจน",
+          "production": "ปริมาณการผลิตไฮโดรเจนต่อปี",
+          "unit": "ล้านตัน / ปี",
+          "rank": "ผู้ผลิตรายใหญ่ที่สุดของโลก",
+          "rankContext": "ขนาดการผลิต · ปี {{year}}",
+          "mapAlt": "ภาพภูมิศาสตร์ประเทศจีนสามมิติ จุดและเส้นเคลื่อนไหวเป็นภาพแนวคิด ไม่ใช่ตำแหน่งโรงงานหรือเส้นทางปฏิบัติงานจริง",
+          "mapCaption": "เครือข่ายพลังงานเชิงแนวคิด · ไม่ใช่ตำแหน่งสถานีหรือเส้นทางจริง",
+          "fallback": "ภาพรวมภูมิศาสตร์",
+          "sourceNote": "ปีอ้างอิงการนำเสนอ: {{edition}} · NEA ยืนยันตัวเลขนี้สำหรับปี {{year}} ส่วนช่วงข้อมูลปี 2026 ยังต้องตรวจสอบ"
+        },
+        "mix": {
+          "eyebrow": "สัดส่วนการผลิตไฮโดรเจน",
+          "title": "ไฮโดรเจนของจีนมาจากไหน",
+          "subtitle": "ถ่านหินยังเป็นแหล่งผลิตไฮโดรเจนหลัก",
+          "coal": "ไฮโดรเจนจากถ่านหิน",
+          "coalDetail": "ต้นฉบับจัดเป็นไฮโดรเจนสีเทา",
+          "byproduct": "ผลพลอยได้จากอุตสาหกรรม",
+          "byproductDetail": "ไฮโดรเจนจากกระบวนการอุตสาหกรรม",
+          "gas": "ไฮโดรเจนจากก๊าซธรรมชาติ",
+          "gasDetail": "ใช้ก๊าซธรรมชาติเป็นวัตถุดิบ",
+          "chartLabel": "สัดส่วนแหล่งผลิตไฮโดรเจน บนมาตราส่วนเดียวกันตั้งแต่ศูนย์ถึงหนึ่งร้อยเปอร์เซ็นต์",
+          "totalNote": "สามหมวดตามต้นฉบับรวม {{total}}% โดยไม่เพิ่มหมวดใหม่",
+          "scaleNote": "มาตราส่วนร่วม · 0–100%",
+          "sourceNote": "คงค่าตัวเลขจากต้นฉบับ · รายงาน NEA ระบุโครงสร้างการผลิตที่ตรงกันเป็นข้อมูลปี {{year}}"
+        }
+      },
+      "opening": {
+        "caption": "ยานยนต์ไฟฟ้าเซลล์เชื้อเพลิงไฮโดรเจน",
+        "chapter": "พลังงาน · โครงสร้างพื้นฐาน · การขนส่ง",
+        "themes": "แนวคิดหลักของการนำเสนอ",
+        "cleaner": "การขนส่งที่สะอาดขึ้น",
+        "efficiency": "ประสิทธิภาพที่สูงขึ้น",
+        "sustainable": "จีนที่ยั่งยืนยิ่งขึ้น"
+      },
+      "visuals": {
+        "truckAlt": "ภาพแนวคิดรถบรรทุกหนักไฮโดรเจนสีขาวและเงิน มุมเฉียงด้านหน้า ในลานโลจิสติกส์ที่มีแสงกลางวัน",
+        "conceptVehicle": "ภาพแนวคิด · ไม่ระบุรุ่นรถจริง",
+        "mapAlt": "ภาพเงาภูมิศาสตร์ประเทศจีนสีฟ้า จาก Natural Earth",
+        "china": "จีน",
+        "mapNote": "ภาพรวมภูมิศาสตร์ · ไม่แสดงตำแหน่งสถานีหรือเส้นทางปฏิบัติงาน",
+        "energyAndLogistics": "พลังงานและโลจิสติกส์",
+        "shareNote": "สัดส่วนตามต้นทางรวม 98% โดยไม่ได้ระบุส่วนที่เหลือ แถบใช้มาตราส่วน 0–100%",
+        "schematic": "แผนภาพประกอบ · ไม่ใช่ข้อกำหนดทางวิศวกรรม",
+        "station": "โครงสร้างพื้นฐานการเติมไฮโดรเจน",
+        "passengerRail": "รถไฟโดยสาร",
+        "freightRail": "หัวรถจักรขนส่งสินค้าและเหมือง",
+        "hydrogen": "ไฮโดรเจน",
+        "fuelCell": "เซลล์เชื้อเพลิง",
+        "battery": "แบตเตอรี่",
+        "propulsion": "การขับเคลื่อน",
+        "refrigeration": "ระบบทำความเย็น",
+        "renewables": "พลังงานลมและแสงอาทิตย์",
+        "electrolysis": "การแยกน้ำด้วยไฟฟ้า",
+        "storage": "การกักเก็บไฮโดรเจน",
+        "grid": "โครงข่ายไฟฟ้า",
+        "steel": "การผลิตเหล็ก",
+        "chemicals": "การสังเคราะห์สารเคมี",
+        "vehicleCost": "ต้นทุนซื้อยานยนต์",
+        "stationAccess": "การเข้าถึงสถานีเติมเชื้อเพลิง",
+        "hydrogenCost": "ต้นทุนการใช้ไฮโดรเจน",
+        "refueling": "การเติมเชื้อเพลิง",
+        "coldOperation": "การใช้งานในอากาศหนาว",
+        "heavyFreight": "การขนส่งสินค้าหนัก",
+        "water": "น้ำจากปฏิกิริยา"
+      },
+      "brand": {
+        "name": "H2 FCEV",
+        "descriptor": "โลจิสติกส์ / จีน"
+      },
+      "navigation": {
+        "pauseMotion": "หยุดการเคลื่อนไหว",
+        "resumeMotion": "เล่นการเคลื่อนไหวต่อ",
+        "reducedMotion": "ปิดการเคลื่อนไหวตามการตั้งค่าลด motion ของอุปกรณ์",
+        "sceneOverview": "ฉากทั้งหมด",
+        "closeOverview": "ปิดภาพรวมฉาก",
+        "language": "ภาษา",
+        "enterFullscreen": "แสดงเต็มหน้าจอ",
+        "exitFullscreen": "ออกจากเต็มหน้าจอ",
+        "scenePreview": "ตัวอย่างงานภาพ",
+        "sourceSlides": "สไลด์ต้นทาง"
+      },
+      "controls": {
+        "previous": "ฉากก่อนหน้า",
+        "next": "ฉากถัดไป",
+        "progress": "ความคืบหน้าการนำเสนอ",
+        "scenePosition": "ฉากที่ {{current}} จาก {{total}}"
+      },
+      "content": {
+        "unavailable": "ไม่มีเนื้อหาสำหรับฉากนี้ในภาษาที่เลือก",
+        "presentationTitle": "H2 FCEV สำหรับโลจิสติกส์ในจีน"
+      },
+      "sceneLabels": {
+        "opening": "เปิดเรื่อง",
+        "chinaScale": "ระบบไฮโดรเจนของจีน",
+        "productionMix": "การผลิตไฮโดรเจน",
+        "greenHydrogen": "ไฮโดรเจนสีเขียว",
+        "infrastructure": "โครงสร้างพื้นฐาน",
+        "vehicleDeployment": "การใช้งานยานยนต์",
+        "heavyDutyLogistics": "โลจิสติกส์รถบรรทุกหนัก",
+        "refrigeratedLogistics": "ขนส่งสินค้าเย็น",
+        "industry": "การใช้งานในอุตสาหกรรม",
+        "powerStorage": "พลังงานและการกักเก็บ",
+        "railSpecialized": "รถไฟและยานพาหนะเฉพาะทาง",
+        "regions": "การใช้งานตามภูมิภาค",
+        "advantages": "ข้อได้เปรียบและการใช้งาน",
+        "challenges": "ต้นทุนและอุปสรรค",
+        "closing": "ปิดเรื่อง"
+      }
+    },
+    "en": {
+      "reference": {
+        "sourceLink": "NEA source report",
+        "dataYear": "Data year · {{year}}",
+        "overview": {
+          "eyebrow": "THE HYDROGEN LANDSCAPE",
+          "title": "China. Hydrogen",
+          "titleAccent": "at scale.",
+          "production": "Annual hydrogen production",
+          "unit": "million tonnes / year",
+          "rank": "World's largest producer",
+          "rankContext": "Production scale · {{year}}",
+          "mapAlt": "Three-dimensional geographic silhouette of China. Animated nodes and links are conceptual and do not represent facilities or operating routes.",
+          "mapCaption": "Illustrative energy network · not station locations or actual routes",
+          "fallback": "Geographic overview",
+          "sourceNote": "Presentation reference: {{edition}} · NEA supports this production figure for {{year}}; the 2026 reporting period remains unverified."
+        },
+        "mix": {
+          "eyebrow": "HYDROGEN PRODUCTION MIX",
+          "title": "Where hydrogen comes from",
+          "subtitle": "Coal remains the largest source of hydrogen.",
+          "coal": "Coal-based hydrogen",
+          "coalDetail": "Grey hydrogen in the supplied material",
+          "byproduct": "Industrial by-product",
+          "byproductDetail": "Recovered from industrial processes",
+          "gas": "Natural-gas-based",
+          "gasDetail": "Hydrogen produced from natural gas",
+          "chartLabel": "Hydrogen production shares on a common scale from zero to one hundred percent",
+          "totalNote": "The three source-stated categories total {{total}}%. No additional category is added.",
+          "scaleNote": "Common scale · 0–100%",
+          "sourceNote": "Supplied values retained · NEA report identifies the matching production structure as {{year}} data."
+        }
+      },
+      "opening": {
+        "caption": "Hydrogen fuel cell electric vehicles",
+        "chapter": "Energy. Infrastructure. Mobility.",
+        "themes": "Presentation themes",
+        "cleaner": "Cleaner Transport",
+        "efficiency": "Higher Efficiency",
+        "sustainable": "A More Sustainable China"
+      },
+      "visuals": {
+        "truckAlt": "Concept illustration of a white and silver hydrogen heavy-duty truck in a bright logistics yard, viewed from the front three-quarter angle.",
+        "conceptVehicle": "Concept illustration · generic vehicle",
+        "mapAlt": "Light-blue geographic silhouette of China, from Natural Earth.",
+        "china": "CHINA",
+        "mapNote": "Geographic overview · no station locations or operational routes shown",
+        "energyAndLogistics": "Energy & logistics",
+        "shareNote": "Source-stated shares total 98%. The remainder is not specified; bars use a 0–100% scale.",
+        "schematic": "Illustrative schematic · not an engineering specification",
+        "station": "Hydrogen refueling infrastructure",
+        "passengerRail": "Passenger rail",
+        "freightRail": "Freight & mining locomotives",
+        "hydrogen": "Hydrogen",
+        "fuelCell": "Fuel cell",
+        "battery": "Battery",
+        "propulsion": "Propulsion",
+        "refrigeration": "Refrigeration",
+        "renewables": "Wind & solar power",
+        "electrolysis": "Water electrolysis",
+        "storage": "Hydrogen storage",
+        "grid": "Power grid",
+        "steel": "Steel production",
+        "chemicals": "Chemical synthesis",
+        "vehicleCost": "Vehicle purchase cost",
+        "stationAccess": "Refueling access",
+        "hydrogenCost": "Hydrogen operating cost",
+        "refueling": "Refueling",
+        "coldOperation": "Cold-weather operation",
+        "heavyFreight": "Heavy freight",
+        "water": "Water by-product"
+      },
+      "brand": {
+        "name": "H2 FCEV",
+        "descriptor": "LOGISTICS / CHINA"
+      },
+      "navigation": {
+        "pauseMotion": "Pause motion",
+        "resumeMotion": "Resume motion",
+        "reducedMotion": "Motion disabled by your reduced-motion preference",
+        "sceneOverview": "Scenes",
+        "closeOverview": "Close overview",
+        "language": "Language",
+        "enterFullscreen": "Enter fullscreen",
+        "exitFullscreen": "Exit fullscreen",
+        "scenePreview": "VISUAL STUDY",
+        "sourceSlides": "SOURCE SLIDES"
+      },
+      "controls": {
+        "previous": "Previous scene",
+        "next": "Next scene",
+        "progress": "Presentation progress",
+        "scenePosition": "Scene {{current}} of {{total}}"
+      },
+      "content": {
+        "unavailable": "Content for this scene is unavailable in the selected language.",
+        "presentationTitle": "H2 FCEV for Logistics in China"
+      },
+      "sceneLabels": {
+        "opening": "Opening",
+        "chinaScale": "China's hydrogen system",
+        "productionMix": "Hydrogen production",
+        "greenHydrogen": "Green hydrogen",
+        "infrastructure": "Infrastructure",
+        "vehicleDeployment": "Vehicle deployment",
+        "heavyDutyLogistics": "Heavy-duty logistics",
+        "refrigeratedLogistics": "Refrigerated freight",
+        "industry": "Industrial applications",
+        "powerStorage": "Power and storage",
+        "railSpecialized": "Rail and specialized transport",
+        "regions": "Regional deployment",
+        "advantages": "Advantages and use cases",
+        "challenges": "Costs and barriers",
+        "closing": "Closing"
+      }
+    }
+  }
+}
