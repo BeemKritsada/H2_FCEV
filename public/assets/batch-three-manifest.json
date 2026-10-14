@@ -3,19 +3,39 @@
   "assets": [
     {
       "path": "images/hydrogen-truck.jpg",
-      "status": "Reused project concept image; not an official vehicle or verified make/model",
+      "status": "Reused only for Scene 09; Scene 11 uses its own vehicle image set",
       "origin": "AI-generated in the previous phase; original prompt and provenance in docs/visual-assets.md and assets/manifest.json",
       "dimensions": [1536, 1024],
       "animation": "Whole-image drift, separate light accent and energy guide; no fake wheel rotation",
       "attribution": "Visible concept note in the scene footer; original translated image alt remains intact",
-      "replacement": "Licensed, verified heavy-duty hydrogen truck photograph or layered render on a light background, preferably at least 2400px wide. A reviewed GLB with separate wheels is required before adding mechanical wheel motion."
+      "replacement": "Licensed, verified heavy-duty hydrogen truck photograph or layered render on a light background, preferably at least 2400px wide."
     },
     {
-      "path": "src/components/presentation/batch3/VehicleArtwork.tsx",
-      "status": "Project-authored layered SVG bus and passenger-car category references",
-      "rights": "Original procedural artwork; no manufacturer branding or official-model claim",
-      "limitations": "Illustrative geometry and scale. Vehicle sizes do not encode exact market shares.",
-      "replacement": "Licensed bus and passenger-car side/three-quarter renders or GLB models, with consistent lighting and camera angle. Keep labels outside artwork and confirm technical fidelity before naming a real make/model."
+      "path": "images/vehicles/รถบรรทุกไฮโดรเจนสีขาวฟ้าล้ำสมัย.png",
+      "status": "Scene 11 main vehicle; copied from dist/assets/images to persistent public assets",
+      "origin": "User-provided image asset",
+      "format": "PNG / RGBA with transparency",
+      "dimensions": [1672, 941],
+      "bytes": 1690302,
+      "animation": "GSAP horizontal position and scale transition; no image rotation"
+    },
+    {
+      "path": "images/vehicles/รถบัสไฮโดรเจนล้ำสมัยสีขาวมุก.png",
+      "status": "Scene 11 secondary commercial vehicle",
+      "origin": "User-provided image asset",
+      "format": "PNG / RGBA with transparency",
+      "dimensions": [1672, 941],
+      "bytes": 1658900,
+      "animation": "GSAP horizontal position and scale transition; no image rotation"
+    },
+    {
+      "path": "images/vehicles/รถซีดานไฮโดรเจนหรูสีขาวประกายเงิน.png",
+      "status": "Scene 11 secondary passenger vehicle",
+      "origin": "User-provided image asset",
+      "format": "PNG / RGBA with transparency",
+      "dimensions": [1672, 941],
+      "bytes": 1382681,
+      "animation": "GSAP horizontal position and scale transition; no image rotation"
     }
   ],
   "externalRuntimeRequests": false

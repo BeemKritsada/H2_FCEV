@@ -27,6 +27,18 @@ assert.equal(facts.transition.timeSeriesAvailable, false)
 assert.deepEqual(facts.commercial, { threshold: 95, comparison: 'greater-than', denominator: 'all-hydrogen-vehicles' })
 assert.deepEqual(facts.passenger, { threshold: 5, comparison: 'less-than', denominator: 'all-hydrogen-vehicles' })
 assert.deepEqual(facts.heavyDuty, { threshold: 65, comparison: 'greater-than', denominator: 'commercial-hydrogen-vehicles' })
+const vehicleAssets = [
+  'รถบรรทุกไฮโดรเจนสีขาวฟ้าล้ำสมัย.png',
+  'รถบัสไฮโดรเจนล้ำสมัยสีขาวมุก.png',
+  'รถซีดานไฮโดรเจนหรูสีขาวประกายเงิน.png',
+]
+for (const filename of vehicleAssets) {
+  const asset = readFileSync(`public/assets/images/vehicles/${filename}`)
+  assert.equal(asset.toString('ascii', 1, 4), 'PNG', `${filename}: PNG signature`)
+  assert.equal(asset.readUInt32BE(16), 1672, `${filename}: width`)
+  assert.equal(asset.readUInt32BE(20), 941, `${filename}: height`)
+  assert.equal(asset[25], 6, `${filename}: PNG alpha channel`)
+}
 for (const locale of ['en', 'th']) {
   const source = json(`src/content/${locale}/sections/index.json`).find(({ id }) => id === facts.sourceSectionId)
   assert.equal(source.sourceSlideNumber, facts.sourceSlide)
@@ -41,7 +53,11 @@ try {
   const { SceneContainer } = await server.ssrLoadModule('/src/components/presentation/SceneContainer.tsx')
   const { presentationScenes: scenes } = await server.ssrLoadModule('/src/scenes/scene-config.ts')
   const { MotionContext } = await server.ssrLoadModule('/src/components/motion/motion-context.ts')
+  const { getVehicleCarouselPosition } = await server.ssrLoadModule('/src/components/presentation/batch3/vehicle-carousel-layout.ts')
   await server.ssrLoadModule('/src/components/presentation/batch2/LogisticsStage.tsx')
+  assert.deepEqual(['truck', 'bus', 'car'].map((id) => getVehicleCarouselPosition(id, 'truck')), ['center', 'right', 'left'])
+  assert.deepEqual(['truck', 'bus', 'car'].map((id) => getVehicleCarouselPosition(id, 'bus')), ['left', 'center', 'right'])
+  assert.deepEqual(['truck', 'bus', 'car'].map((id) => getVehicleCarouselPosition(id, 'car')), ['right', 'left', 'center'])
   const originalModule = ts.transpileModule(baseline.sceneConfig, { compilerOptions: { module: ts.ModuleKind.ESNext } }).outputText
   const { presentationScenes: originalScenes } = await import(`data:text/javascript;base64,${Buffer.from(originalModule).toString('base64')}`)
   const added = ['scene-market-transition', 'scene-market-structure']
@@ -73,11 +89,19 @@ try {
           assert.ok(!html.includes('hydrogen-truck.jpg'), 'Transition should have its own visual')
         }
         if (index === 10) {
-          for (const value of ['>95%', '<5%', '>65%']) assert.ok(text.includes(value))
-          translated('structure.commercialShare', { value: 95 }); translated('structure.passengerShare', { value: 5 })
-          translated('structure.withinCommercial', { value: 65 }); translated('structure.denominatorNote'); translated('assetNote')
-          const commercial = html.match(/<section class="commercial-category"[\s\S]*?<\/section>/)?.[0]
-          assert.ok(commercial?.includes('heavy-duty-subshare'), 'Truck sub-share must remain nested inside the commercial category')
+          for (const value of ['95%+', '<5%', '65%+']) assert.ok(text.includes(value))
+          translated('structure.carousel.truck.title'); translated('structure.carousel.truck.description')
+          for (const id of ['bus', 'car']) for (const key of ['title', 'description', 'alt']) assert.ok(i18n.t(`batchThree.structure.carousel.${id}.${key}`).length, `${locale}: missing ${id}.${key}`)
+          translated('structure.carousel.overviewLabel'); translated('structure.carousel.overviewHeavyDuty')
+          const cards = html.match(/data-carousel-id="(?:truck|bus|car)"/g) ?? []
+          assert.equal(cards.length, 3, `${locale}: all three vehicle images should render`)
+          assert.match(html, /data-active-vehicle="truck"/, 'Truck should be selected by default')
+          assert.match(html, /data-carousel-id="truck"[^>]*aria-pressed="true"/, 'Truck should be the active carousel button initially')
+          for (const filename of vehicleAssets) assert.ok(html.includes(filename) || html.includes(encodeURI(filename)), `${locale}: missing image reference ${filename}`)
+          assert.ok(!html.includes('<canvas'), 'Scene 11 image carousel must not use Three.js canvases')
+          const busInfo = i18n.t('batchThree.structure.carousel.bus.description')
+          assert.ok(busInfo.includes('95'))
+          assert.ok(/not a bus-specific share|ไม่ใช่สัดส่วนของรถโดยสาร/.test(busInfo), 'The 95% figure must be attributed to the commercial category, not buses alone')
           assert.ok(!text.includes('85%'), 'Do not merge the incompatible source-slide share into this scene')
         }
       }

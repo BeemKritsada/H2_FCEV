@@ -38,8 +38,33 @@
     "withinCommercial": "Over {{value}}% within commercial vehicles",
     "denominatorNote": "The truck share uses commercial vehicles as its base, not the whole vehicle market.",
     "bus": "Other commercial types · example: bus",
-    "busAlt": "Simplified conceptual bus, shown as another commercial vehicle category.",
-    "carAlt": "Simplified conceptual passenger car, shown without brand or model claims.",
-    "hierarchyNote": "Category illustration · vehicle sizes do not encode exact market shares"
+    "hierarchyNote": "Category illustration · vehicle sizes do not encode exact market shares",
+    "carousel": {
+      "role": "carousel",
+      "label": "Hydrogen vehicle market image carousel",
+      "selectVehicle": "Select {{vehicle}} as the main vehicle",
+      "overviewLabel": "Market overview",
+      "overviewCommercial": "Commercial vehicles · overall market",
+      "overviewPassenger": "Passenger cars · overall market",
+      "overviewHeavyDuty": "Heavy-duty trucks · within commercial vehicles",
+      "truck": {
+        "title": "Hydrogen Heavy-duty Truck",
+        "alt": "White and blue hydrogen heavy-duty truck, shown as a transparent-background vehicle image.",
+        "figureContext": "within commercial hydrogen vehicles",
+        "description": "Heavy-duty trucks account for over 65% of commercial hydrogen fuel-cell vehicles."
+      },
+      "bus": {
+        "title": "Hydrogen Commercial Bus",
+        "alt": "White hydrogen commercial bus with blue accents, shown as a transparent-background vehicle image.",
+        "figureContext": "commercial vehicle category overall",
+        "description": "Hydrogen buses belong to the commercial vehicle category, which represents over 95% of the overall hydrogen vehicle market; this is not a bus-specific share."
+      },
+      "car": {
+        "title": "Hydrogen Passenger Car",
+        "alt": "Silver-white hydrogen passenger sedan with blue accents, shown as a transparent-background vehicle image.",
+        "figureContext": "of the overall market",
+        "description": "Passenger cars account for less than 5% of China's hydrogen fuel-cell vehicle market."
+      }
+    }
   }
 }

@@ -3,7 +3,8 @@ import { useTranslation } from 'react-i18next'
 import { ArrowRight, Building2, Compass, MoveRight } from 'lucide-react'
 import facts from '../../../content/batch-three-facts.json'
 import { useVehicleMarketMotion } from './useVehicleMarketMotion'
-import { CategoryVehicle, MarketTruck } from './VehicleArtwork'
+import { MarketTruck } from './VehicleArtwork'
+import VehicleCarousel from './VehicleCarousel'
 import '../../../styles/batch-three-scenes.css'
 
 type SceneProps = { count: number; number: number }
@@ -15,10 +16,6 @@ function Source({ vehicles = false }: { vehicles?: boolean }) {
   const { t } = useTranslation()
   return <footer className="market-source"><span>{t('batchThree.source', { slide: facts.sourceSlide })}</span>{vehicles && <span>{t('batchThree.assetNote')}</span>}</footer>
 }
-function Share({ value, less = false }: { value: number; less?: boolean }) {
-  return <strong className="market-share" data-market-share><span className="sr-only">{less ? '<' : '>'}{value}%</span><span aria-hidden="true" className="market-share__value">{less && <span className="market-share__sign">&lt;</span>}{value}<span className="market-share__unit">%{!less && '+'}</span></span></strong>
-}
-
 export function VehicleFleetScene(props: SceneProps) {
   const { t } = useTranslation()
   const root = useRef<HTMLElement>(null)
@@ -79,22 +76,11 @@ export function MarketTransitionScene(props: SceneProps) {
 export function MarketStructureScene(props: SceneProps) {
   const { t } = useTranslation()
   const root = useRef<HTMLElement>(null)
-  const { playing } = useVehicleMarketMotion(root)
+  const { playing, reducedMotion } = useVehicleMarketMotion(root)
   return <section ref={root} className="reference-scene batch-three-scene market-structure-scene" aria-labelledby="scene-title" data-motion={playing ? 'running' : 'paused'}>
-    <Eyebrow {...props} /><header className="structure-heading"><h1 id="scene-title">{t('batchThree.structure.title')}</h1><p>{t('batchThree.structure.scope')}</p></header>
-    <div className="market-category-composition">
-      <section className="commercial-category" aria-labelledby="commercial-category-title">
-        <header className="market-category-heading"><Share value={facts.commercial.threshold} /><div><h2 id="commercial-category-title">{t('batchThree.structure.commercial')}</h2><p>{t('batchThree.structure.commercialShare', { value: facts.commercial.threshold })}</p></div></header>
-        <div className="commercial-vehicles"><MarketTruck /><figure className="commercial-bus" data-market-vehicle><CategoryVehicle kind="bus" /><figcaption>{t('batchThree.structure.bus')}</figcaption></figure></div>
-        <div className="heavy-duty-subshare"><Share value={facts.heavyDuty.threshold} /><div><h3>{t('batchThree.structure.heavyDuty')}</h3><p>{t('batchThree.structure.withinCommercial', { value: facts.heavyDuty.threshold })}</p></div></div>
-        <p className="market-denominator">{t('batchThree.structure.denominatorNote')}</p>
-      </section>
-      <section className="passenger-category" aria-labelledby="passenger-category-title">
-        <header className="market-category-heading"><Share value={facts.passenger.threshold} less /><div><h2 id="passenger-category-title">{t('batchThree.structure.passenger')}</h2><p>{t('batchThree.structure.passengerShare', { value: facts.passenger.threshold })}</p></div></header>
-        <figure className="passenger-car" data-market-vehicle><CategoryVehicle kind="car" /></figure>
-        <p className="category-illustration-note">{t('batchThree.structure.hierarchyNote')}</p>
-      </section>
-    </div>
+    <Eyebrow {...props} />
+    <header className="structure-heading"><h1 id="scene-title">{t('batchThree.structure.title')}</h1><p>{t('batchThree.structure.scope')}</p></header>
+    <VehicleCarousel reducedMotion={reducedMotion} />
     <Source vehicles />
   </section>
 }
