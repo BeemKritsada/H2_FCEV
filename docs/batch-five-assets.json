@@ -1,0 +1,61 @@
+{
+  "reviewedOn": "2026-10-14",
+  "imageRoot": "public/assets/images/",
+  "handling": "ไฟล์ WebP เก็บใน public อย่างถาวร ภาพต้นฉบับเดิมไม่ถูกลบ ภาพข่าวคงลายน้ำและเครดิตผู้ถ่าย ไม่ได้อ้างว่าภาพข่าวมีใบอนุญาตให้เผยแพร่ต่อทุกประเภท",
+  "generatedPrompt": "Use case: photorealistic-natural. Asset type: wide landscape photo-style illustration for an energy presentation, 16:9. [scenario]. Truck white and primary-blue accents, realistic modern Chinese heavy-duty road vehicle with plausible wheels and proportions. Premium realistic industrial editorial photography, bright soft daylight, restrained white blue-gray palette, clean detail, medium-wide environmental view, vehicle fully visible with breathing room. No text, no logos, no watermarks, no embedded labels. This is a fictional illustrative scene, not a record of an actual installation.",
+  "assets": [
+    {
+      "path": "logistics/port.webp", "size": [1440, 810], "bytes": 178932,
+      "kind": "ภาพประกอบสร้างด้วย ImageGen", "scene": 15,
+      "scenario": "Modern Chinese container port, blue gantry cranes, stacked shipping containers, container semitrailer hydrogen heavy-duty tractor truck moving through yard."
+    },
+    {
+      "path": "logistics/mine.webp", "size": [1440, 810], "bytes": 238022,
+      "kind": "ภาพประกอบสร้างด้วย ImageGen", "scene": 15,
+      "scenario": "Chinese open-pit mine, terraced earth, heavy-duty hydrogen mining haulage truck carrying rocks on a graded industrial road."
+    },
+    {
+      "path": "logistics/steel.webp", "size": [1440, 810], "bytes": 190074,
+      "kind": "ภาพประกอบสร้างด้วย ImageGen", "scene": 15,
+      "scenario": "Modern Chinese steel mill yard with metal-clad halls and pipes, hydrogen tractor-trailer carrying secured steel coils on a short internal road."
+    },
+    {
+      "path": "logistics/highway.webp", "size": [1440, 810], "bytes": 146204,
+      "kind": "ภาพประกอบสร้างด้วย ImageGen", "scene": 15,
+      "scenario": "Chinese intercity highway, hydrogen box semitrailer, rolling green hills and distant logistics buildings."
+    },
+    {
+      "path": "logistics/performance-truck.webp", "size": [1440, 706], "bytes": 186966,
+      "kind": "ภาพรถแนวคิดเดิม ตัดเฉพาะขอบโปร่งใสและย่อเป็น WebP", "scene": 16,
+      "sourceFile": "public/assets/images/vehicles/รถบรรทุกไฮโดรเจนสีขาวฟ้าล้ำสมัย.png"
+    },
+    {
+      "path": "rail/suburban.webp", "size": [1393, 783], "bytes": 107828,
+      "kind": "ภาพรถไฟ CRRC จริงจากบทความผู้จัดหาอุปกรณ์", "scene": 18,
+      "source": "https://www.hubersuhner.com/en/newsroom/blog-and-literature/blog/development-of-hydrogen-powered-trains-in-china",
+      "sourceImageLabel": "Hydrogen Train 03"
+    },
+    {
+      "path": "rail/foshan.webp", "size": [1080, 720], "bytes": 188468,
+      "kind": "ภาพรถรางเกาหมิงจริง", "scene": 19, "credit": "Nanfang Plus / 南方+",
+      "source": "https://m.thepaper.cn/newsDetail_forward_5109775",
+      "originalImage": "https://image.thepaper.cn/www/image/39/724/201.jpg"
+    },
+    {
+      "path": "rail/changchun.webp", "size": [930, 649], "bytes": 142574,
+      "kind": "ภาพ 氢春号 / Qingchun Hao จริง", "scene": 20, "credit": "China News Service / 中新网",
+      "source": "https://photo.china.com.cn/2025-10/17/content_118128154.shtml",
+      "originalImage": "https://images.china.cn/site1000/2025-10/17/118128154_bf069bde-0f3c-4ec3-81dd-3f17602c91f3.jpg"
+    },
+    {
+      "path": "rail/jilin.webp", "size": [1417, 1063], "bytes": 366946,
+      "kind": "ภาพ 氢凇号 / Qingsong Hao จริง", "scene": 20, "credit": "Ifeng / 吉林日报",
+      "source": "https://jl.ifeng.com/c/8r3UlGyQmj2",
+      "originalImage": "https://x0.ifengimg.com/ucms/2026_09/0C63E9F4D2AD863624CA34939A7EB6BD0173F087_size288_w1417_h1063.jpg"
+    }
+  ],
+  "remainingAssetGaps": [
+    "ยังไม่มีวิดีโอหรือภาพแยกเลเยอร์สำหรับการเคลื่อนรถจริง ใช้การเคลื่อนกล้องและแสงอย่างเบาแทน",
+    "ภาพสี่สถานการณ์โลจิสติกส์เป็นภาพประกอบ ไม่ใช่หลักฐานยืนยันสถานที่ติดตั้งจริง"
+  ]
+}

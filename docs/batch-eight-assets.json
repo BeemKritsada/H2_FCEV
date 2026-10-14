@@ -1,0 +1,30 @@
+{
+  "reviewedOn": "2026-10-14",
+  "imageRoot": "public/assets/images/",
+  "handling": "WebP เก็บถาวรใน public/assets/images/challenges/ ไม่อ้าง dist เป็นต้นฉบับ ไม่ลบหรือแก้ไฟล์ภาพเดิม ภาพถ่ายเป็นภาพตัวอย่างนอกประเทศจีน จึงระบุสถานที่/คำว่า 'ตัวอย่าง' บนภาพ และไม่ใส่ข้อความแปลหรือตัวเลขลงในภาพ",
+  "assets": [
+    {
+      "path": "challenges/fcev-sedan.webp", "size": [1600, 900], "bytes": 147196, "challenge": "purchase",
+      "kind": "ภาพเรนเดอร์รถแนวคิดเดิมของโครงการ (พื้นหลังโปร่งใส) ย่อเป็น WebP; วางบนฉากสตูดิโอที่สร้างด้วย CSS",
+      "sourceFile": "public/assets/images/vehicles/รถซีดานไฮโดรเจนหรูสีขาวประกายเงิน.png"
+    },
+    {
+      "path": "challenges/refueling-station.webp", "size": [1600, 1000], "bytes": 214536, "challenge": "refueling",
+      "kind": "ภาพถ่ายจริง สถานีเติมไฮโดรเจนที่ Jyväskylä ฟินแลนด์ (ถ่าย 10 ก.ค. 2026) ครอป 16:10 ตัดท้องฟ้าส่วนบน",
+      "source": "https://commons.wikimedia.org/wiki/File:Hydrogen_station_in_Jyv%C3%A4skyl%C3%A4.jpg",
+      "credit": "Tiia Monto", "license": "CC BY 4.0", "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "changes": "ครอปและย่อขนาด, แปลงเป็น WebP"
+    },
+    {
+      "path": "challenges/hydrogen-nozzle.webp", "size": [1600, 1000], "bytes": 112010, "challenge": "operating",
+      "kind": "ภาพถ่ายจริง หัวจ่ายไฮโดรเจนที่มีน้ำแข็งเกาะขณะเติมรถเซลล์เชื้อเพลิง (ถ่าย 6 ก.พ. 2022) ครอปจากภาพสี่เหลี่ยมจัตุรัสเป็น 16:10",
+      "source": "https://commons.wikimedia.org/wiki/File:Hydrogen_refueling.jpg",
+      "credit": "Ogidya", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "ครอปและย่อขนาด, แปลงเป็น WebP (งานดัดแปลงอยู่ภายใต้ CC BY-SA 4.0)"
+    }
+  ],
+  "wanted": [
+    "ภาพสถานีเติมไฮโดรเจนในจีน (เช่น สถานี Sinopec) ที่มีใบอนุญาตใช้งานชัดเจน เพื่อแทนภาพตัวอย่างจากฟินแลนด์",
+    "ภาพถ่ายรถยนต์นั่งเซลล์เชื้อเพลิงจริงในสตูดิโอโทนเดียวกับภาพถ่ายอีก 2 ภาพ หากต้องการความสมจริงระดับภาพถ่ายทั้งชุด"
+  ]
+}

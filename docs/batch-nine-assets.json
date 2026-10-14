@@ -1,0 +1,30 @@
+{
+  "scenes": [28, 29],
+  "handling": "Reuse permanent public assets without modifying image files. All labels are localized HTML. Concept images are identified as illustrations; the station photograph is explicitly identified as Finland. No new images, videos or 3D dependencies were generated or downloaded.",
+  "reused": [
+    { "path": "public/assets/images/logistics/performance-truck.webp", "topics": ["28/01", "28/02", "29/01"], "kind": "Existing transparent concept truck render", "provenance": "docs/batch-five-assets.json" },
+    { "path": "public/assets/images/logistics/mine.webp", "topics": ["28/03"], "kind": "Existing generated mining illustration; not a cold-weather test or verified operating site", "provenance": "docs/batch-five-assets.json" },
+    { "path": "public/assets/images/logistics/steel.webp", "topics": ["28/05"], "kind": "Existing generated steelworks/logistics illustration", "provenance": "docs/batch-five-assets.json" },
+    { "path": "public/assets/images/logistics/port.webp", "topics": ["28/05"], "kind": "Existing generated container-port illustration; conceptual shipping context", "provenance": "docs/batch-five-assets.json" },
+    { "path": "public/assets/images/challenges/refueling-station.webp", "topics": ["28/02", "29/01", "29/02"], "kind": "Photograph of a station in Jyväskylä, Finland", "credit": "Tiia Monto", "license": "CC BY 4.0", "licenseUrl": "https://creativecommons.org/licenses/by/4.0/", "source": "https://commons.wikimedia.org/wiki/File:Hydrogen_station_in_Jyv%C3%A4skyl%C3%A4.jpg", "changes": "Existing cropped/resized WebP; CSS framing and a faded layer in the cost composition", "provenance": "docs/batch-eight-assets.json" },
+    { "path": "public/assets/images/challenges/fcev-sedan.webp", "topics": ["29/04"], "kind": "Existing transparent concept passenger-car render", "provenance": "docs/batch-eight-assets.json" }
+  ],
+  "nativeDiagrams": [
+    "Fuel-cell reaction: hydrogen and oxygen input, electricity and water output, heat note",
+    "Refueling workflow with no universal time statistic",
+    "Renewables to electrolysis to storage to later fuel-cell/industrial demand",
+    "Conceptual hydrogen demand branches to steel, chemicals, freight and shipping",
+    "Qualitative acquisition, fuel and operations cost layers",
+    "Clockwise vehicle/station investment coordination loop",
+    "Fossil and renewable-powered hydrogen production pathways, without share estimates",
+    "Service-facility schematic with fuel-cell powertrain, specialist staff and parts",
+    "Qualitative policy-to-commercialization roadmap without dated projections"
+  ],
+  "missingOptionalAssets": [
+    { "scene": 28, "topic": "01 Clean operation", "description": "Licensed close-up photograph of an actual fuel-cell stack; current implementation uses a concept truck plus a technical stack diagram", "aspectRatio": "4:3", "format": "WebP image", "transparent": true, "proposedPath": "public/assets/images/industry/fuel-cell-stack.webp" },
+    { "scene": 28, "topic": "02 Refueling / Scene 29 topics 01–02", "description": "Licensed photograph of a hydrogen station in China with verified project identity; current real photograph is explicitly labeled Finland", "aspectRatio": "16:10", "format": "WebP image", "transparent": false, "proposedPath": "public/assets/images/industry/china-refueling-station.webp" },
+    { "scene": 28, "topic": "03 Cold-weather capability", "description": "Verified cold-region heavy-duty hydrogen operation; current mine illustration and thermal-management symbols do not depict or claim a cold-weather demonstration", "aspectRatio": "16:9", "format": "WebP image", "transparent": false, "proposedPath": "public/assets/images/industry/cold-region-truck.webp" },
+    { "scene": 28, "topic": "05 Hard-to-abate sectors", "description": "Matching licensed chemical-plant and vessel images; current collage uses steel/port illustrations and four labeled sector symbols", "aspectRatio": "16:9 each", "format": "WebP image pair", "transparent": false, "proposedPath": "public/assets/images/industry/chemicals.webp; public/assets/images/industry/shipping.webp" },
+    { "scene": 29, "topic": "04 Maintenance", "description": "Licensed modern fuel-cell vehicle service facility with visible powertrain; current implementation is explicitly labeled a service-ecosystem schematic", "aspectRatio": "16:9", "format": "WebP image", "transparent": false, "proposedPath": "public/assets/images/industry/fuel-cell-service.webp" }
+  ]
+}

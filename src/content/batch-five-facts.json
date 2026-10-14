@@ -1,0 +1,15 @@
+{
+  "logisticsSourceSlide": 9,
+  "railSourceSlide": 10,
+  "truck": { "refuelingMinutes": [3, 5], "rangeKm": [600, 1000], "coldCelsius": -30 },
+  "convoyTonnes": 10000,
+  "regions": [
+    { "id": "innerMongolia", "anchor": [111.5, 43.5] },
+    { "id": "shanxi", "anchor": [112.3, 37.5] },
+    { "id": "hebei", "anchor": [115.2, 39.3] },
+    { "id": "foshan", "anchor": [113.1, 23.0] },
+    { "id": "shanghai", "anchor": [121.5, 31.2] }
+  ],
+  "suburban": { "introductionYear": 2022, "laterTestYear": 2024, "cars": 4, "speedKmh": 160, "laterRangeLowerBoundKm": 1000, "suppliedRefuelingMinutes": 15 },
+  "foshan": { "serviceYear": 2019, "routeKm": 6.5, "reportedRangeKm": 100 }
+}

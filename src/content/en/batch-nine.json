@@ -1,0 +1,47 @@
+{
+  "eyebrow": "Hydrogen industry outlook",
+  "select": "Select a topic to explore",
+  "source": "Source: Briefing material · Qualitative industry perspective",
+  "concept": "Conceptual system diagram",
+  "vehicleConcept": "Conceptual vehicle and system overlay",
+  "industrialConcept": "Conceptual industrial setting · not a specific project",
+  "station": "Station example: Jyväskylä, Finland",
+  "stationAlt": "Hydrogen refueling station in Jyväskylä, Finland",
+  "truckAlt": "White and blue concept hydrogen heavy-duty truck",
+  "mineAlt": "Illustrative heavy-duty mining truck in an open-pit mine",
+  "steelAlt": "Illustrative steelworks and heavy freight operation",
+  "portAlt": "Illustrative container-port logistics operation",
+  "credit": "Photo: Tiia Monto · CC BY 4.0 · cropped",
+  "advantages": {
+    "title": "Five Strategic Advantages of Hydrogen Energy",
+    "topics": [
+      { "short": "Clean operation", "label": "Zero Harmful Tailpipe Emissions", "takeaway": "Clean operation begins at the fuel cell.", "body": "Hydrogen fuel cells generate electricity with water as the principal reaction product, producing no CO₂ at the vehicle tailpipe during operation.", "note": "Tailpipe emissions and lifecycle emissions are different measures." },
+      { "short": "Fast refueling", "label": "Fast Refueling", "takeaway": "Less downtime in suitable duty cycles.", "body": "Hydrogen refueling can approach conventional fueling times in suitable vehicles, reducing downtime compared with some battery-charging scenarios.", "note": "Actual duration depends on the vehicle, station and operating conditions." },
+      { "short": "Heavy-duty capability", "label": "Cold-Weather and Heavy-Duty Capability", "takeaway": "Match the powertrain to the mission.", "body": "FCEVs can offer advantages in cold-region and heavy-duty operations such as long-haul freight, mines, and ports, depending on the vehicle design and duty cycle.", "note": "Cold-weather performance depends on thermal management; the image illustrates mining use." },
+      { "short": "Long-duration storage", "label": "Long-Duration Energy Storage", "takeaway": "Connect renewable supply with later demand.", "body": "Hydrogen can support multi-month or seasonal energy storage in appropriately designed systems, complementing batteries that are often optimized for shorter-duration storage.", "note": "Storage duration, efficiency and economics depend on system design." },
+      { "short": "Industrial decarbonization", "label": "Decarbonizing Hard-to-Abate Sectors", "takeaway": "A pathway for selected industrial processes.", "body": "Hydrogen offers a potential decarbonization pathway for selected steelmaking and chemical processes, long-haul heavy freight, and shipping where direct electrification may face technical or operational limits.", "note": "Conceptual demand links; hydrogen is not always preferable to direct electrification." }
+    ]
+  },
+  "barriers": {
+    "title": "Five Major Barriers to Hydrogen Commercialization",
+    "topics": [
+      { "short": "High total cost", "label": "High Total Cost", "takeaway": "Fleet economics must work across the whole system.", "body": "High vehicle acquisition and hydrogen costs challenge commercial fleet economics, with some projects still dependent on subsidies or policy support.", "note": "Qualitative cost drivers; no numerical cost split is implied." },
+      { "short": "Uneven infrastructure", "label": "Uneven Refueling Infrastructure", "takeaway": "Vehicles and stations need coordinated investment.", "body": "Refueling access remains uneven, particularly for passenger vehicles, creating a vehicle-and-station investment coordination problem.", "note": "A conceptual feedback loop, not a map of station coverage." },
+      { "short": "Green hydrogen supply", "label": "Low Share of Green Hydrogen", "takeaway": "Production pathways shape the carbon outcome.", "body": "Much of China's hydrogen production still relies on fossil-based pathways, particularly coal, limiting lifecycle carbon benefits unless production emissions are reduced.", "note": "Upstream production emissions are distinct from fuel-cell tailpipe emissions." },
+      { "short": "Maintenance network", "label": "Limited Maintenance and Service Network", "takeaway": "Service readiness is part of market readiness.", "body": "Hydrogen passenger-vehicle servicing remains limited in some locations, including specialist maintenance capacity and replacement-parts availability.", "note": "Illustrative service ecosystem; no nationwide coverage counts are asserted." },
+      { "short": "Market transition", "label": "Market Transition and Subsidy Dependence", "takeaway": "Build competitive, sustainable business models.", "body": "The briefing material indicates softer market conditions in parts of early 2026. The industry still faces the challenge of achieving competitive economics and sustainable business models with less subsidy dependence.", "note": "Early-2026 observations; not full-year results or a forecast." }
+    ]
+  },
+  "diagram": {
+    "hydrogen": "Hydrogen", "oxygen": "Oxygen from air", "fuelCell": "Fuel cell", "electricity": "Electricity", "water": "Water", "heat": "Heat also released",
+    "dispenser": "Hydrogen dispenser", "refuel": "Refuel", "return": "Return to operation", "downtime": "Shorter stop · suitable operating conditions",
+    "cold": "Cold-region operation", "thermal": "Thermal management", "load": "Heavy payloads", "logistics": "Mines · ports · long-haul freight",
+    "renewables": "Wind + solar", "electrolyzer": "Electrolyzer", "storage": "Hydrogen storage", "demand": "Fuel cell / industrial demand", "surplus": "Surplus electricity", "later": "Later demand", "seasonal": "Multi-month / seasonal storage",
+    "steel": "Steelmaking", "chemicals": "Chemicals", "freight": "Heavy freight", "shipping": "Shipping", "demandLinks": "Potential hydrogen demand",
+    "acquisition": "Vehicle acquisition", "fuel": "Hydrogen fuel", "operations": "Operations", "systemCost": "Total system economics",
+    "fewVehicles": "Few vehicles", "limitedInvestment": "Limited station investment", "limitedAccess": "Limited refueling access", "slowAdoption": "Slow vehicle adoption", "coordination": "Investment coordination",
+    "fossil": "Coal / fossil inputs", "fossilProduction": "Fossil-based production", "productionEmissions": "Production CO₂ emissions", "green": "Renewable electricity", "electrolysis": "Water electrolysis", "greenHydrogen": "Green hydrogen", "upstream": "Upstream production", "sameUse": "Hydrogen at point of use",
+    "service": "Service coverage", "technicians": "Specialist technicians", "parts": "Spare parts", "powertrain": "Fuel-cell powertrain", "serviceSystem": "Service ecosystem schematic",
+    "policy": "Policy support", "scale": "Scale-up", "costReduction": "Cost reduction", "commercial": "Sustainable commercial operations", "pathway": "A commercialization pathway", "early2026": "Early 2026 · reported observations", "notForecast": "Qualitative stages · no dated forecast"
+  }
+}

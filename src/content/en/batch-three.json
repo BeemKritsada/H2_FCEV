@@ -1,7 +1,7 @@
 {
   "eyebrow": "Hydrogen vehicle market",
-  "source": "Supplied presentation · slide {{slide}} · figures retained as provided",
-  "assetNote": "Concept vehicles · not verified makes or official vehicle designs",
+  "source": "Source: Briefing material · Data: end-2025 to early 2026",
+  "assetNote": "Conceptual vehicle visualizations · not specific models",
   "fleet": {
     "title": "Hydrogen Vehicle Deployment in China",
     "context": "Latest Reference Context: {{year}}",
@@ -11,7 +11,7 @@
     "nearly": "Nearly",
     "monthlyUnit": "/ month",
     "sales": "Monthly sales at the end of {{year}}",
-    "rank": "The supplied content describes China as the world's largest accumulated market.",
+    "rank": "Described in the briefing material as the world's largest cumulative market.",
     "vehicleLabel": "Hydrogen heavy-duty logistics"
   },
   "transition": {

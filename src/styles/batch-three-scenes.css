@@ -60,7 +60,7 @@
 .vehicle-showcase { display: grid; grid-template-rows: minmax(200px, 1fr) auto auto; gap: clamp(10px, 1.35svh, 16px); flex: 1; min-height: 0; }
 .vehicle-carousel { min-width: 0; }
 .vehicle-carousel__stage { position: relative; height: clamp(215px, 33svh, 380px); min-width: 0; overflow: hidden; background: radial-gradient(ellipse at 50% 58%, #f4f8fc 0%, #fff 68%); }
-.vehicle-carousel__item { position: absolute; top: 50%; left: 50%; display: grid; width: 56%; height: 100%; place-items: center; padding: 0; border: 0; background: transparent; color: inherit; transform: translate(-50%, -50%); transform-origin: center; }
+.vehicle-carousel__item { position: absolute; top: 50%; left: 50%; display: grid; grid-template-rows: minmax(0, 1fr); width: 56%; height: 100%; place-items: center; padding: 0; border: 0; background: transparent; color: inherit; transform: translate(-50%, -50%); transform-origin: center; }
 .vehicle-carousel__item img { display: block; width: 100%; height: 80%; object-fit: contain; transform: translateY(4px); user-select: none; pointer-events: none; }
 .vehicle-carousel__item[data-position="center"] img { transform: translateY(4px) scale(.9); }
 .vehicle-detail { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: clamp(20px, 4vw, 72px); align-items: center; padding-top: clamp(10px, 1.4svh, 16px); border-top: 1px solid var(--line); }

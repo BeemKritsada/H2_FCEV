@@ -1,0 +1,7 @@
+{
+  "sourceSectionId": "refrigerated-transport",
+  "sourceSlide": 14,
+  "hydrogenRefuelMinutes": [10, 15],
+  "bevChargeHours": [1, 2],
+  "hydrogenRangeKm": [500, 800]
+}

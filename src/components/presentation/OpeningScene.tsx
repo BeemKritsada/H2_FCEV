@@ -26,6 +26,7 @@ export function OpeningScene({ presentation, closing = false }: {
           <span>{title.replace(/^H2 FCEV\s*/, '')}</span>
         </h1>
         <p className="opening-caption">{t('opening.caption')}</p>
+        {!closing && <p className="opening-reference-year">{t('batchFive.referenceYear')}</p>}
         <div className="opening-chapter">
           <span className="opening-chapter__line" aria-hidden="true" />
           <span>{t(closing ? 'sceneLabels.closing' : 'opening.chapter')}</span>

@@ -1,0 +1,42 @@
+{
+  "eyebrow": "HYDROGEN VEHICLES · ADOPTION BARRIERS",
+  "title": "Three Major Challenges of Hydrogen Vehicles",
+  "subtitle": "Cost to buy, access to refuel, and cost to run",
+  "selector": "Select a challenge",
+  "position": "Challenge {{index}} of 3",
+  "source": "Source: Briefing material",
+  "units": { "rmb": "RMB", "rmbPerKg": "RMB/kg", "mpa": "MPa" },
+  "purchase": {
+    "title": "High Vehicle Purchase Cost",
+    "short": "Purchase cost",
+    "priceLabel": "Starting vehicle price, approx.",
+    "multipleLabel": "vs comparable ICE or BEV models",
+    "support": "Vehicle prices start at approximately 300,000 RMB, around 1.5–4 times comparable ICE or BEV alternatives in the supplied reference.",
+    "scope": "Reported price gap; it varies by vehicle segment.",
+    "alt": "White and blue hydrogen fuel-cell sedan, concept render",
+    "credit": "Concept vehicle visualization"
+  },
+  "refueling": {
+    "title": "Limited Hydrogen Refueling Accessibility",
+    "short": "Refueling access",
+    "commonStatus": "More common",
+    "commonLabel": "Mainly serves commercial-vehicle applications",
+    "limitedStatus": "Limited availability",
+    "limitedLabel": "Used by many passenger-car systems",
+    "support": "Most stations in the supplied reference use 35 MPa systems for commercial applications, while 70 MPa refueling remains limited, particularly outside major urban areas.",
+    "scope": "Pressure levels are refueling standards, not vehicle performance ratings.",
+    "dispenser": "Hydrogen dispenser",
+    "alt": "Hydrogen refueling station with a canopy, dispenser and hose, and on-site hydrogen equipment",
+    "credit": "Representative station photo · Jyväskylä, Finland"
+  },
+  "operating": {
+    "title": "High Operating Cost",
+    "short": "Operating cost",
+    "priceLabel": "Average retail hydrogen price",
+    "comparison": "Higher cost per 100 km than a home-charged BEV under the stated comparison",
+    "support": "An average retail hydrogen price of 44.5 RMB/kg contributes to higher cost per 100 km than home-charged battery-electric vehicles under the stated comparison conditions.",
+    "scope": "No cost-per-100-km figure is available in the briefing material.",
+    "alt": "Frosted hydrogen refueling nozzle connected to a fuel-cell car",
+    "credit": "Representative refueling photo"
+  }
+}

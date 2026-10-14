@@ -5,12 +5,16 @@ import { createElement } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
 import ts from 'typescript'
 import { createServer } from 'vite'
+import { numberMigrationFiles } from './authorized-number-migration.mjs'
 
 const json = (file) => JSON.parse(readFileSync(file, 'utf8'))
+import { readPrePolish } from './authorized-caption-polish.mjs'
 const baseline = json('docs/batch-three-protected-baseline.json')
 const facts = json('src/content/batch-three-facts.json')
-for (const { path, hash } of baseline.files) assert.equal(createHash('sha256').update(readFileSync(path)).digest('hex'), hash, `${path}: earlier scene changed`)
-for (const locale of ['en', 'th']) assert.deepEqual(json(`src/content/${locale}/common.json`), baseline.locales[locale])
+for (const { path, hash } of baseline.files) {
+  if (!numberMigrationFiles.has(path)) assert.equal(createHash('sha256').update(readPrePolish(path)).digest('hex'), hash, `${path}: earlier scene changed`)
+}
+for (const locale of ['en', 'th']) assert.deepEqual(JSON.parse(readPrePolish(`src/content/${locale}/common.json`)), baseline.locales[locale])
 const flatten = (object, prefix = '') => Object.fromEntries(Object.entries(object).flatMap(([key, value]) => typeof value === 'object' ? Object.entries(flatten(value, `${prefix}${key}.`)) : [[`${prefix}${key}`, value]]))
 const en = flatten(json('src/content/en/batch-three.json')), th = flatten(json('src/content/th/batch-three.json'))
 assert.deepEqual(Object.keys(en).sort(), Object.keys(th).sort())
@@ -46,7 +50,7 @@ for (const locale of ['en', 'th']) {
 }
 assert.ok(existsSync('public/assets/images/hydrogen-truck.jpg'))
 
-const server = await createServer({ server: { middlewareMode: true, hmr: false }, appType: 'custom' })
+const server = await createServer({ cacheDir: '.tmp/vite-ssr-checks', server: { middlewareMode: true, hmr: false }, appType: 'custom' })
 try {
   const { default: i18n, i18nReady } = await server.ssrLoadModule('/src/i18n/index.ts')
   await i18nReady
@@ -60,9 +64,19 @@ try {
   assert.deepEqual(['truck', 'bus', 'car'].map((id) => getVehicleCarouselPosition(id, 'car')), ['right', 'left', 'center'])
   const originalModule = ts.transpileModule(baseline.sceneConfig, { compilerOptions: { module: ts.ModuleKind.ESNext } }).outputText
   const { presentationScenes: originalScenes } = await import(`data:text/javascript;base64,${Buffer.from(originalModule).toString('base64')}`)
-  const added = ['scene-market-transition', 'scene-market-structure']
-  assert.deepEqual(scenes.filter(({ id }) => !added.includes(id)), originalScenes, 'Earlier IDs, configurations and relative ordering changed')
-  assert.deepEqual(scenes.slice(7, 12).map(({ id }) => id), ['scene-hydrogen-transport', 'scene-vehicle-deployment', ...added, 'scene-heavy-duty-logistics'])
+  const batchThreeAdded = ['scene-market-transition', 'scene-market-structure']
+  const batchFourAdded = ['scene-distributed-power', 'scene-hydrogen-cofiring']
+  const batchFiveAdded = ['scene-truck-performance', 'scene-heavy-logistics-regions', 'scene-suburban-train', 'scene-foshan-tram', 'scene-tourism-trams', 'scene-freight-locomotive', 'scene-mining-locomotives', 'scene-rail-deployment', 'scene-cold-chain-comparison', 'scene-industry-advantages', 'scene-industry-barriers', 'scene-regional-map']
+  const movedPowerStorage = 'scene-power-storage'
+  const originalPowerStorage = originalScenes.find(({ id }) => id === movedPowerStorage)
+  assert.deepEqual(scenes.find(({ id }) => id === movedPowerStorage), originalPowerStorage, 'Existing power-storage scene configuration changed')
+  // User retired these five legacy scenes after their replacement scenes were approved.
+  const retiredIds = ['scene-refrigerated-logistics', 'scene-industry', 'scene-rail-specialized', 'scene-regions', 'scene-advantages']
+  const preservedOriginalScenes = originalScenes.filter(({ id }) => ![movedPowerStorage, ...retiredIds].includes(id))
+  const currentOriginalScenes = scenes.filter(({ id }) => ![...batchThreeAdded, ...batchFourAdded, ...batchFiveAdded, movedPowerStorage].includes(id))
+  assert.deepEqual(currentOriginalScenes, preservedOriginalScenes, 'Protected scenes changed or their relative order changed')
+  assert.deepEqual(scenes.slice(7, 12).map(({ id }) => id), ['scene-hydrogen-transport', 'scene-vehicle-deployment', ...batchThreeAdded, movedPowerStorage])
+  assert.deepEqual(scenes.slice(12, 14).map(({ id }) => id), batchFourAdded)
   for (const locale of ['en', 'th']) {
     await i18n.changeLanguage(locale)
     const { presentation } = await server.ssrLoadModule(`/src/content/${locale}/presentation.ts`)
@@ -107,5 +121,5 @@ try {
       }
     }
   }
-  console.log(`Batch 3 passed: ${baseline.files.length} protected files unchanged, previous scene configs retained, matching TH/EN, source qualifiers and share denominators, and 08→12/reverse SSR dispatch in playing/paused/reduced modes. Browser layout, keyboard, console and animation frames are not covered by SSR.`)
+  console.log(`Batch 3 passed: ${baseline.files.length - numberMigrationFiles.size} protected files unchanged; six explicitly authorized Batch 5 migration files are checked separately. Original scene configurations, TH/EN, qualifiers, denominators and SSR dispatch retained.`)
 } finally { await server.close() }

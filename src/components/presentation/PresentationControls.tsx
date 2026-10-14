@@ -6,6 +6,7 @@ interface PresentationControlsProps {
   sceneCount: number
   onPrevious: () => void
   onNext: () => void
+  onRestart: () => void
 }
 
 export function PresentationControls({
@@ -13,6 +14,7 @@ export function PresentationControls({
   sceneCount,
   onPrevious,
   onNext,
+  onRestart,
 }: PresentationControlsProps) {
   const { t } = useTranslation()
   const current = activeIndex + 1
@@ -51,13 +53,12 @@ export function PresentationControls({
       </div>
 
       <button
-        aria-label={t('controls.next')}
+        aria-label={t(activeIndex === sceneCount - 1 ? 'batchFive.restart' : 'controls.next')}
         className="navigation-button navigation-button--next"
-        disabled={activeIndex === sceneCount - 1}
-        onClick={onNext}
+        onClick={activeIndex === sceneCount - 1 ? onRestart : onNext}
         type="button"
       >
-        <span>{t('controls.next')}</span>
+        <span>{t(activeIndex === sceneCount - 1 ? 'batchFive.restart' : 'controls.next')}</span>
         <ArrowRight aria-hidden="true" size={17} />
       </button>
     </footer>

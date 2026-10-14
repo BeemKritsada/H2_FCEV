@@ -5,6 +5,7 @@ import facts from '../../../content/batch-three-facts.json'
 import { useVehicleMarketMotion } from './useVehicleMarketMotion'
 import { MarketTruck } from './VehicleArtwork'
 import VehicleCarousel from './VehicleCarousel'
+import { AnimatedNumber } from '../AnimatedNumber'
 import '../../../styles/batch-three-scenes.css'
 
 type SceneProps = { count: number; number: number }
@@ -26,8 +27,8 @@ export function VehicleFleetScene(props: SceneProps) {
     <div className="fleet-composition">
       <div className="fleet-copy">
         <p className="fleet-period">{t('batchThree.fleet.period', { year: facts.fleet.year })}</p>
-        <div className="fleet-total"><span className="market-qualifier">{t('batchThree.fleet.approximate')}</span><strong><span className="sr-only">{facts.fleet.value.toLocaleString('en-US')}</span><span aria-hidden="true" data-fleet-count={facts.fleet.value}>{facts.fleet.value.toLocaleString('en-US')}</span></strong><p>{t('batchThree.fleet.accumulated')}</p></div>
-        <div className="fleet-sales" data-monthly-sales><span className="market-qualifier">{t('batchThree.fleet.nearly')}</span><div className="fleet-sales__value"><strong>{facts.monthlySales.value.toLocaleString('en-US')}</strong><span>{t('batchThree.fleet.monthlyUnit')}</span></div><p>{t('batchThree.fleet.sales', { year: facts.monthlySales.year })}</p></div>
+        <div className="fleet-total"><span className="market-qualifier">{t('batchThree.fleet.approximate')}</span><strong><AnimatedNumber value={facts.fleet.value} /></strong><p>{t('batchThree.fleet.accumulated')}</p></div>
+        <div className="fleet-sales" data-monthly-sales><span className="market-qualifier">{t('batchThree.fleet.nearly')}</span><div className="fleet-sales__value"><strong><AnimatedNumber value={facts.monthlySales.value} /></strong><span>{t('batchThree.fleet.monthlyUnit')}</span></div><p>{t('batchThree.fleet.sales', { year: facts.monthlySales.year })}</p></div>
       </div>
       <div className="fleet-vehicle">
         <span className="market-art-label">{t('batchThree.fleet.vehicleLabel')}</span><MarketTruck />

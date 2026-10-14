@@ -1,0 +1,138 @@
+.reference-scene.challenges-scene {
+  --challenge-body: clamp(18px, min(1.2vw, 2.3svh), 23px);
+  --challenge-label: clamp(16px, min(1.05vw, 2.05svh), 20px);
+  --challenge-figure: clamp(60px, min(5vw, 9.4svh), 104px);
+  gap: clamp(14px, 2.1svh, 26px);
+}
+.challenges-scene h1 { font-size: clamp(40px, min(3.3vw, 6svh), 64px); letter-spacing: -.04em; }
+.challenges-heading { display: grid; gap: 6px; }
+.challenges-heading p { margin: 0; color: var(--muted); font-size: var(--challenge-body); line-height: 1.45; }
+
+.challenges-layout {
+  flex: 1; min-height: 0; display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr) auto;
+  grid-template-areas: "stage detail" "selectors detail";
+  gap: clamp(12px, 1.8svh, 20px) clamp(28px, 3.2vw, 60px);
+}
+
+/* Stage: all three images stay mounted (preloaded); GSAP owns their opacity. */
+.challenge-stage { grid-area: stage; position: relative; min-height: 250px; overflow: hidden; border-radius: 6px; background: var(--panel); isolation: isolate; }
+.challenge-stage::after { content: ''; position: absolute; inset: 0; z-index: 3; pointer-events: none; background: linear-gradient(105deg, transparent 38%, #ffffff26 50%, transparent 62%); transform: translateX(-70%); animation: challenge-light 11s ease-in-out infinite; }
+.challenge-frame { position: absolute; inset: 0; margin: 0; opacity: 0; will-change: opacity, transform; }
+.challenge-frame img { position: relative; display: block; width: 100%; height: 100%; object-fit: cover; }
+/* object-position percentages pin the same image point to the same frame point at any aspect ratio. */
+.challenge-frame--refueling img { object-position: 44% 58%; }
+.challenge-frame--operating img { object-position: 55% 52%; }
+.challenge-frame--purchase { background: radial-gradient(ellipse 72% 62% at 54% 44%, #fff 0%, #eef5fb 58%, #dae7f3 100%); }
+.challenge-frame--purchase::before { content: ''; position: absolute; left: 12%; right: 10%; bottom: 9%; height: 10%; background: radial-gradient(ellipse at center, #0b2a5a38, transparent 70%); filter: blur(6px); }
+.challenge-frame--purchase img { object-fit: contain; padding: 5% 7% 7%; }
+.challenge-frame::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, transparent 58%, #07398f40 100%); }
+.challenge-frame--purchase::after { background: linear-gradient(180deg, transparent 70%, #07398f14 100%); }
+.challenge-frame--operating::after { background: linear-gradient(180deg, transparent 58%, #07398f40 100%), linear-gradient(90deg, transparent 60%, #f59e0b14 100%); }
+.challenge-frame__index { position: absolute; z-index: 2; top: 16px; left: 16px; padding: 6px 10px; border-radius: 4px; background: var(--accent); color: white; font-size: 15px; font-weight: 700; letter-spacing: .06em; font-variant-numeric: tabular-nums; }
+.challenge-frame figcaption { position: absolute; z-index: 2; right: 16px; bottom: 12px; color: white; font-size: 14px; text-shadow: 0 1px 6px #07264f99; }
+.challenge-frame--purchase figcaption { color: var(--muted); text-shadow: none; }
+.dispenser-marker { position: absolute; z-index: 2; left: 44%; top: 58%; display: flex; align-items: center; gap: 10px; transform: translate(-11px, -50%); }
+.dispenser-marker i { position: relative; flex: none; width: 22px; height: 22px; border: 2px solid white; border-radius: 50%; background: #00a8e8; box-shadow: 0 0 0 4px #00a8e84d; }
+.dispenser-marker i::after { content: ''; position: absolute; inset: -9px; border: 2px solid #00a8e8; border-radius: 50%; animation: challenge-pulse 3.2s ease-out infinite; }
+.dispenser-marker span { padding: 6px 10px; border-radius: 4px; background: #ffffffeb; color: var(--navy); font-size: 15px; font-weight: 600; white-space: nowrap; box-shadow: 0 6px 18px #07264f26; }
+
+.challenges-scene[data-motion] .challenge-frame--refueling img,
+.challenges-scene[data-motion] .challenge-frame--operating img { animation: challenge-drift 18s ease-in-out infinite alternate; }
+.challenges-scene[data-motion] .challenge-frame--purchase img { animation: challenge-float 9s ease-in-out infinite alternate; }
+.challenges-scene[data-motion="paused"] *, .challenges-scene[data-motion="paused"] *::before, .challenges-scene[data-motion="paused"] *::after,
+.challenges-scene[data-motion="paused"] .challenge-stage::after { animation-play-state: paused !important; }
+@keyframes challenge-drift { from { transform: scale(1); } to { transform: scale(1.04) translate(-.5%, -.4%); } }
+@keyframes challenge-float { from { transform: translateY(0); } to { transform: translateY(-4px); } }
+@keyframes challenge-light { 0%, 55% { transform: translateX(-70%); } 100% { transform: translateX(70%); } }
+@keyframes challenge-pulse { from { opacity: .8; transform: scale(.7); } to { opacity: 0; transform: scale(1.35); } }
+
+/* Detail column */
+.challenge-detail-region { grid-area: detail; min-width: 0; min-height: 0; }
+.challenge-detail { display: flex; flex-direction: column; gap: clamp(8px, 1.3svh, 16px); height: 100%; }
+.challenge-detail__position { color: var(--accent); font-size: var(--note-size); font-weight: 650; letter-spacing: .08em; text-transform: uppercase; }
+:lang(th) .challenge-detail__position { letter-spacing: .02em; }
+.challenge-detail h2 { margin: 0; color: var(--navy); font-size: clamp(27px, min(2.05vw, 3.9svh), 40px); font-weight: 620; line-height: 1.22; letter-spacing: -.025em; }
+.challenge-figures { display: grid; gap: clamp(6px, 1.2svh, 14px); }
+.challenge-figure { position: relative; min-width: 0; }
+.challenge-figure__label { display: block; color: var(--muted); font-size: var(--challenge-label); line-height: 1.4; }
+.challenge-figure strong, .pressure-row strong { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; margin-top: 2px; color: var(--accent); font-size: var(--challenge-figure); font-weight: 600; line-height: 1.06; letter-spacing: -.045em; }
+.challenge-figure strong small, .pressure-row strong small { color: var(--navy); font-size: clamp(18px, 1.35vw, 26px); font-weight: 550; letter-spacing: .02em; }
+.challenge-figure--secondary strong { color: var(--navy); font-size: calc(var(--challenge-figure) * .74); }
+.challenge-figure--warning { padding-bottom: 14px; }
+.challenge-figure--warning strong small { color: #a35f00; }
+.challenge-figure__accent { position: absolute; left: 0; bottom: 0; width: min(260px, 70%); height: 4px; border-radius: 2px; background: linear-gradient(90deg, var(--orange), #f59e0b00); }
+.cost-comparison { margin: 0; padding: 10px 0 0 16px; border-left: 3px solid var(--orange); color: var(--ink); font-size: var(--challenge-label); line-height: 1.5; }
+
+.challenge-figures--pressure { gap: 0; }
+.pressure-row { --pressure-active: 1; display: grid; grid-template-columns: minmax(0, auto) minmax(0, 1fr); align-items: center; gap: 4px 22px; padding: clamp(6px, 1.1svh, 12px) 0; border-top: 1px solid var(--line); opacity: calc(.3 + .7 * var(--pressure-active)); }
+.pressure-row strong { font-size: calc(var(--challenge-figure) * .86); margin: 0; }
+.pressure-row p { margin: 6px 0 0; color: var(--muted); font-size: var(--challenge-label); line-height: 1.4; }
+.pressure-status { display: inline-flex; padding: 4px 11px; border-radius: 999px; background: #e6f1ff; color: var(--accent); font-size: var(--note-size); font-weight: 650; line-height: 1.3; }
+.pressure-status--limited { background: #fff5e3; color: #a35f00; box-shadow: inset 0 0 0 1px #f59e0b73; }
+
+.challenge-detail__support { margin: auto 0 0; padding-top: clamp(8px, 1.3svh, 14px); border-top: 1px solid var(--line); color: var(--ink); font-size: var(--challenge-body); line-height: 1.5; }
+
+/* Selectors */
+.challenge-selectors { grid-area: selectors; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.challenge-selector { position: relative; display: flex; align-items: center; gap: 12px; min-width: 0; padding: 9px 12px 9px 9px; overflow: hidden; border: 1px solid #d4e4f2; border-radius: 6px; background: white; color: var(--muted); text-align: left; transition: border-color .3s, background-color .3s, color .3s; }
+.challenge-selector::before { content: ''; position: absolute; inset: 0 0 auto; height: 3px; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform .5s cubic-bezier(.2, .7, .2, 1); }
+.challenge-selector:hover { border-color: #9cc3ea; color: var(--navy); }
+.challenge-selector[aria-pressed="true"] { border-color: var(--accent); background: #f0f7ff; color: var(--navy); }
+.challenge-selector[aria-pressed="true"]::before { transform: scaleX(1); }
+.challenge-selector:focus-visible { outline: 3px solid var(--cyan); outline-offset: 3px; }
+.challenge-selector__thumb { flex: none; width: clamp(64px, 5vw, 96px); aspect-ratio: 16 / 10; overflow: hidden; border-radius: 4px; background: linear-gradient(#f7fafd, #dde9f4); }
+.challenge-selector__thumb img { display: block; width: 100%; height: 100%; object-fit: cover; opacity: .78; filter: saturate(.5); transition: opacity .3s, filter .3s; }
+.challenge-selector:first-child .challenge-selector__thumb img { object-fit: contain; }
+.challenge-selector[aria-pressed="true"] .challenge-selector__thumb img { opacity: 1; filter: none; }
+.challenge-selector__text { min-width: 0; }
+.challenge-selector__index { display: flex; align-items: center; gap: 6px; color: var(--accent); font-size: 14px; font-weight: 700; letter-spacing: .06em; font-variant-numeric: tabular-nums; }
+.challenge-selector__title { display: block; margin-top: 3px; font-size: var(--challenge-label); font-weight: 560; line-height: 1.3; }
+
+.challenges-source { margin-top: 0; border-top: 1px solid var(--line); padding-top: 12px; display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; color: var(--muted); font-size: 15px; line-height: 1.55; }
+.challenges-source__note { display: block; }
+.challenges-source > div { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px 14px; }
+.challenges-source a { display: inline-flex; align-items: center; gap: 3px; color: var(--navy); text-underline-offset: 4px; }
+
+@media (min-width: 1101px) and (max-height: 820px) {
+  .reference-scene.challenges-scene { --challenge-figure: clamp(56px, 8.6svh, 72px); gap: 12px; padding-top: 16px; }
+  .challenges-scene h1 { font-size: 46px; }
+  /* The three selectors already name the topics; the slide must fit without scrolling. */
+  .challenges-heading p { display: none; }
+  .pressure-row { padding-block: 4px; }
+  .challenge-detail { gap: 6px; }
+  .challenge-detail h2 { font-size: 27px; }
+  .challenge-detail__support { font-size: 18px; line-height: 1.45; }
+  .challenge-selector { padding-block: 7px; }
+  .challenge-selector__thumb { width: 64px; }
+  .challenges-source { padding-top: 8px; font-size: 14px; }
+}
+@media (max-width: 1100px) {
+  .challenges-layout { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); }
+  .challenge-selector { flex-direction: column; align-items: flex-start; }
+  .challenge-selector__thumb { width: 100%; max-height: 64px; }
+}
+@media (max-width: 760px) {
+  .reference-scene.challenges-scene { --challenge-body: 19px; --challenge-label: 17px; --challenge-figure: 68px; gap: 20px; }
+  .challenges-scene h1 { font-size: clamp(32px, 8.2vw, 44px); }
+  .challenges-layout { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto auto; grid-template-areas: "stage" "selectors" "detail"; gap: 16px; }
+  .challenge-stage { min-height: 0; aspect-ratio: 16 / 10; }
+  .challenge-frame__index { top: 10px; left: 10px; font-size: 13px; }
+  .challenge-frame figcaption { right: 10px; bottom: 8px; font-size: 12px; }
+  .dispenser-marker span { font-size: 13px; padding: 4px 8px; }
+  .challenge-selectors { gap: 8px; }
+  .challenge-selector { gap: 6px; padding: 7px; }
+  .challenge-selector__thumb { max-height: 48px; }
+  .challenge-selector__index { font-size: 12px; }
+  .challenge-selector__title { font-size: 14px; }
+  .challenge-detail { gap: 12px; }
+  .challenge-detail h2 { font-size: 27px; }
+  .pressure-row { grid-template-columns: minmax(0, 1fr); }
+  .challenge-detail__support { margin-top: 4px; }
+  .challenges-source { flex-direction: column; gap: 10px; font-size: 14px; }
+  .challenges-source > div { justify-content: flex-start; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .challenges-scene *, .challenges-scene *::before, .challenges-scene *::after, .challenges-scene .challenge-stage::after { animation: none !important; transition: none !important; }
+}

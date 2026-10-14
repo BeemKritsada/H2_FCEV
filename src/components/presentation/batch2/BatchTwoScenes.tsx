@@ -5,6 +5,7 @@ import facts from '../../../content/batch-two-facts.json'
 import { RegionalNetworkMap } from './RegionalNetworkMap'
 import { useInfrastructureMotion } from './useInfrastructureMotion'
 import { LogisticsFallback } from './LogisticsFallback'
+import { AnimatedNumber } from '../AnimatedNumber'
 import '../../../styles/batch-two-scenes.css'
 
 const LogisticsStage = lazy(() => import('./LogisticsStage'))
@@ -27,11 +28,11 @@ export function RefuelingNetworkScene(props: SceneProps) {
     <Eyebrow {...props} /><h1 id="scene-title">{t('batchTwo.network.title')}</h1>
     <div className="network-composition">
       <div className="network-summary">
-        <strong className="infra-hero">{facts.completed}</strong><p className="network-completed">{t('batchTwo.network.completed')}</p>
+        <strong className="infra-hero"><AnimatedNumber value={facts.completed} /></strong><p className="network-completed">{t('batchTwo.network.completed')}</p>
         <p className="network-scale">{t('batchTwo.network.scale')}</p>
         <div className="public-access">
           <svg viewBox="0 0 110 110" aria-hidden="true"><circle cx="55" cy="55" r="44" fill="none" stroke="#dae8f4" strokeWidth="8" /><circle data-public-ring cx="55" cy="55" r="44" fill="none" stroke="#0753c8" strokeWidth="8" pathLength="100" strokeDasharray="100" strokeDashoffset={100 - facts.publicPercentApproximate} transform="rotate(-90 55 55)" /></svg>
-          <div><strong>~{facts.publicPercentApproximate}%</strong><span>{t('batchTwo.network.public')}</span></div>
+          <div><strong><AnimatedNumber value={facts.publicPercentApproximate} prefix="~" suffix="%" /></strong><span>{t('batchTwo.network.public')}</span></div>
         </div>
         <p className="public-remainder"><strong>~{facts.remainderPercentDerived}%</strong> {t('batchTwo.network.industrial')}<small>{t('batchTwo.network.remainder')}</small></p>
       </div>
@@ -48,7 +49,7 @@ export function InfrastructureExpansionScene(props: SceneProps) {
   const milestones = [
     { value: facts.completed, key: 'completed', Icon: Check },
     { value: facts.plannedOrConstruction, key: 'planned', Icon: GitBranch },
-    { value: `${facts.projectedLowerBoundExclusive}+`, key: 'projected', Icon: TrendingUp },
+    { value: facts.projectedLowerBoundExclusive, key: 'projected', Icon: TrendingUp },
   ]
   return <section ref={root} className="reference-scene batch-two-scene infrastructure-expansion-scene" aria-labelledby="scene-title" data-motion={playing ? 'running' : 'paused'}>
     <Eyebrow {...props} /><h1 id="scene-title">{t('batchTwo.expansion.title')}</h1>
@@ -57,7 +58,7 @@ export function InfrastructureExpansionScene(props: SceneProps) {
       <div className="expansion-milestones">
         {milestones.map(({ value, key, Icon }, index) => <div key={key} className={`expansion-milestone expansion-milestone--${key}`} data-forecast={index === 2 ? '' : undefined}>
           <span className="expansion-milestone__icon" data-milestone><Icon size={26} aria-hidden="true" /></span>
-          <strong>{value}</strong>
+          <strong><AnimatedNumber value={value} suffix={key === 'projected' ? '+' : ''} /></strong>
           <h2>{t(`batchTwo.expansion.${key}`, { year: facts.projectionYear })}</h2>
           <p>{t(`batchTwo.expansion.${key}Note`, { value: facts.projectedLowerBoundExclusive })}</p>
         </div>)}
@@ -102,9 +103,7 @@ export function HydrogenTransportScene(props: SceneProps) {
         <strong className="cost-statistic">
           <span className="sr-only">{facts.retailStorageTransportSharePercent.join('–')}%</span>
           <span className="cost-statistic__value" aria-hidden="true">
-            <span>{facts.retailStorageTransportSharePercent[0]}</span>
-            <span className="cost-statistic__separator">–</span>
-            <span>{facts.retailStorageTransportSharePercent[1]}</span>
+            <AnimatedNumber value={facts.retailStorageTransportSharePercent} separator=" – " />
             <span className="cost-statistic__unit">%</span>
           </span>
         </strong>

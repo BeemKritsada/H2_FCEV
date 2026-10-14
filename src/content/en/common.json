@@ -1,19 +1,19 @@
 {
   "batchOne": {
-    "conceptNote": "Temporary concept models · not actual equipment or a documented site",
+    "conceptNote": "Conceptual visualization of hydrogen technology",
     "green": {
       "eyebrow": "GREEN HYDROGEN EXPANSION",
       "title": "Scaling up",
       "titleAccent": "green hydrogen.",
       "subtitle": "Wind and solar electricity power water electrolysis to produce green hydrogen.",
       "visualLabel": "Integrated renewable hydrogen facility · concept",
-      "visualAlt": "Conceptual facility with wind turbines, solar panels, an electrolyzer and hydrogen storage. Green electricity flows toward electrolysis; blue hydrogen flows toward storage. This is a temporary illustration, not a documented Chinese facility.",
+      "visualAlt": "Conceptual facility with wind turbines, solar panels, an electrolyzer and hydrogen storage. Green electricity flows toward electrolysis; blue hydrogen flows toward storage. The illustration explains the process and does not depict a specific facility in China.",
       "processLabel": "Renewable electricity to green hydrogen",
       "renewables": "Wind + solar",
       "electricity": "Electricity",
       "electrolysis": "Electrolysis",
       "hydrogen": "Green hydrogen",
-      "capacityLabel": "Source-stated green hydrogen project figures",
+      "capacityLabel": "Green hydrogen project figures",
       "operating": "Operational capacity",
       "construction": "Under construction",
       "annualUnit": "tonnes / year",
@@ -25,7 +25,7 @@
       "xinjiang": "Xinjiang",
       "innerMongolia": "Inner Mongolia",
       "gansu": "Gansu",
-      "sourceNote": "Supplied figures · source slide {{slide}}; reporting date requires verification."
+      "sourceNote": "Source: Briefing material · Data year not specified"
     },
     "equipment": {
       "eyebrow": "HYDROGEN EQUIPMENT TECHNOLOGY",
@@ -33,19 +33,19 @@
       "titleAccent": "Made domestically.",
       "localization": "Domestic production of key hydrogen equipment",
       "visualLabel": "Three core equipment categories · conceptual product study",
-      "visualAlt": "Three simplified conceptual models: a skid-mounted electrolyzer, a high-pressure hydrogen storage tank and a fuel cell stack. Temporary placeholders without manufacturer-specific specifications.",
+      "visualAlt": "Three simplified conceptual models: a skid-mounted electrolyzer, a high-pressure hydrogen storage tank and a fuel cell stack. They do not represent any manufacturer's specifications.",
       "electrolyzer": "Electrolyzer",
       "electrolyzerDetail": "Electricity turns water into hydrogen.",
       "tank": "High-pressure H₂ tank",
       "tankDetail": "Stores hydrogen under pressure.",
       "fuelCell": "Fuel cell stack",
       "fuelCellDetail": "Converts hydrogen and oxygen into electricity.",
-      "standardClaim": "The supplied material describes the technology as comparable to global standards.",
-      "sourceNote": "Source slide {{slide}} · localization scope, date and technology comparison require verification."
+      "standardClaim": "The briefing material describes the technology as comparable to international standards.",
+      "sourceNote": "Source: Briefing material · Data year and scope of the domestic share not specified"
     }
   },
   "reference": {
-    "sourceLink": "NEA source report",
+    "sourceLink": "NEA report",
     "dataYear": "Data year · {{year}}",
     "overview": {
       "eyebrow": "THE HYDROGEN LANDSCAPE",
@@ -56,24 +56,24 @@
       "rank": "World's largest producer",
       "rankContext": "Production scale · {{year}}",
       "mapAlt": "Three-dimensional geographic silhouette of China. Animated nodes and links are conceptual and do not represent facilities or operating routes.",
-      "mapCaption": "Illustrative energy network · not station locations or actual routes",
+      "mapCaption": "Conceptual hydrogen infrastructure network",
       "fallback": "Geographic overview",
-      "sourceNote": "Presentation reference: {{edition}} · NEA supports this production figure for {{year}}; the 2026 reporting period remains unverified."
+      "sourceNote": "Source: National Energy Administration of China (NEA) · Data year: {{year}}"
     },
     "mix": {
       "eyebrow": "HYDROGEN PRODUCTION MIX",
       "title": "Where hydrogen comes from",
       "subtitle": "Coal remains the largest source of hydrogen.",
       "coal": "Coal-based hydrogen",
-      "coalDetail": "Grey hydrogen in the supplied material",
+      "coalDetail": "Classified as grey hydrogen",
       "byproduct": "Industrial by-product",
       "byproductDetail": "Recovered from industrial processes",
       "gas": "Natural-gas-based",
       "gasDetail": "Hydrogen produced from natural gas",
       "chartLabel": "Hydrogen production shares on a common scale from zero to one hundred percent",
-      "totalNote": "The three source-stated categories total {{total}}%. No additional category is added.",
+      "totalNote": "The three main categories total {{total}}%; the remainder is not specified in the source.",
       "scaleNote": "Common scale · 0–100%",
-      "sourceNote": "Supplied values retained · NEA report identifies the matching production structure as {{year}} data."
+      "sourceNote": "Source: National Energy Administration of China (NEA) · Production-structure data year: {{year}}"
     }
   },
   "opening": {
@@ -86,13 +86,13 @@
   },
   "visuals": {
     "truckAlt": "Concept illustration of a white and silver hydrogen heavy-duty truck in a bright logistics yard, viewed from the front three-quarter angle.",
-    "conceptVehicle": "Concept illustration · generic vehicle",
+    "conceptVehicle": "Conceptual hydrogen truck visualization",
     "mapAlt": "Light-blue geographic silhouette of China, from Natural Earth.",
     "china": "CHINA",
     "mapNote": "Geographic overview · no station locations or operational routes shown",
     "energyAndLogistics": "Energy & logistics",
-    "shareNote": "Source-stated shares total 98%. The remainder is not specified; bars use a 0–100% scale.",
-    "schematic": "Illustrative schematic · not an engineering specification",
+    "shareNote": "Stated shares total 98%; the remainder is not specified. Bars use a 0–100% scale.",
+    "schematic": "Conceptual schematic · not an engineering specification",
     "station": "Hydrogen refueling infrastructure",
     "passengerRail": "Passenger rail",
     "freightRail": "Freight & mining locomotives",

@@ -2,11 +2,21 @@ import { useTranslation } from 'react-i18next'
 import type { PresentationLocale, PresentationSection } from '../../content/schema'
 import type { PresentationScene, SceneContentPreview } from '../../scenes/scene-config'
 import { SceneVisual } from './SceneVisual'
+import { SourceStatisticText } from './SourceStatisticText'
 import { OpeningScene } from './OpeningScene'
 import { ChinaOverviewScene, ProductionMixScene } from './ReferenceScenes'
 import { EquipmentTechnologyScene, GreenHydrogenScene } from './batch1/BatchOneScenes'
 import { HydrogenTransportScene, InfrastructureExpansionScene, RefuelingNetworkScene } from './batch2/BatchTwoScenes'
 import { MarketStructureScene, MarketTransitionScene, VehicleFleetScene } from './batch3/BatchThreeScenes'
+import { DistributedPowerScene, HydrogenCofiringScene, PowerStorageScene } from './batch4/BatchFourScenes'
+import { FoshanTramScene, HeavyLogisticsRegionsScene, LogisticsApplicationsScene, SuburbanTrainScene, TourismTramsScene, TruckPerformanceScene } from './batch5/BatchFiveScenes'
+import { FreightLocomotiveScene, MiningLocomotivesScene, RailDeploymentScene } from './batch7/BatchSevenScenes'
+import { ChallengesScene } from './batch8/ChallengesScene'
+import { ColdChainComparisonScene } from './coldchain/ColdChainComparisonScene'
+import { IndustryScene } from './batch9/IndustryScenes'
+import { RegionalMapScene } from './batch11/RegionalMapScene'
+import { SpeakerClosingScene } from './closing/SpeakerClosingScene'
+import { ExecutiveHeroScene } from './opening/ExecutiveHeroScene'
 
 interface SceneContainerProps {
   scene: PresentationScene
@@ -67,7 +77,11 @@ export function SceneContainer({
   const sourceSlides = Array.from(
     new Set(sourceSections.flatMap((section) => section.sourceSlideNumber)),
   )
+  const sourceSlide = primarySection?.sourceSlideNumber ?? 0
   if (isTitleScene) sourceSlides.push(presentation.title.sourceSlideNumber)
+
+  if (scene.id === 'scene-opening') return <ExecutiveHeroScene />
+  if (scene.id === 'scene-closing') return <SpeakerClosingScene count={sceneCount} number={sceneNumber} />
 
   if (isTitleScene) {
     return <OpeningScene presentation={presentation} closing={scene.id === 'scene-closing'} />
@@ -83,6 +97,23 @@ export function SceneContainer({
   if (scene.id === 'scene-vehicle-deployment') return <VehicleFleetScene count={sceneCount} number={sceneNumber} />
   if (scene.id === 'scene-market-transition') return <MarketTransitionScene count={sceneCount} number={sceneNumber} />
   if (scene.id === 'scene-market-structure') return <MarketStructureScene count={sceneCount} number={sceneNumber} />
+  if (scene.id === 'scene-power-storage') return <PowerStorageScene count={sceneCount} number={sceneNumber} sourceSlide={sourceSlide} />
+  if (scene.id === 'scene-distributed-power') return <DistributedPowerScene count={sceneCount} number={sceneNumber} sourceSlide={sourceSlide} />
+  if (scene.id === 'scene-hydrogen-cofiring') return <HydrogenCofiringScene count={sceneCount} number={sceneNumber} sourceSlide={sourceSlide} />
+  if (scene.id === 'scene-heavy-duty-logistics') return <LogisticsApplicationsScene count={sceneCount} number={sceneNumber} />
+  if (scene.id === 'scene-truck-performance') return <TruckPerformanceScene count={sceneCount} number={sceneNumber} />
+  if (scene.id === 'scene-heavy-logistics-regions') return <HeavyLogisticsRegionsScene count={sceneCount} number={sceneNumber} />
+  if (scene.id === 'scene-suburban-train') return <SuburbanTrainScene count={sceneCount} number={sceneNumber} />
+  if (scene.id === 'scene-foshan-tram') return <FoshanTramScene count={sceneCount} number={sceneNumber} />
+  if (scene.id === 'scene-tourism-trams') return <TourismTramsScene count={sceneCount} number={sceneNumber} />
+  if (scene.id === 'scene-freight-locomotive') return <FreightLocomotiveScene count={sceneCount} number={sceneNumber} />
+  if (scene.id === 'scene-mining-locomotives') return <MiningLocomotivesScene count={sceneCount} number={sceneNumber} />
+  if (scene.id === 'scene-rail-deployment') return <RailDeploymentScene count={sceneCount} number={sceneNumber} />
+  if (scene.id === 'scene-cold-chain-comparison') return <ColdChainComparisonScene count={sceneCount} number={sceneNumber} />
+  if (scene.id === 'scene-industry-advantages') return <IndustryScene kind="advantages" count={sceneCount} number={sceneNumber} />
+  if (scene.id === 'scene-industry-barriers') return <IndustryScene kind="barriers" count={sceneCount} number={sceneNumber} />
+  if (scene.id === 'scene-challenges') return <ChallengesScene count={sceneCount} number={sceneNumber} />
+  if (scene.id === 'scene-regional-map') return <RegionalMapScene count={sceneCount} number={sceneNumber} />
 
   return (
     <section aria-labelledby="scene-title" className={`scene-container scene-container--${scene.visual}`}>
@@ -108,11 +139,11 @@ export function SceneContainer({
             {previews.map((preview) => (
               <div className="scene-copy__preview-block" key={preview.id}>
                 {preview.items.length === 1 ? (
-                  <p>{preview.items[0]}</p>
+                  <p><SourceStatisticText text={preview.items[0]!} sectionId={preview.id} /></p>
                 ) : (
                   <ul>
                     {preview.items.map((item, itemIndex) => (
-                      <li key={preview.id + '-' + itemIndex}>{item}</li>
+                      <li key={preview.id + '-' + itemIndex}><SourceStatisticText text={item} sectionId={preview.id} /></li>
                     ))}
                   </ul>
                 )}

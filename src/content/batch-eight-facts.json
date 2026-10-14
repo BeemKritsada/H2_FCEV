@@ -1,0 +1,12 @@
+{
+  "sourceSlide": 12,
+  "sourceSectionId": "adoption-barriers",
+  "purchase": { "startingPriceRmb": 300000, "costMultiple": [1.5, 4] },
+  "refueling": { "commonPressureMpa": 35, "limitedPressureMpa": 70 },
+  "operating": { "averageRetailRmbPerKg": 44.5 },
+  "images": {
+    "purchase": { "path": "challenges/fcev-sedan.webp", "size": [1600, 900] },
+    "refueling": { "path": "challenges/refueling-station.webp", "size": [1600, 1000], "source": "https://commons.wikimedia.org/wiki/File:Hydrogen_station_in_Jyv%C3%A4skyl%C3%A4.jpg", "credit": "Tiia Monto", "license": "CC BY 4.0", "licenseUrl": "https://creativecommons.org/licenses/by/4.0/" },
+    "operating": { "path": "challenges/hydrogen-nozzle.webp", "size": [1600, 1000], "source": "https://commons.wikimedia.org/wiki/File:Hydrogen_refueling.jpg", "credit": "Ogidya", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/" }
+  }
+}

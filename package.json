@@ -15,7 +15,19 @@
     "reference:render": "node scripts/check-reference-render.mjs",
     "batch-one:check": "node scripts/check-batch-one.mjs",
     "batch-two:check": "node scripts/check-batch-two.mjs",
-    "batch-three:check": "node scripts/check-batch-three.mjs"
+    "batch-three:check": "node scripts/check-batch-three.mjs",
+    "batch-four:check": "node scripts/check-batch-four.mjs",
+    "batch-four:browser": "node scripts/check-batch-four-browser.mjs",
+    "batch-five:check": "node scripts/check-batch-five.mjs",
+    "batch-five:browser": "node scripts/check-batch-five-browser.mjs",
+    "batch-seven:browser": "node scripts/check-batch-seven-browser.mjs",
+    "batch-eight:check": "node scripts/check-batch-eight.mjs",
+    "batch-eight:browser": "node scripts/check-batch-eight-browser.mjs",
+    "cold-chain:browser": "node scripts/check-cold-chain-browser.mjs",
+    "batch-nine:browser": "node scripts/check-batch-nine-browser.mjs",
+    "regional-map:browser": "node scripts/check-regional-map-browser.mjs",
+    "speaker-closing:browser": "node scripts/check-speaker-closing-browser.mjs",
+    "executive-hero:browser": "node scripts/check-executive-hero-browser.mjs"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.9",

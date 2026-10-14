@@ -1,30 +1,27 @@
-import { useEffect, useLayoutEffect, useRef } from 'react'
-import gsap from 'gsap'
-import { useMotion } from '../motion/motion-context'
+import { useContext, useLayoutEffect, useRef } from 'react'
+import { NumberSequenceContext } from '../motion/number-sequence-context'
+import { formatStatistic, type NumberFormat } from '../motion/number-format'
+import '../../styles/animated-number.css'
 
-/** DOM-only ticking: no per-frame React updates and no screen-reader announcements. */
-export function AnimatedNumber({ value, decimals = 0, active = true }: { value: number; decimals?: number; active?: boolean }) {
+type Props = NumberFormat & { value: number | readonly number[]; active?: boolean }
+
+/** Final accessible value stays stable; GSAP updates only the aria-hidden display. */
+export function AnimatedNumber({ value, decimals = 0, prefix = '', suffix = '', separator = '–', grouping = true }: Props) {
   const node = useRef<HTMLSpanElement>(null)
-  const tween = useRef<gsap.core.Tween | null>(null)
-  const { playing, reducedMotion } = useMotion()
-  const display = value.toFixed(decimals)
-
+  const register = useContext(NumberSequenceContext)
+  // Serialised so inline arrays do not re-register (and orphan) a running count.
+  const valuesKey = JSON.stringify(value)
+  const decimalsKey = JSON.stringify(decimals)
+  const display = formatStatistic(value, { decimals, prefix, suffix, separator, grouping })
   useLayoutEffect(() => {
-    if (reducedMotion || !node.current) return
-    const state = { value: 0 }
-    const element = node.current
-    tween.current = gsap.to(state, {
-      value, duration: 1.7, delay: 0.2, ease: 'power2.out', paused: true,
-      onUpdate: () => { element.textContent = state.value.toFixed(decimals) },
-    })
-    return () => { tween.current?.kill(); element.textContent = value.toFixed(decimals) }
-  }, [value, decimals, reducedMotion])
-
-  useEffect(() => {
-    if (playing && active) tween.current?.play()
-    else if (tween.current?.progress() === 0) tween.current.progress(1)
-    else tween.current?.pause()
-  }, [playing, active, reducedMotion])
-
-  return <><span className="sr-only">{display}</span><span aria-hidden="true" ref={node}>{display}</span></>
+    if (!node.current || !register) return
+    const values = JSON.parse(valuesKey) as number | number[]
+    const places = JSON.parse(decimalsKey) as number | number[]
+    return register({ node: node.current, render: (progress) => formatStatistic(values, { decimals: places, prefix, suffix, separator, grouping }, progress) })
+  }, [register, valuesKey, decimalsKey, prefix, suffix, separator, grouping])
+  return <span className="animated-number" data-statistic={display}>
+    <span className="sr-only">{display}</span>
+    <span className="animated-number__width" aria-hidden="true">{display}</span>
+    <span className="animated-number__tick" aria-hidden="true" ref={node}>{display}</span>
+  </span>
 }

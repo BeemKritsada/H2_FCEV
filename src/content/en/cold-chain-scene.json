@@ -1,0 +1,48 @@
+{
+  "eyebrow": "HYDROGEN · COLD-CHAIN LOGISTICS",
+  "title": "Why FCEV Fits Cold-Chain Logistics",
+  "subtitle": "Comparing fuel-cell and battery-electric trucks for refrigerated freight",
+  "bev": "BEV refrigerated truck",
+  "fcev": "FCEV refrigerated truck",
+  "bevAlt": "Illustrative battery-electric refrigerated truck, white body with blue accents",
+  "fcevAlt": "Illustrative hydrogen fuel-cell refrigerated truck, white body with blue and green accents",
+  "selector": "Choose a comparison topic",
+  "source": "Source: Briefing material",
+  "assetNote": "Conceptual vehicle renders · not specific production models",
+  "scope": "Figures describe an example cold-chain scenario; actual results depend on vehicle, load, route and infrastructure.",
+  "units": { "minutes": "MIN", "hours": "HR", "kilometers": "KM" },
+  "topics": {
+    "energy": {
+      "short": "Energy load",
+      "bevLabel": "Propulsion + cooling",
+      "bevCallout": "Both systems draw electrical energy throughout the trip.",
+      "fcevLabel": "Continuous duty potential",
+      "fcevCallout": "Fast hydrogen stops may help routes with sustained refrigeration demand.",
+      "explanation": "Refrigeration adds a continuous load to either truck. The operating advantage depends on the route and available refueling or charging."
+    },
+    "payload": {
+      "short": "Payload",
+      "bevLabel": "Battery mass",
+      "bevCallout": "A large battery pack can reduce the remaining payload allowance.",
+      "fcevLabel": "Payload potential",
+      "fcevCallout": "Some fuel-cell designs may retain more cargo capacity.",
+      "explanation": "Payload is vehicle-specific: compare complete truck mass and axle limits before drawing a conclusion."
+    },
+    "time": {
+      "short": "Refueling / charging time",
+      "bevLabel": "BEV charging in the example case",
+      "bevCallout": "At least 1–2 hours, depending on the charging setup.",
+      "fcevLabel": "Hydrogen refueling in the example case",
+      "fcevCallout": "Approximately 10–15 minutes for a fill.",
+      "explanation": "Shorter stops may help protect delivery schedules. These are scenario figures, not guaranteed times for every truck or station."
+    },
+    "range": {
+      "short": "Driving range",
+      "bevLabel": "BEV route planning",
+      "bevCallout": "Charging access and refrigeration demand must be included in the route plan.",
+      "fcevLabel": "Range per hydrogen fill",
+      "fcevCallout": "Approximately 500–800 km, as reported.",
+      "explanation": "The reported FCEV range can suit medium- and long-distance cold-chain work. The briefing material gives no comparable BEV range."
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "eyebrow": "HYDROGEN · FREIGHT RAIL",
+  "source": "Source: Briefing material",
+  "photo": "Photograph",
+  "freight": {
+    "title": "High-Power Hydrogen Freight Locomotive",
+    "subtitle": "A 2024 heavy-haul test in the Batuta corridor, Inner Mongolia",
+    "location": "Batuta · Inner Mongolia",
+    "photoAlt": "CHN Energy's 2,400 kW hydrogen freight locomotive at the Batuta–Zhunge’er railway test site",
+    "photoCaption": "2024 loading test · Batuta–Zhunge’er line",
+    "power": "Maximum locomotive power",
+    "haul": "Freight train on level track",
+    "duration": "Continuous operation on a full hydrogen tank, as reported",
+    "hours": "HOURS",
+    "tonnes": "TONNES",
+    "scope": "10,000 tonnes refers to the full train on level track; performance depends on operating conditions. Described in the briefing material as China's highest-power hydrogen locomotive."
+  },
+  "mining": {
+    "title": "Hydrogen Locomotives for Mining and Industry",
+    "subtitle": "Two power classes for industrial and mine railway applications",
+    "small": "700 kW locomotive",
+    "medium": "1,400 kW locomotive",
+    "smallAlt": "CRRC 700 kW hydrogen shunting locomotive hauling rail cars in snow",
+    "mediumAlt": "CRRC 1,400 kW hydrogen locomotive photographed in an industrial workshop",
+    "regions": "Pilot/test regions: Liaoning · Inner Mongolia · Hebei",
+    "benefit": "Lower Carbon Emissions Compared with Diesel Locomotives",
+    "benefitNote": "Some projects estimate reductions of several hundred tonnes per locomotive annually; the outcome depends on duty cycle and hydrogen supply.",
+    "scope": "Regions and the annual estimate are as reported; they do not indicate commercial operation or a lifecycle benefit in every case."
+  },
+  "deployment": {
+    "title": "Hydrogen Railway Deployment in China",
+    "subtitle": "Different technologies and project stages across the named locations",
+    "mapAlt": "Geographic map of China with nine city locations and three approximate freight pilot regions",
+    "select": "Select a location",
+    "cities": "Cities referenced",
+    "regions": "Freight pilot / test regions",
+    "mapNote": "Pins mark cities; rings mark approximate regions, not project sites or rail routes.",
+    "statusKnown": "Documented example",
+    "statusSource": "Named in supplied material; exact project status requires confirmation",
+    "statusRegion": "Pilot/test region named in supplied material; exact site requires confirmation",
+    "categories": {
+      "passenger": "Passenger / suburban",
+      "tourism": "Tourism tram",
+      "freight": "Freight / industrial",
+      "pilot": "Pilot or project reference"
+    },
+    "locations": {
+      "foshan": "Foshan",
+      "changchun": "Changchun",
+      "jilin": "Jilin",
+      "chengdu": "Chengdu",
+      "yibin": "Yibin",
+      "baotou": "Baotou",
+      "qinzhou": "Qinzhou",
+      "qingdao": "Qingdao",
+      "tangshan": "Tangshan",
+      "liaoning": "Liaoning",
+      "innerMongolia": "Inner Mongolia",
+      "hebei": "Hebei"
+    }
+  }
+}

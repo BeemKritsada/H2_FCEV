@@ -14,6 +14,7 @@ coverage/
 
 # Temporary output and logs
 .tmp/
+tmp/
 *.tmp
 *.log
 npm-debug.log*

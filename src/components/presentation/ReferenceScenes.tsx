@@ -97,7 +97,7 @@ export function ProductionMixScene({ count }: { count: number }) {
             <div className="mix-row__track" role="meter" aria-label={t(item.labelKey)} aria-valuemin={0} aria-valuemax={facts.productionMix.scaleMaximum} aria-valuenow={item.value} aria-valuetext={`${item.value}%`}>
               <div className="mix-row__fill" data-bar style={{ width: `${item.value / facts.productionMix.scaleMaximum * 100}%` }}><span className="energy-shimmer" style={{ animationDelay: `${index * -1.9}s` }} /></div>
             </div>
-            <strong className="mix-row__value" style={{ left: `${item.value}%` }} data-enter>{item.value}<span>%</span></strong>
+            <strong className="mix-row__value" style={{ left: `${item.value}%` }} data-enter><AnimatedNumber value={item.value} /><span>%</span></strong>
           </div>
         </div>
       })}

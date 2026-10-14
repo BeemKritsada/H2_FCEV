@@ -9,19 +9,11 @@ export function useVehicleMarketMotion(root: RefObject<HTMLElement | null>) {
   useLayoutEffect(() => {
     const node = root.current
     if (!node || motion.reducedMotion) return
-    const counter = node.querySelector<HTMLElement>('[data-fleet-count]')
-    const total = Number(counter?.dataset.fleetCount ?? 0)
-    const format = (value: number) => Math.round(value).toLocaleString('en-US')
     const context = gsap.context(() => {
       const sequence = gsap.timeline({ paused: true })
       timeline.current = sequence
       const vehicles = node.querySelectorAll('[data-market-vehicle]')
       if (vehicles.length) sequence.from(vehicles, { x: 24, opacity: 0.15, scale: 0.97, duration: 0.95, stagger: 0.22, ease: 'power3.out' }, 0)
-      if (counter && Number.isFinite(total)) {
-        const count = { value: 0 }
-        counter.textContent = format(0)
-        sequence.to(count, { value: total, duration: 1.5, ease: 'power2.out', onUpdate: () => { counter.textContent = format(count.value) } }, 0.25)
-      }
       const sales = node.querySelector('[data-monthly-sales]')
       if (sales) sequence.from(sales, { opacity: 0.5, y: 7, duration: 0.6, ease: 'power2.out' }, 1.05)
       const path = node.querySelector('[data-market-track]')
@@ -35,7 +27,6 @@ export function useVehicleMarketMotion(root: RefObject<HTMLElement | null>) {
     }, node)
     return () => {
       context.revert(); timeline.current = null
-      if (counter) counter.textContent = format(total)
     }
   }, [root, motion.reducedMotion])
   // Finish the reveal when paused so the presenter never holds an intermediate count.

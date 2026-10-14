@@ -1,0 +1,237 @@
+.batch-four-scene {
+  --batch-blue: #0753c8;
+  --batch-deep: #07398f;
+  --batch-cyan: #00a8e8;
+  --batch-green: #16a56a;
+  --batch-orange: #f59e0b;
+  display: flex;
+  min-width: 0;
+  gap: clamp(8px, 1.15svh, 14px);
+  padding-top: clamp(18px, 2.5svh, 30px);
+  padding-bottom: 12px;
+  overflow-x: clip;
+}
+.batch-four-scene h1 { max-width: 1500px; font-size: clamp(36px, 3.35vw, 64px); line-height: 1.16; letter-spacing: -.045em; }
+:lang(th) .batch-four-scene h1 { line-height: 1.28; letter-spacing: -.025em; }
+.batch-four-heading { display: grid; grid-template-columns: minmax(0, 1fr); gap: 7px; }
+.batch-four-heading p { max-width: 1440px; margin: 0; color: var(--muted); font-size: clamp(18px, 1.35vw, 25px); line-height: 1.5; }
+.batch-four-source { display: flex; align-items: center; justify-content: space-between; gap: 18px; min-height: 20px; color: #708397; font-size: 11px; line-height: 1.4; }
+.batch-four-source span:last-child { text-align: right; }
+
+/* Scene 12: one connected renewable-to-hydrogen process, with presenter-held modes. */
+.storage-controls { display: flex; justify-self: end; align-self: end; gap: 4px; margin-left: auto; padding: 4px; border: 1px solid #d6e3ed; border-radius: 8px; background: #f4f8fb; }
+.storage-controls button { min-height: 39px; padding: 8px 18px; border: 0; border-radius: 5px; background: transparent; color: #49647d; font: inherit; font-size: 15px; font-weight: 550; cursor: pointer; transition: color 180ms ease, background-color 180ms ease, box-shadow 180ms ease; }
+.storage-controls button[aria-pressed="true"] { background: #fff; color: var(--batch-blue); box-shadow: 0 1px 5px #15395c18; }
+.storage-controls button:focus-visible, .backup-scenario:focus-visible, .backup-sequence-button:focus-visible { outline: 3px solid #00a8e880; outline-offset: 3px; }
+.energy-system { display: grid; min-width: 0; flex: 1; align-items: center; margin: 0; }
+.energy-system__art { display: block; width: 100%; max-height: 53svh; height: auto; }
+.energy-art-label { fill: #274a68; font-family: Inter, 'Noto Sans Thai', sans-serif; font-size: 19px; font-weight: 600; }
+.flow-track { fill: none; stroke: #cddce6; stroke-width: 8; stroke-linecap: round; }
+.flow-path { fill: none; stroke-width: 7; stroke-linecap: round; stroke-dasharray: 13 17; opacity: 0; transition: opacity 280ms ease; }
+.flow-path--renewable { stroke: var(--batch-green); }
+.flow-path--hydrogen-store, .flow-path--hydrogen-supply { stroke: var(--batch-blue); }
+.flow-path--grid { stroke: var(--batch-green); }
+.power-storage-scene[data-mode="store"] .flow-path--renewable,
+.power-storage-scene[data-mode="store"] .flow-path--hydrogen-store,
+.power-storage-scene[data-mode="supply"] .flow-path--hydrogen-supply,
+.power-storage-scene[data-mode="supply"] .flow-path--grid { opacity: 1; }
+.energy-facility, .energy-grid, [data-component="renewables"] { opacity: .72; transition: opacity 320ms ease, filter 320ms ease; }
+.energy-facility[data-active="true"], .energy-grid[data-active="true"], [data-component="renewables"][data-active="true"] { opacity: 1; filter: drop-shadow(0 3px 5px #1262a518); }
+.energy-turbine__rotor { transform-box: fill-box; transform-origin: center; }
+.storage-summary { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 18px; min-width: 0; border-top: 1px solid var(--line); padding-top: 9px; }
+.storage-summary__status { display: inline-flex; align-items: center; gap: 8px; color: var(--batch-blue); font-size: 15px; font-weight: 650; white-space: nowrap; }
+.storage-summary__status i { width: 8px; height: 8px; border-radius: 50%; background: var(--batch-green); box-shadow: 0 0 0 4px #16a56a18; }
+.storage-summary__content { display: grid; gap: 2px; min-width: 0; }
+.storage-summary p { margin: 0; color: #345674; font-size: clamp(16px, 1.15vw, 21px); line-height: 1.45; }
+.storage-summary__content > span { color: #348264; font-size: 13px; line-height: 1.35; }
+.storage-summary__note { color: #728599; font-size: 12px; text-align: right; }
+.power-storage-scene[data-motion="running"] .energy-turbine__rotor { animation: energy-turbine-turn 18s linear infinite; }
+.power-storage-scene[data-motion="running"][data-mode="store"] .flow-path--renewable,
+.power-storage-scene[data-motion="running"][data-mode="store"] .flow-path--hydrogen-store,
+.power-storage-scene[data-motion="running"][data-mode="supply"] .flow-path--hydrogen-supply,
+.power-storage-scene[data-motion="running"][data-mode="supply"] .flow-path--grid { animation: energy-flow-dash 2.8s linear infinite; }
+.power-storage-scene[data-motion="running"][data-mode="store"] .energy-solar > g:nth-child(4n + 1) path:first-child { animation: solar-surface-pulse 3.6s ease-in-out infinite; }
+@keyframes energy-turbine-turn { to { transform: rotate(360deg); } }
+@keyframes energy-flow-dash { to { stroke-dashoffset: -60; } }
+@keyframes solar-surface-pulse { 0%, 100% { opacity: .86; } 50% { opacity: 1; } }
+
+/* Scene 13: scenario focus and a manually triggered, four-step backup sequence. */
+.backup-showcase { display: grid; min-height: 0; flex: 1; grid-template-rows: minmax(0, 1fr) auto auto; gap: clamp(8px, 1.1svh, 13px); }
+.backup-scenarios { display: grid; min-height: 0; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(12px, 1.45vw, 24px); }
+.backup-scenario { position: relative; display: grid; min-width: 0; grid-template-rows: minmax(0, 1fr) auto; align-content: stretch; gap: 7px; overflow: hidden; padding: clamp(8px, .85vw, 14px); border: 1px solid #dce7ef; border-radius: 9px; background: linear-gradient(155deg, #fff, #f7fafc); color: inherit; text-align: left; cursor: pointer; transition: opacity 240ms ease, border-color 240ms ease, box-shadow 240ms ease, transform 240ms ease; }
+.backup-scenario[data-selected="false"] { opacity: .76; }
+.backup-scenario[data-selected="true"] { border-color: #77add2; box-shadow: 0 7px 24px #133b5d12; transform: translateY(-2px); }
+.backup-scenario__art { display: block; width: 100%; height: clamp(170px, 25svh, 270px); overflow: hidden; border-radius: 5px; }
+.backup-scenario__copy { display: grid; gap: 3px; padding: 0 4px 2px; }
+.backup-scenario__copy strong { color: #1e3956; font-size: clamp(18px, 1.35vw, 23px); font-weight: 620; line-height: 1.3; }
+.backup-scenario__copy > span { color: #647b90; font-size: clamp(14px, .95vw, 17px); line-height: 1.35; }
+.backup-scenario__selection { position: absolute; top: 15px; right: 15px; display: grid; width: 20px; height: 20px; place-items: center; border: 1px solid #91a9ba; border-radius: 50%; background: #fff; }
+.backup-scenario__selection i { width: 9px; height: 9px; border-radius: 50%; background: transparent; }
+.backup-scenario[data-selected="true"] .backup-scenario__selection { border-color: var(--batch-blue); }
+.backup-scenario[data-selected="true"] .backup-scenario__selection i { background: var(--batch-blue); }
+.scenario-flow { fill: none; stroke-width: 5; stroke-linecap: round; stroke-dasharray: 9 12; transition: opacity 260ms ease; }
+.scenario-flow--grid { stroke: var(--batch-green); opacity: .95; }
+.scenario-flow--hydrogen { stroke: var(--batch-blue); opacity: 0; }
+.scenario-flow--backup { stroke: var(--batch-green); opacity: 0; }
+.backup-scenario[data-power-state="interrupted"] .scenario-flow--grid,
+.backup-scenario[data-power-state="activating"] .scenario-flow--grid,
+.backup-scenario[data-power-state="restored"] .scenario-flow--grid { opacity: .08; }
+.backup-scenario[data-power-state="activating"] .scenario-flow--hydrogen,
+.backup-scenario[data-power-state="restored"] .scenario-flow--hydrogen { opacity: 1; }
+.backup-scenario[data-power-state="activating"] .scenario-flow--backup { opacity: .42; }
+.backup-scenario[data-power-state="restored"] .scenario-flow--backup { opacity: 1; }
+.backup-scenario[data-power-state="interrupted"] .backup-environment__building { opacity: .72; }
+.backup-scenario[data-power-state="interrupted"] .backup-window { fill: #71828d; }
+.backup-scenario[data-power-state="activating"] .backup-window,
+.backup-scenario[data-power-state="restored"] .backup-window { fill: #fff0b6; }
+.backup-scenario[data-power-state="normal"] .scenario-lamp { opacity: .5; }
+.backup-scenario[data-power-state="interrupted"] .scenario-lamp { opacity: 0; }
+.backup-scenario[data-power-state="activating"] .scenario-lamp,
+.backup-scenario[data-power-state="restored"] .scenario-lamp { opacity: 1; }
+.backup-unit text { fill: #345875; font: 600 12px Inter, 'Noto Sans Thai', sans-serif; }
+.backup-operations { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.backup-flow-legend { display: flex; flex-wrap: wrap; gap: clamp(15px, 2.4vw, 38px); color: #506b82; font-size: 14px; }
+.backup-flow-legend span { display: inline-flex; align-items: center; gap: 8px; }
+.backup-flow-legend i { display: inline-block; width: 22px; border-top: 3px solid var(--batch-green); }
+.backup-flow-legend__hydrogen i { border-color: var(--batch-blue); }
+.distributed-power-scene[data-motion="running"] .scenario-flow--grid { animation: energy-flow-dash 3.2s linear infinite; }
+.distributed-power-scene[data-motion="running"] .backup-scenario[data-power-state="activating"] .scenario-flow--hydrogen,
+.distributed-power-scene[data-motion="running"] .backup-scenario[data-power-state="activating"] .scenario-flow--backup,
+.distributed-power-scene[data-motion="running"] .backup-scenario[data-power-state="restored"] .scenario-flow--hydrogen,
+.distributed-power-scene[data-motion="running"] .backup-scenario[data-power-state="restored"] .scenario-flow--backup { animation: energy-flow-dash 2.8s linear infinite; }
+.backup-sequence-button { display: inline-flex; min-height: 39px; align-items: center; justify-content: center; gap: 9px; padding: 8px 14px; border: 1px solid #a9c8dd; border-radius: 6px; background: #f8fcfe; color: var(--batch-blue); font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; transition: background-color 180ms ease, border-color 180ms ease; }
+.backup-sequence-button:hover { border-color: #6ea3ca; background: #edf7fc; }
+.backup-sequence { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; list-style: none; padding: 0; margin: 0; border-top: 1px solid #d9e5ed; }
+.backup-sequence li { display: flex; min-width: 0; align-items: center; gap: 9px; padding: 8px 9px 0; color: #8798a7; font-size: 13px; line-height: 1.3; transition: color 220ms ease; }
+.backup-sequence li + li { border-left: 1px solid #e4edf3; }
+.backup-sequence li > span { color: #9aabba; font-size: 11px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.backup-sequence li[data-current="true"] { color: var(--batch-blue); font-weight: 650; }
+.backup-sequence li[data-current="true"] > span { color: var(--batch-blue); }
+.backup-sequence li[data-complete="true"] { color: #498b6e; }
+.chp-note { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: clamp(12px, 2vw, 30px); border-top: 1px solid var(--line); padding: 9px 0 2px; }
+.chp-note__flow { max-width: 560px; color: var(--batch-blue); font-size: clamp(14px, 1.05vw, 18px); font-weight: 650; line-height: 1.4; }
+.chp-note__flow b { color: #6b91ad; padding-inline: 4px; }
+.chp-note h2 { margin: 0; color: #244565; font-size: clamp(16px, 1.2vw, 20px); font-weight: 600; line-height: 1.35; }
+.chp-note p { margin: 2px 0 0; color: #708397; font-size: 13px; line-height: 1.4; }
+.chp-note__pilot { color: #448269; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-align: right; text-transform: uppercase; }
+
+/* Scene 14: two distinct fuel inputs, a simplified combustion process, and grid output. */
+.cofiring-diagram { display: grid; min-width: 0; flex: 1; align-items: center; margin: 0; overflow: hidden; }
+.cofiring-diagram svg { display: block; width: 100%; max-height: 53svh; height: auto; }
+.cofire-art-label { fill: #2f4d66; font-family: Inter, 'Noto Sans Thai', sans-serif; font-size: 19px; font-weight: 650; }
+.cofire-art-label--blue { fill: #0753c8; }
+.cofire-art-label--green { fill: #26795c; }
+.cofire-art-note { fill: #73899a; font-family: Inter, 'Noto Sans Thai', sans-serif; font-size: 15px; }
+.cofire-art-caption { fill: #647d91; font-family: Inter, 'Noto Sans Thai', sans-serif; font-size: 16px; font-weight: 550; }
+.cofire-flow { fill: none; stroke-width: 8; stroke-linecap: round; stroke-dasharray: 12 16; }
+.cofire-flow--coal { stroke: #66788a; }
+.cofire-flow--hydrogen { stroke: var(--batch-blue); }
+.cofire-flow--steam { stroke: #63b9d3; stroke-width: 11; stroke-dasharray: 7 15; }
+.cofire-flow--power { stroke: var(--batch-green); }
+.cofiring-scene[data-motion="running"] .cofire-flow { animation: cofire-flow-run 3s linear infinite; }
+.steam-turbine__rotor { transform-box: fill-box; transform-origin: center; }
+.cofiring-scene[data-motion="running"] .steam-turbine__rotor { animation: turbine-slow-turn 5s linear infinite; }
+@keyframes cofire-flow-run { to { stroke-dashoffset: -56; } }
+@keyframes turbine-slow-turn { to { transform: rotate(360deg); } }
+.cofiring-takeaway { display: grid; grid-template-columns: 6px minmax(0, 1fr) auto; align-items: center; gap: 14px; border-top: 1px solid #dbe7ee; padding-top: 10px; }
+.cofiring-takeaway__mark { display: block; width: 4px; height: 100%; min-height: 34px; border-radius: 3px; background: var(--batch-green); }
+.cofiring-takeaway strong { color: #237454; font-size: clamp(16px, 1.2vw, 21px); font-weight: 650; line-height: 1.4; }
+.cofiring-takeaway p { margin: 3px 0 0; color: #718699; font-size: 13px; line-height: 1.4; }
+.cofiring-takeaway__flow { max-width: 440px; color: #59738b; font-size: 13px; line-height: 1.4; text-align: right; }
+
+@media (min-width: 1700px) {
+  .batch-four-scene { gap: 13px; }
+  .batch-four-heading p { max-width: 1550px; }
+  .storage-controls button { min-height: 42px; font-size: 16px; }
+  .backup-scenario__art { height: clamp(220px, 27svh, 300px); }
+}
+@media (min-width: 761px) and (max-height: 800px) {
+  .batch-four-scene { gap: 7px; padding-top: 14px; padding-bottom: 7px; }
+  .batch-four-scene h1 { font-size: clamp(34px, 3vw, 44px); }
+  .batch-four-heading p { font-size: 17px; line-height: 1.35; }
+  .storage-controls button { min-height: 34px; padding-block: 5px; font-size: 14px; }
+  .energy-system__art { max-height: 39svh; }
+  .storage-summary { gap: 12px; padding-top: 6px; }
+  .storage-summary p { font-size: 16px; }
+  .storage-summary__note { font-size: 11px; }
+  .backup-scenario__art { height: clamp(145px, 21svh, 176px); }
+  .backup-scenario__copy strong { font-size: 17px; }
+  .backup-scenario__copy > span { font-size: 13px; }
+  .backup-sequence li { padding: 6px 6px 0; font-size: 12px; }
+  .chp-note { padding-top: 6px; }
+  .chp-note p { font-size: 11px; }
+  .cofiring-diagram svg { max-height: 39svh; }
+  .cofiring-takeaway { padding-top: 7px; }
+  .cofiring-takeaway strong { font-size: 17px; }
+}
+@media (max-width: 1100px) {
+  .batch-four-scene { padding-inline: 32px; }
+  .batch-four-scene h1 { font-size: clamp(34px, 4vw, 48px); }
+  .storage-summary { grid-template-columns: auto minmax(0, 1fr); }
+  .storage-summary__note { grid-column: 1 / -1; text-align: left; }
+  .backup-scenario__copy strong { font-size: 18px; }
+  .backup-scenario__copy > span { font-size: 14px; }
+  .chp-note { grid-template-columns: auto minmax(0, 1fr); }
+  .chp-note__pilot { grid-column: 2; text-align: left; }
+}
+@media (max-width: 760px) {
+  .batch-four-scene { gap: 12px; padding: 25px 24px 22px; overflow-y: auto; }
+  .batch-four-scene h1 { font-size: clamp(31px, 7.2vw, 42px); line-height: 1.22; }
+  .batch-four-heading p { font-size: 17px; }
+  .batch-four-source { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .batch-four-source span:last-child { text-align: left; }
+  .storage-controls { width: 100%; margin-left: 0; }
+  .storage-controls button { flex: 1; min-height: 42px; padding-inline: 7px; font-size: 14px; }
+  .energy-system { display: block; overflow-x: auto; overscroll-behavior-inline: contain; }
+  .energy-system__art { width: 850px; max-width: none; max-height: none; }
+  .storage-summary { grid-template-columns: 1fr; gap: 6px; }
+  .storage-summary__note { grid-column: auto; }
+  .backup-scenarios { grid-template-columns: 1fr; gap: 10px; }
+  .backup-scenario { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); grid-template-rows: auto; align-items: center; }
+  .backup-scenario__art { grid-column: 1; grid-row: 1; height: clamp(115px, 34vw, 165px); }
+  .backup-scenario__copy { grid-column: 2; grid-row: 1; padding-inline: 10px 26px; }
+  .backup-scenario__copy strong { font-size: 17px; }
+  .backup-scenario__copy > span { font-size: 13px; }
+  .backup-scenario__selection { top: 10px; right: 10px; }
+  .backup-operations { align-items: flex-start; flex-direction: column; gap: 10px; }
+  .backup-flow-legend { font-size: 12px; }
+  .backup-sequence { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 5px; }
+  .backup-sequence li { min-height: 37px; padding: 5px; font-size: 12px; }
+  .backup-sequence li:nth-child(3) { border-left: 0; }
+  .chp-note { grid-template-columns: 1fr; gap: 5px; }
+  .chp-note__pilot { grid-column: auto; }
+  .cofiring-diagram { display: block; overflow-x: auto; overscroll-behavior-inline: contain; }
+  .cofiring-diagram svg { width: 1080px; max-width: none; max-height: none; }
+  .cofiring-takeaway { grid-template-columns: 5px minmax(0, 1fr); }
+  .cofiring-takeaway__flow { grid-column: 2; max-width: none; text-align: left; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .batch-four-scene *, .batch-four-scene *::before, .batch-four-scene *::after { animation: none !important; transition: none !important; }
+}
+
+/* Rotors turn about their hub (local origin), not the off-centre bounding box of the blades. */
+.energy-turbine__rotor { transform-box: view-box; transform-origin: 0 0; }
+.cofire-track { fill: none; stroke: #d6e0e7; stroke-width: 12; stroke-linecap: round; }
+.backup-window { transition: fill 320ms ease; }
+.scenario-lamp, .backup-environment__building { transition: opacity 320ms ease; }
+.energy-system, .cofiring-diagram { position: relative; }
+.storage-controls { justify-self: end; }
+
+/* Desktop: the scene owns exactly one screen; diagrams take the remaining height and scale to fit. */
+@media (min-width: 1101px) {
+  .reference-scene.batch-four-scene { box-sizing: border-box; height: calc(100svh - 164px); flex: 0 0 auto; }
+  .energy-system, .cofiring-diagram { flex: 1 1 0; min-height: 0; display: block; }
+  .energy-system__art, .cofiring-diagram svg { position: absolute; inset: 0; width: 100%; height: 100%; max-height: none; }
+  .storage-controls { position: absolute; top: 10px; right: 10px; z-index: 1; box-shadow: 0 2px 10px #15395c14; background: #f4f8fbf2; }
+  .backup-showcase { flex: 1 1 0; min-height: 0; }
+  .backup-scenario { min-height: 0; }
+  .backup-scenario__art { height: 100%; min-height: 0; }
+}
+@media (min-width: 1101px) and (max-height: 800px) {
+  .batch-four-scene h1 { font-size: clamp(30px, 2.6vw, 38px); }
+  :lang(th) .batch-four-scene h1 { font-size: clamp(28px, 2.4vw, 36px); }
+  .batch-four-heading p { font-size: 15px; }
+}
+@media (max-width: 760px) {
+  .storage-controls { position: sticky; left: 0; margin-bottom: 8px; }
+}

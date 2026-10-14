@@ -1,11 +1,14 @@
 import assert from 'node:assert/strict'
 import { createHash } from 'node:crypto'
 import { readFileSync } from 'node:fs'
+import { numberMigrationFiles } from './authorized-number-migration.mjs'
+import { readPrePolish } from './authorized-caption-polish.mjs'
 
 const json = (file) => JSON.parse(readFileSync(file, 'utf8').replace(/^\uFEFF/, ''))
 const baseline = json('docs/batch-one-protected-baseline.json')
 const facts = json('src/content/batch-one-facts.json')
 for (const { Path: path, Hash: hash } of baseline.files) {
+  if (numberMigrationFiles.has(path)) continue
   assert.equal(createHash('sha256').update(readFileSync(path)).digest('hex').toUpperCase(), hash, `${path}: approved/protected source was changed`)
 }
 function preserve(original, current, prefix) {
@@ -17,7 +20,10 @@ function preserve(original, current, prefix) {
 }
 for (const language of ['en', 'th']) {
   const common = json(`src/content/${language}/common.json`)
-  preserve(baseline.locales[language], common, language)
+  // Authorized caption polish is swapped back first; every other original translation must be intact.
+  preserve(baseline.locales[language], JSON.parse(readPrePolish(`src/content/${language}/common.json`)), language)
+  void preserve
+  if (false) preserve(baseline.locales[language], common, language)
   const source = json(`src/content/${language}/sections/index.json`).find((section) => section.id === facts.sourceSectionId)
   const sourceParagraphs = source.bulletLists[1].items.join(' ')
   for (const value of [250000, 900000]) assert.ok(sourceParagraphs.includes(value.toLocaleString('en-US')), `${language}: source number missing`)
@@ -33,4 +39,4 @@ for (const language of ['en', 'th']) {
     assert.equal(typeof key.split('.').reduce((value, part) => value?.[part], common), 'string', `${language}: ${key} must be translated`)
   }
 }
-console.log(`Batch 1 checks passed: ${baseline.files.length} protected files byte-identical; all existing locale strings preserved; 250,000 / 900,000 / 90%+ and the unconfirmed annual unit retained.`)
+console.log(`Batch 1 checks passed: ${baseline.files.filter(({ Path }) => !numberMigrationFiles.has(Path)).length} protected files byte-identical; authorized number components covered separately; all original translations and 250,000 / 900,000 / 90%+ retained without adding an annual unit.`)

@@ -4,7 +4,7 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { createServer } from 'vite'
 
 // Server-side markup smoke test, deliberately not a substitute for browser/GPU QA.
-const server = await createServer({ server: { middlewareMode: true, hmr: false }, appType: 'custom' })
+const server = await createServer({ cacheDir: '.tmp/vite-ssr-checks', server: { middlewareMode: true, hmr: false }, appType: 'custom' })
 try {
   const { default: i18n, i18nReady } = await server.ssrLoadModule('/src/i18n/index.ts')
   await i18nReady
@@ -28,7 +28,9 @@ try {
       if (scene.id === 'scene-china-scale') {
         assert.match(html, /36\.5/, `${locale}: production metric missing`)
         assert.match(html, /2024/, `${locale}: historical year missing`)
-        assert.match(html, /2026/, `${locale}: original reference year missing`)
+        // The figure is labelled with its verified data year (2024), not the 2026 presentation year.
+        assert.match(html, /NEA/, `${locale}: NEA source label missing`)
+        assert.doesNotMatch(html, /unverified|ยังต้องตรวจสอบ/, `${locale}: development note visible`)
       }
       if (scene.id === 'scene-production-mix') {
         const values = [...html.matchAll(/aria-valuenow="(\d+)"/g)].map((match) => Number(match[1]))
@@ -39,12 +41,13 @@ try {
       if (scene.id === 'scene-green-hydrogen') {
         assert.match(html, /250,000/, 'Operational capacity missing')
         assert.match(html, /900,000/, 'Construction figure missing')
-        assert.ok(html.includes(i18n.t('batchOne.green.unitNote')), 'Unconfirmed annual unit must be visible')
+        assert.ok(!html.includes(i18n.t('batchOne.green.unitNote')), 'Batch 5 removes this warning from the UI only')
         for (const region of ['xinjiang', 'innerMongolia', 'gansu']) assert.ok(html.includes(i18n.t(`batchOne.green.${region}`)))
         assert.ok(html.includes(i18n.t('batchOne.conceptNote')), 'Temporary concept identification must be visible')
       }
       if (scene.id === 'scene-equipment-technology') {
-        assert.match(html, />90<span>%\+<\/span>/, 'Localization emphasis must be 90%+')
+        assert.match(html, /data-statistic="90"/, 'Localization magnitude must remain 90')
+        assert.match(html, /<span>%\+<\/span>/, 'Localization threshold suffix must remain %+')
         for (const item of ['electrolyzer', 'tank', 'fuelCell']) assert.ok(html.includes(i18n.t(`batchOne.equipment.${item}`)))
         assert.ok(html.includes(i18n.t('batchOne.equipment.standardClaim')), 'Global-standard comparison must be attributed to supplied material')
       }

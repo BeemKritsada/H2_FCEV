@@ -1,0 +1,116 @@
+{
+  "eyebrow": "REGIONAL DEPLOYMENT",
+  "title": "Regional Distribution of Hydrogen Deployment in China",
+  "intro": "Hydrogen projects and fuel-cell vehicle applications concentrate in four major industrial and demonstration clusters, with other projects distributed across the country.",
+  "overview": "National overview",
+  "overviewBack": "Back to national overview",
+  "selectorsLabel": "Select a region",
+  "hint": "Select a region below or on the map",
+  "mapAlt": "Map of China's provinces showing four hydrogen deployment clusters and other regions",
+  "overviewPanel": {
+    "label": "Overview",
+    "title": "Four main clusters + other regions",
+    "body": "Activity groups around the Greater Bay Area, Beijing–Tianjin–Hebei, the Yangtze River Delta and Chengdu–Chongqing. Other projects are spread across industrial and demonstration sites elsewhere.",
+    "note": "Groupings are for presentation purposes; they are not an official classification or a complete list of projects."
+  },
+  "regions": {
+    "gba": {
+      "short": "Greater Bay Area",
+      "name": "Guangdong–Hong Kong–Macao Greater Bay Area",
+      "area": "Guangdong Province · Greater Bay Area cities",
+      "body": "Guangdong is a major hydrogen industry center. Foshan is a prominent hub for refueling infrastructure and multiple vehicle demonstrations, while Guangzhou, Shenzhen, and Dongguan support industrial and port-oriented hydrogen logistics development.",
+      "statLabel": "hydrogen refueling stations across Guangdong Province",
+      "statNote": "Province-wide figure from the briefing material · reporting date not stated",
+      "imageAlt": "Gaoming hydrogen tram in Foshan, Guangdong, photographed by Nanfang Plus",
+      "imageCredit": "Photo: Nanfang Plus / 南方+ · Foshan Gaoming hydrogen tram"
+    },
+    "jjj": {
+      "short": "Beijing–Tianjin–Hebei",
+      "name": "Beijing–Tianjin–Hebei Hydrogen Cluster",
+      "area": "Beijing · Tianjin · Hebei Province",
+      "body": "The Beijing–Tianjin–Hebei region has a hydrogen demonstration foundation, including winter-sports-related deployment. Zhangjiakou, Tangshan, and Handan are associated with industrial and heavy transport applications, while Beijing has emphasized public transport and municipal service vehicles.",
+      "imageAlt": "Illustrative hydrogen tractor-trailer carrying steel coils in an industrial yard"
+    },
+    "yrd": {
+      "short": "Yangtze River Delta",
+      "name": "Yangtze River Delta",
+      "area": "Shanghai · Jiangsu · Zhejiang · Anhui",
+      "body": "Shanghai emphasizes port logistics and passenger fuel-cell vehicle demonstrations, while Jiaxing and Ningbo have urban logistics applications. Qingdao and Zibo in Shandong are related hydrogen industrial locations but lie outside the Yangtze River Delta region.",
+      "imageAlt": "Illustrative hydrogen heavy-duty truck in a container port"
+    },
+    "cc": {
+      "short": "Chengdu–Chongqing",
+      "name": "Chengdu–Chongqing Hydrogen Corridor",
+      "area": "Sichuan Province · Chongqing Municipality",
+      "body": "The Chengdu–Chongqing region is developing hydrogen bus and intercity temperature-controlled freight applications, focusing on western China's transport and logistics needs.",
+      "imageAlt": "Illustrative hydrogen fuel-cell refrigerated truck"
+    },
+    "other": {
+      "short": "Other Regions",
+      "name": "Other Industrial and Demonstration Regions",
+      "area": "Inner Mongolia · Shanxi · selected northeastern and southwestern locations",
+      "body": "Inner Mongolia and Shanxi feature heavy-duty industrial and mining transport applications. Selected northeastern and southwestern locations have distributed demonstration projects, with uneven refueling infrastructure availability.",
+      "imageAlt": "Illustrative hydrogen mining haul truck in an open-pit mine"
+    }
+  },
+  "applicationsLabel": "Applications",
+  "applications": {
+    "bus": "Hydrogen buses",
+    "tram": "Hydrogen trams",
+    "heavyTruck": "Heavy-duty trucks",
+    "twoWheeler": "Hydrogen two-wheelers",
+    "port": "Port logistics",
+    "cleaning": "Municipal cleaning vehicles",
+    "mining": "Mining & industrial haulage",
+    "demonstration": "Demonstration projects",
+    "passengerCar": "Passenger car demonstrations",
+    "urbanFreight": "Urban freight vehicles",
+    "coldChain": "Cold-chain logistics",
+    "intercity": "Intercity freight",
+    "industrial": "Industrial demonstrations",
+    "pilots": "Scattered pilot projects"
+  },
+  "cities": {
+    "foshan": "Foshan",
+    "guangzhou": "Guangzhou",
+    "shenzhen": "Shenzhen",
+    "dongguan": "Dongguan",
+    "beijing": "Beijing",
+    "tianjin": "Tianjin",
+    "zhangjiakou": "Zhangjiakou",
+    "tangshan": "Tangshan",
+    "handan": "Handan",
+    "shanghai": "Shanghai",
+    "jiaxing": "Jiaxing",
+    "ningbo": "Ningbo",
+    "qingdao": "Qingdao",
+    "zibo": "Zibo",
+    "chengdu": "Chengdu",
+    "chongqing": "Chongqing"
+  },
+  "provinces": {
+    "guangdong": "GUANGDONG",
+    "hebei": "HEBEI",
+    "jiangsu": "JIANGSU",
+    "anhui": "ANHUI",
+    "zhejiang": "ZHEJIANG",
+    "shandong": "SHANDONG · outside YRD",
+    "sichuan": "SICHUAN",
+    "inner-mongol": "INNER MONGOLIA",
+    "shanxi": "SHANXI"
+  },
+  "areas": {
+    "northeast": "Selected northeastern locations",
+    "southwest": "Selected southwestern locations"
+  },
+  "legendLabel": "Map legend",
+  "legend": {
+    "area": "Cluster area (province level)",
+    "city": "City referenced",
+    "external": "Related location outside the region",
+    "dispersed": "Dispersed pilots · no specific site shown"
+  },
+  "externalNote": "Qingdao and Zibo (Shandong) are shown as related locations outside the Yangtze River Delta.",
+  "conceptImage": "Conceptual illustration",
+  "source": "Source: Briefing material · Clusters are presentation groupings, not an official classification · Map: Natural Earth 1:50m (public domain) · City coordinates: GeoNames (CC BY 4.0)"
+}

@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import facts from '../../../content/batch-one-facts.json'
 import { useSceneMotion } from '../../motion/useSceneMotion'
 import { ConceptFallback } from './ConceptFallback'
+import { AnimatedNumber } from '../AnimatedNumber'
 import '../../../styles/batch-one-scenes.css'
 
 const HydrogenStage = lazy(() => import('./HydrogenStage'))
@@ -71,14 +72,13 @@ export function GreenHydrogenScene({ count, number }: { count: number; number: n
       <aside className="green-metrics" aria-label={t('batchOne.green.capacityLabel')}>
         <div className="green-metric green-metric--operating" data-enter>
           <span className="green-metric__status"><i className="batch-dot batch-dot--green" />{t('batchOne.green.operating')}</span>
-          <strong>{facts.greenHydrogen.operatingCapacity.value.toLocaleString('en-US')}</strong>
+          <strong><AnimatedNumber value={facts.greenHydrogen.operatingCapacity.value} /></strong>
           <span className="green-metric__unit">{t(facts.greenHydrogen.operatingCapacity.unitKey)}</span>
         </div>
         <div className="green-metric green-metric--construction" data-enter>
           <span className="green-metric__status"><i className="batch-dot batch-dot--orange" />{t('batchOne.green.construction')}</span>
-          <strong>{facts.greenHydrogen.underConstruction.value.toLocaleString('en-US')}</strong>
+          <strong><AnimatedNumber value={facts.greenHydrogen.underConstruction.value} /></strong>
           <span className="green-metric__unit">{t(facts.greenHydrogen.underConstruction.unitKey)}</span>
-          <p className="green-metric__caution">{t('batchOne.green.unitNote')}</p>
         </div>
       </aside>
     </div>
@@ -99,7 +99,7 @@ export function EquipmentTechnologyScene({ count, number }: { count: number; num
     <header className="equipment-heading">
       <div className="batch-heading" data-enter><h1 id="scene-title">{t('batchOne.equipment.title')}<span>{t('batchOne.equipment.titleAccent')}</span></h1></div>
       <div className="equipment-localization" data-enter>
-        <strong>{facts.equipment.localizationLowerBound}<span>%+</span></strong>
+        <strong><AnimatedNumber value={facts.equipment.localizationLowerBound} /><span>%+</span></strong>
         <span>{t('batchOne.equipment.localization')}</span>
       </div>
     </header>

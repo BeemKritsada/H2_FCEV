@@ -1,0 +1,828 @@
+{
+ "authorizedOn": "2026-10-15",
+ "reason": "Global presentation polish: audience-facing captions, notes and source labels rewritten; figures, units, years and names unchanged. See docs/content-verification.md.",
+ "changes": [
+  {
+   "path": "src/content/en/common.json",
+   "key": "batchOne.conceptNote",
+   "before": "Temporary concept models · not actual equipment or a documented site",
+   "after": "Conceptual visualization of hydrogen technology"
+  },
+  {
+   "path": "src/content/en/common.json",
+   "key": "batchOne.green.visualAlt",
+   "before": "Conceptual facility with wind turbines, solar panels, an electrolyzer and hydrogen storage. Green electricity flows toward electrolysis; blue hydrogen flows toward storage. This is a temporary illustration, not a documented Chinese facility.",
+   "after": "Conceptual facility with wind turbines, solar panels, an electrolyzer and hydrogen storage. Green electricity flows toward electrolysis; blue hydrogen flows toward storage. The illustration explains the process and does not depict a specific facility in China."
+  },
+  {
+   "path": "src/content/en/common.json",
+   "key": "batchOne.green.capacityLabel",
+   "before": "Source-stated green hydrogen project figures",
+   "after": "Green hydrogen project figures"
+  },
+  {
+   "path": "src/content/en/common.json",
+   "key": "batchOne.green.sourceNote",
+   "before": "Supplied figures · source slide {{slide}}; reporting date requires verification.",
+   "after": "Source: Briefing material · Data year not specified"
+  },
+  {
+   "path": "src/content/en/common.json",
+   "key": "batchOne.equipment.visualAlt",
+   "before": "Three simplified conceptual models: a skid-mounted electrolyzer, a high-pressure hydrogen storage tank and a fuel cell stack. Temporary placeholders without manufacturer-specific specifications.",
+   "after": "Three simplified conceptual models: a skid-mounted electrolyzer, a high-pressure hydrogen storage tank and a fuel cell stack. They do not represent any manufacturer's specifications."
+  },
+  {
+   "path": "src/content/en/common.json",
+   "key": "batchOne.equipment.standardClaim",
+   "before": "The supplied material describes the technology as comparable to global standards.",
+   "after": "The briefing material describes the technology as comparable to international standards."
+  },
+  {
+   "path": "src/content/en/common.json",
+   "key": "batchOne.equipment.sourceNote",
+   "before": "Source slide {{slide}} · localization scope, date and technology comparison require verification.",
+   "after": "Source: Briefing material · Data year and scope of the domestic share not specified"
+  },
+  {
+   "path": "src/content/en/common.json",
+   "key": "reference.overview.mapCaption",
+   "before": "Illustrative energy network · not station locations or actual routes",
+   "after": "Conceptual hydrogen infrastructure network"
+  },
+  {
+   "path": "src/content/en/common.json",
+   "key": "reference.overview.sourceNote",
+   "before": "Presentation reference: {{edition}} · NEA supports this production figure for {{year}}; the 2026 reporting period remains unverified.",
+   "after": "Source: National Energy Administration of China (NEA) · Data year: {{year}}"
+  },
+  {
+   "path": "src/content/en/common.json",
+   "key": "reference.mix.coalDetail",
+   "before": "Grey hydrogen in the supplied material",
+   "after": "Classified as grey hydrogen"
+  },
+  {
+   "path": "src/content/en/common.json",
+   "key": "reference.mix.totalNote",
+   "before": "The three source-stated categories total {{total}}%. No additional category is added.",
+   "after": "The three main categories total {{total}}%; the remainder is not specified in the source."
+  },
+  {
+   "path": "src/content/en/common.json",
+   "key": "reference.mix.sourceNote",
+   "before": "Supplied values retained · NEA report identifies the matching production structure as {{year}} data.",
+   "after": "Source: National Energy Administration of China (NEA) · Production-structure data year: {{year}}"
+  },
+  {
+   "path": "src/content/en/common.json",
+   "key": "reference.sourceLink",
+   "before": "NEA source report",
+   "after": "NEA report"
+  },
+  {
+   "path": "src/content/en/common.json",
+   "key": "visuals.conceptVehicle",
+   "before": "Concept illustration · generic vehicle",
+   "after": "Conceptual hydrogen truck visualization"
+  },
+  {
+   "path": "src/content/en/common.json",
+   "key": "visuals.shareNote",
+   "before": "Source-stated shares total 98%. The remainder is not specified; bars use a 0–100% scale.",
+   "after": "Stated shares total 98%; the remainder is not specified. Bars use a 0–100% scale."
+  },
+  {
+   "path": "src/content/en/common.json",
+   "key": "visuals.schematic",
+   "before": "Illustrative schematic · not an engineering specification",
+   "after": "Conceptual schematic · not an engineering specification"
+  },
+  {
+   "path": "src/content/th/common.json",
+   "key": "batchOne.conceptNote",
+   "before": "โมเดลแนวคิดชั่วคราว · ไม่ใช่อุปกรณ์หรือสถานที่จริง",
+   "after": "ภาพจำลองแนวคิดเทคโนโลยีพลังงานไฮโดรเจน"
+  },
+  {
+   "path": "src/content/th/common.json",
+   "key": "batchOne.green.visualAlt",
+   "before": "ภาพแนวคิดโรงงานที่มีกังหันลม แผงโซลาร์เซลล์ เครื่องแยกน้ำ และถังเก็บไฮโดรเจน ไฟฟ้าสีเขียวไหลสู่เครื่องแยกน้ำ และไฮโดรเจนสีน้ำเงินไหลไปยังถังเก็บ เป็นภาพชั่วคราว ไม่ใช่โรงงานจริงในจีน",
+   "after": "ภาพแนวคิดโรงงานที่มีกังหันลม แผงโซลาร์เซลล์ เครื่องแยกน้ำ และถังเก็บไฮโดรเจน ไฟฟ้าสีเขียวไหลสู่เครื่องแยกน้ำ และไฮโดรเจนสีน้ำเงินไหลไปยังถังเก็บ ภาพนี้อธิบายกระบวนการ ไม่ได้แสดงโรงงานแห่งใดในจีน"
+  },
+  {
+   "path": "src/content/th/common.json",
+   "key": "batchOne.green.capacityLabel",
+   "before": "ตัวเลขโครงการไฮโดรเจนสีเขียวตามต้นฉบับ",
+   "after": "ตัวเลขโครงการไฮโดรเจนสีเขียว"
+  },
+  {
+   "path": "src/content/th/common.json",
+   "key": "batchOne.green.sourceNote",
+   "before": "ตัวเลขตามสไลด์ต้นฉบับ {{slide}} · ช่วงเวลาของข้อมูลยังต้องตรวจสอบ",
+   "after": "ที่มา: เอกสารประกอบการบรรยาย · ไม่ระบุปีของข้อมูล"
+  },
+  {
+   "path": "src/content/th/common.json",
+   "key": "batchOne.equipment.visualAlt",
+   "before": "โมเดลแนวคิดอย่างง่ายสามชนิด ได้แก่ เครื่องแยกน้ำพร้อมฐาน ถังเก็บไฮโดรเจนความดันสูง และชุดเซลล์เชื้อเพลิง ใช้เป็นภาพชั่วคราวโดยไม่อ้างอิงสเปกของผู้ผลิตรายใด",
+   "after": "โมเดลแนวคิดอย่างง่ายสามชนิด ได้แก่ เครื่องแยกน้ำพร้อมฐาน ถังเก็บไฮโดรเจนความดันสูง และชุดเซลล์เชื้อเพลิง ไม่ได้อ้างอิงสเปกของผู้ผลิตรายใด"
+  },
+  {
+   "path": "src/content/th/common.json",
+   "key": "batchOne.equipment.standardClaim",
+   "before": "ต้นฉบับระบุว่าเทคโนโลยีเทียบเท่ามาตรฐานระดับโลก",
+   "after": "เอกสารประกอบการบรรยายระบุว่าเทคโนโลยีอยู่ในระดับเทียบเท่ามาตรฐานสากล"
+  },
+  {
+   "path": "src/content/th/common.json",
+   "key": "batchOne.equipment.sourceNote",
+   "before": "สไลด์ต้นฉบับ {{slide}} · ยังต้องยืนยันขอบเขตและปีของสัดส่วนผลิตในประเทศ รวมถึงเกณฑ์เปรียบเทียบเทคโนโลยี",
+   "after": "ที่มา: เอกสารประกอบการบรรยาย · ไม่ระบุปีและขอบเขตของสัดส่วนการผลิตในประเทศ"
+  },
+  {
+   "path": "src/content/th/common.json",
+   "key": "reference.overview.mapCaption",
+   "before": "เครือข่ายพลังงานเชิงแนวคิด · ไม่ใช่ตำแหน่งสถานีหรือเส้นทางจริง",
+   "after": "ภาพจำลองแนวคิดการเชื่อมโยงโครงสร้างพื้นฐานไฮโดรเจน"
+  },
+  {
+   "path": "src/content/th/common.json",
+   "key": "reference.overview.sourceNote",
+   "before": "ปีอ้างอิงการนำเสนอ: {{edition}} · NEA ยืนยันตัวเลขนี้สำหรับปี {{year}} ส่วนช่วงข้อมูลปี 2026 ยังต้องตรวจสอบ",
+   "after": "ที่มา: สำนักงานพลังงานแห่งชาติจีน (NEA) · ข้อมูลปี {{year}}"
+  },
+  {
+   "path": "src/content/th/common.json",
+   "key": "reference.mix.coalDetail",
+   "before": "ต้นฉบับจัดเป็นไฮโดรเจนสีเทา",
+   "after": "จัดเป็นไฮโดรเจนสีเทา"
+  },
+  {
+   "path": "src/content/th/common.json",
+   "key": "reference.mix.totalNote",
+   "before": "สามหมวดตามต้นฉบับรวม {{total}}% โดยไม่เพิ่มหมวดใหม่",
+   "after": "สามหมวดหลักรวมกัน {{total}}% ส่วนที่เหลือไม่ได้ระบุในแหล่งข้อมูล"
+  },
+  {
+   "path": "src/content/th/common.json",
+   "key": "reference.mix.sourceNote",
+   "before": "คงค่าตัวเลขจากต้นฉบับ · รายงาน NEA ระบุโครงสร้างการผลิตที่ตรงกันเป็นข้อมูลปี {{year}}",
+   "after": "ที่มา: สำนักงานพลังงานแห่งชาติจีน (NEA) · ข้อมูลโครงสร้างการผลิตปี {{year}}"
+  },
+  {
+   "path": "src/content/th/common.json",
+   "key": "reference.sourceLink",
+   "before": "รายงานอ้างอิง NEA",
+   "after": "รายงาน NEA"
+  },
+  {
+   "path": "src/content/th/common.json",
+   "key": "visuals.conceptVehicle",
+   "before": "ภาพแนวคิด · ไม่ระบุรุ่นรถจริง",
+   "after": "ภาพจำลองรถบรรทุกไฮโดรเจนเชิงแนวคิด"
+  },
+  {
+   "path": "src/content/th/common.json",
+   "key": "visuals.shareNote",
+   "before": "สัดส่วนตามต้นทางรวม 98% โดยไม่ได้ระบุส่วนที่เหลือ แถบใช้มาตราส่วน 0–100%",
+   "after": "สัดส่วนที่ระบุรวมกัน 98% ส่วนที่เหลือไม่ได้ระบุ แถบใช้มาตราส่วน 0–100%"
+  },
+  {
+   "path": "src/content/th/common.json",
+   "key": "visuals.schematic",
+   "before": "แผนภาพประกอบ · ไม่ใช่ข้อกำหนดทางวิศวกรรม",
+   "after": "แผนภาพเชิงแนวคิด · ไม่ใช่ข้อกำหนดทางวิศวกรรม"
+  },
+  {
+   "path": "src/content/en/batch-two.json",
+   "key": "source",
+   "before": "Supplied presentation · slides 4 / 19 · figures retained as provided",
+   "after": "Source: Briefing material (station counts cite GGII, April 2026)"
+  },
+  {
+   "path": "src/content/en/batch-two.json",
+   "key": "network.scale",
+   "before": "Described as the world's largest network in the supplied source.",
+   "after": "Described in the briefing material as the world's largest network."
+  },
+  {
+   "path": "src/content/en/batch-two.json",
+   "key": "network.mapNote",
+   "before": "Regional references, not station locations. Signals are conceptual, not verified connections.",
+   "after": "Markers indicate regions, not station locations; signal lines are conceptual."
+  },
+  {
+   "path": "src/content/en/batch-two.json",
+   "key": "expansion.note",
+   "before": "Different project statuses, not a cumulative historical series. Planned projects are not all assumed operational by the forecast date.",
+   "after": "Bars show different project statuses, not a cumulative series; the forecast does not assume every planned project will open."
+  },
+  {
+   "path": "src/content/en/batch-two.json",
+   "key": "transport.concept",
+   "before": "Conceptual equipment and flow · not a real facility or pipeline route",
+   "after": "Conceptual visualization · not an actual facility or pipeline route"
+  },
+  {
+   "path": "src/content/en/batch-two.json",
+   "key": "transport.pressure",
+   "before": "Pressure indicator: illustrative, no measured value",
+   "after": "Pressure gauge shown for illustration only"
+  },
+  {
+   "path": "src/content/en/batch-two.json",
+   "key": "transport.source",
+   "before": "Supplied presentation · slide 4 · cost share according to the supplied data",
+   "after": "Source: Briefing material · Data year not specified"
+  },
+  {
+   "path": "src/content/th/batch-two.json",
+   "key": "source",
+   "before": "เอกสารต้นฉบับ · สไลด์ 4 / 19 · คงตัวเลขตามข้อมูลที่ได้รับ",
+   "after": "ที่มา: เอกสารประกอบการบรรยาย (จำนวนสถานีอ้างอิง GGII เมษายน 2026)"
+  },
+  {
+   "path": "src/content/th/batch-two.json",
+   "key": "network.scale",
+   "before": "ข้อมูลต้นฉบับระบุว่าเป็นเครือข่ายที่ใหญ่ที่สุดในโลก",
+   "after": "เอกสารประกอบการบรรยายระบุว่าเป็นเครือข่ายที่ใหญ่ที่สุดในโลก"
+  },
+  {
+   "path": "src/content/th/batch-two.json",
+   "key": "network.mapNote",
+   "before": "จุดอ้างอิงภูมิภาค ไม่ใช่พิกัดสถานี · สัญญาณเป็นภาพแนวคิด ไม่ใช่เส้นเชื่อมที่ยืนยันแล้ว",
+   "after": "จุดบนแผนที่แสดงภูมิภาค ไม่ใช่ตำแหน่งสถานี · เส้นสัญญาณเป็นภาพแนวคิด"
+  },
+  {
+   "path": "src/content/th/batch-two.json",
+   "key": "expansion.note",
+   "before": "เป็นคนละสถานะโครงการ ไม่ใช่ยอดสะสมตามเวลา · ไม่ได้สมมติว่าทุกโครงการจะเปิดใช้งานทันกำหนดคาดการณ์",
+   "after": "แสดงสถานะโครงการที่ต่างกัน ไม่ใช่ยอดสะสมตามช่วงเวลา · ค่าคาดการณ์ไม่ได้หมายความว่าโครงการที่วางแผนไว้จะเปิดใช้งานทั้งหมด"
+  },
+  {
+   "path": "src/content/th/batch-two.json",
+   "key": "transport.concept",
+   "before": "ภาพจำลองอุปกรณ์และการไหล · ไม่ใช่สถานที่หรือเส้นทางท่อส่งจริง",
+   "after": "ภาพจำลองเชิงแนวคิด · ไม่ใช่สถานที่หรือเส้นทางท่อส่งจริง"
+  },
+  {
+   "path": "src/content/th/batch-two.json",
+   "key": "transport.pressure",
+   "before": "ตัวบ่งชี้ความดันเป็นภาพประกอบ ไม่มีค่าที่วัดจริง",
+   "after": "มาตรวัดความดันในภาพเป็นสัญลักษณ์ประกอบเท่านั้น"
+  },
+  {
+   "path": "src/content/th/batch-two.json",
+   "key": "transport.source",
+   "before": "เอกสารต้นฉบับ · สไลด์ 4 · สัดส่วนต้นทุนตามข้อมูลที่ได้รับ",
+   "after": "ที่มา: เอกสารประกอบการบรรยาย · ไม่ระบุปีของข้อมูล"
+  },
+  {
+   "path": "src/content/en/batch-three.json",
+   "key": "source",
+   "before": "Supplied presentation · slide {{slide}} · figures retained as provided",
+   "after": "Source: Briefing material · Data: end-2025 to early 2026"
+  },
+  {
+   "path": "src/content/en/batch-three.json",
+   "key": "assetNote",
+   "before": "Concept vehicles · not verified makes or official vehicle designs",
+   "after": "Conceptual vehicle visualizations · not specific models"
+  },
+  {
+   "path": "src/content/en/batch-three.json",
+   "key": "fleet.rank",
+   "before": "The supplied content describes China as the world's largest accumulated market.",
+   "after": "Described in the briefing material as the world's largest cumulative market."
+  },
+  {
+   "path": "src/content/th/batch-three.json",
+   "key": "source",
+   "before": "เอกสารต้นฉบับ · สไลด์ {{slide}} · คงตัวเลขตามข้อมูลที่ได้รับ",
+   "after": "ที่มา: เอกสารประกอบการบรรยาย · ข้อมูลช่วงสิ้นปี 2025 ถึงต้นปี 2026"
+  },
+  {
+   "path": "src/content/th/batch-three.json",
+   "key": "assetNote",
+   "before": "ภาพรถเชิงแนวคิด · ไม่ใช่รุ่นรถหรือแบบทางการที่ตรวจสอบแล้ว",
+   "after": "ภาพจำลองรถเชิงแนวคิด · ไม่อ้างอิงรุ่นหรือผู้ผลิตใด"
+  },
+  {
+   "path": "src/content/th/batch-three.json",
+   "key": "fleet.rank",
+   "before": "ข้อมูลต้นฉบับระบุว่าจีนอยู่ในอันดับหนึ่งของโลกด้านจำนวนรถใช้งานสะสม",
+   "after": "เอกสารประกอบการบรรยายระบุว่าจีนมีจำนวนรถใช้งานสะสมมากที่สุดในโลก"
+  },
+  {
+   "path": "src/content/en/batch-four.json",
+   "key": "storage.note",
+   "before": "Process illustration only • no capacity or round-trip efficiency is implied.",
+   "after": "Process illustration · capacity and round-trip efficiency are not shown"
+  },
+  {
+   "path": "src/content/en/batch-four.json",
+   "key": "cofiring.caveat",
+   "before": "The supplied material gives no hydrogen blend ratio or quantified CO₂ reduction.",
+   "after": "The briefing material does not specify a hydrogen blend ratio or a quantified CO₂ reduction."
+  },
+  {
+   "path": "src/content/en/batch-four.json",
+   "key": "sourceNote",
+   "before": "Supplied presentation • source slide {{slide}}",
+   "after": "Source: Briefing material"
+  },
+  {
+   "path": "src/content/en/batch-four.json",
+   "key": "conceptNote",
+   "before": "Concept illustration • not a documented operating site",
+   "after": "Conceptual process visualization"
+  },
+  {
+   "path": "src/content/th/batch-four.json",
+   "key": "storage.note",
+   "before": "ภาพอธิบายกระบวนการเท่านั้น • ไม่ได้ระบุกำลังผลิตหรือประสิทธิภาพการแปลงพลังงาน",
+   "after": "ภาพอธิบายกระบวนการ · ไม่ได้แสดงกำลังผลิตหรือประสิทธิภาพการแปลงพลังงาน"
+  },
+  {
+   "path": "src/content/th/batch-four.json",
+   "key": "cofiring.caveat",
+   "before": "ข้อมูลที่ได้รับไม่ได้ระบุสัดส่วนไฮโดรเจนที่ผสมหรือปริมาณ CO₂ ที่ลดลง",
+   "after": "เอกสารประกอบการบรรยายไม่ได้ระบุสัดส่วนการผสมไฮโดรเจนหรือปริมาณ CO₂ ที่ลดลง"
+  },
+  {
+   "path": "src/content/th/batch-four.json",
+   "key": "sourceNote",
+   "before": "ข้อมูลจากสไลด์ต้นทาง • สไลด์ที่ {{slide}}",
+   "after": "ที่มา: เอกสารประกอบการบรรยาย"
+  },
+  {
+   "path": "src/content/th/batch-four.json",
+   "key": "conceptNote",
+   "before": "ภาพประกอบแนวคิด • ไม่ใช่สถานที่ปฏิบัติงานที่มีการระบุชื่อ",
+   "after": "ภาพจำลองกระบวนการเชิงแนวคิด"
+  },
+  {
+   "path": "src/content/en/batch-five.json",
+   "key": "referenceYear",
+   "before": "Reference Year: 2026",
+   "after": "Presentation Reference Year: 2026"
+  },
+  {
+   "path": "src/content/en/batch-five.json",
+   "key": "source",
+   "before": "Supplied presentation · source slide {{slide}}",
+   "after": "Source: Briefing material"
+  },
+  {
+   "path": "src/content/en/batch-five.json",
+   "key": "concept",
+   "before": "AI-generated application illustrations · not verified operating sites",
+   "after": "Conceptual application illustrations (AI-generated)"
+  },
+  {
+   "path": "src/content/en/batch-five.json",
+   "key": "truckConcept",
+   "before": "Concept vehicle · illustrative design",
+   "after": "Concept vehicle visualization"
+  },
+  {
+   "path": "src/content/en/batch-five.json",
+   "key": "performance.coldNote",
+   "before": "Operation down to −30°C with relatively limited range degradation in the supplied material",
+   "after": "Operates down to −30°C with relatively limited range loss, as reported"
+  },
+  {
+   "path": "src/content/en/batch-five.json",
+   "key": "performance.scope",
+   "before": "These figures describe the supplied examples; performance varies by vehicle and operating conditions.",
+   "after": "Figures are reported examples; actual performance varies by vehicle model and operating conditions."
+  },
+  {
+   "path": "src/content/en/batch-five.json",
+   "key": "regions.note",
+   "before": "Regional markers are approximate; they are not individual deployment sites or verified routes.",
+   "after": "Markers show approximate regions, not project sites or verified routes."
+  },
+  {
+   "path": "src/content/en/batch-five.json",
+   "key": "suburban.note",
+   "before": "15 minutes is retained from the owner's material; source-specific confirmation remains pending. Later test range is distinct from the original prototype specification.",
+   "after": "The 15-minute figure is from the briefing material; the 2024 test range is separate from the original prototype specification."
+  },
+  {
+   "path": "src/content/en/batch-five.json",
+   "key": "foshan.note",
+   "before": "Historical service example; this slide does not assert continued operation in 2026.",
+   "after": "Service example since 2019; operating status in 2026 is not confirmed."
+  },
+  {
+   "path": "src/content/en/batch-five.json",
+   "key": "tourism.changchunService",
+   "before": "Passenger-service start date: unconfirmed",
+   "after": "Passenger-service start date: not confirmed"
+  },
+  {
+   "path": "src/content/th/batch-five.json",
+   "key": "referenceYear",
+   "before": "ข้อมูลอ้างอิงปี 2026",
+   "after": "ปีอ้างอิงการนำเสนอ: 2026"
+  },
+  {
+   "path": "src/content/th/batch-five.json",
+   "key": "source",
+   "before": "เอกสารนำเสนอที่ได้รับ · สไลด์ต้นฉบับ {{slide}}",
+   "after": "ที่มา: เอกสารประกอบการบรรยาย"
+  },
+  {
+   "path": "src/content/th/batch-five.json",
+   "key": "concept",
+   "before": "ภาพประกอบสร้างด้วย AI · ไม่ใช่ภาพยืนยันสถานที่ดำเนินงานจริง",
+   "after": "ภาพประกอบการใช้งานเชิงแนวคิด (สร้างด้วย AI)"
+  },
+  {
+   "path": "src/content/th/batch-five.json",
+   "key": "truckConcept",
+   "before": "รถแนวคิด · ภาพประกอบการออกแบบ",
+   "after": "ภาพจำลองรถแนวคิด"
+  },
+  {
+   "path": "src/content/th/batch-five.json",
+   "key": "performance.coldNote",
+   "before": "ข้อมูลที่ได้รับระบุการใช้งานที่อุณหภูมิต่ำถึง −30°C โดยระยะทางวิ่งลดลงค่อนข้างน้อย",
+   "after": "ใช้งานได้ที่อุณหภูมิต่ำถึง −30°C โดยระยะทางวิ่งลดลงไม่มาก ตามข้อมูลที่รายงาน"
+  },
+  {
+   "path": "src/content/th/batch-five.json",
+   "key": "performance.scope",
+   "before": "ตัวเลขอ้างถึงตัวอย่างในเอกสาร สมรรถนะจริงขึ้นอยู่กับรุ่นรถและสภาพการใช้งาน",
+   "after": "ตัวเลขเป็นกรณีตัวอย่าง สมรรถนะจริงขึ้นอยู่กับรุ่นรถและสภาพการใช้งาน"
+  },
+  {
+   "path": "src/content/th/batch-five.json",
+   "key": "regions.note",
+   "before": "จุดบนแผนที่แสดงพื้นที่โดยประมาณ ไม่ใช่ตำแหน่งรถแต่ละคันหรือเส้นทางที่ยืนยันแล้ว",
+   "after": "จุดบนแผนที่แสดงพื้นที่โดยประมาณ ไม่ใช่ตำแหน่งโครงการหรือเส้นทางที่ยืนยันแล้ว"
+  },
+  {
+   "path": "src/content/th/batch-five.json",
+   "key": "suburban.note",
+   "before": "คงตัวเลข 15 นาทีตามเอกสารของเจ้าของงาน โดยยังรอตรวจสอบแหล่งเฉพาะ ระยะทางจากการทดสอบภายหลังแยกจากสเปกรถต้นแบบเดิม",
+   "after": "ตัวเลข 15 นาทีอ้างอิงจากเอกสารประกอบการบรรยาย · ระยะทางจากการทดสอบปี 2024 แยกจากสเปกรถต้นแบบเดิม"
+  },
+  {
+   "path": "src/content/th/batch-five.json",
+   "key": "foshan.note",
+   "before": "ตัวอย่างการให้บริการในอดีต สไลด์นี้ไม่ได้ยืนยันว่ายังคงให้บริการในปี 2026",
+   "after": "ตัวอย่างการให้บริการตั้งแต่ปี 2019 · ไม่ได้ยืนยันสถานะการให้บริการในปี 2026"
+  },
+  {
+   "path": "src/content/th/batch-five.json",
+   "key": "tourism.changchunService",
+   "before": "วันเริ่มบริการผู้โดยสาร: ยังไม่ยืนยัน",
+   "after": "วันเริ่มให้บริการผู้โดยสาร: ยังไม่มีข้อมูลยืนยัน"
+  },
+  {
+   "path": "src/content/en/batch-seven.json",
+   "key": "source",
+   "before": "Supplied presentation · source slide 11",
+   "after": "Source: Briefing material"
+  },
+  {
+   "path": "src/content/en/batch-seven.json",
+   "key": "freight.scope",
+   "before": "10,000 tonnes refers to the train on level track; performance is conditional. The supplied material describes this as China's highest-power hydrogen locomotive.",
+   "after": "10,000 tonnes refers to the full train on level track; performance depends on operating conditions. Described in the briefing material as China's highest-power hydrogen locomotive."
+  },
+  {
+   "path": "src/content/en/batch-seven.json",
+   "key": "mining.regions",
+   "before": "Pilot/test regions in the supplied material: Liaoning · Inner Mongolia · Hebei",
+   "after": "Pilot/test regions: Liaoning · Inner Mongolia · Hebei"
+  },
+  {
+   "path": "src/content/en/batch-seven.json",
+   "key": "mining.scope",
+   "before": "The regions and annual estimate come from the supplied slide; they do not establish commercial deployment or a universal lifecycle benefit.",
+   "after": "Regions and the annual estimate are as reported; they do not indicate commercial operation or a lifecycle benefit in every case."
+  },
+  {
+   "path": "src/content/en/batch-seven.json",
+   "key": "deployment.cities",
+   "before": "Cities in supplied material",
+   "after": "Cities referenced"
+  },
+  {
+   "path": "src/content/en/batch-seven.json",
+   "key": "deployment.mapNote",
+   "before": "City markers show location only. Regional rings are approximate, not exact project sites or rail routes.",
+   "after": "Pins mark cities; rings mark approximate regions, not project sites or rail routes."
+  },
+  {
+   "path": "src/content/th/batch-seven.json",
+   "key": "source",
+   "before": "เอกสารประกอบ · สไลด์ต้นฉบับ 11",
+   "after": "ที่มา: เอกสารประกอบการบรรยาย"
+  },
+  {
+   "path": "src/content/th/batch-seven.json",
+   "key": "freight.scope",
+   "before": "10,000 ตันหมายถึงน้ำหนักทั้งขบวนบนทางราบ ไม่ใช่น้ำหนักตู้เดียว เอกสารต้นฉบับระบุว่าเป็นหัวรถจักรไฮโดรเจนกำลังสูงที่สุดในจีน",
+   "after": "10,000 ตันหมายถึงน้ำหนักทั้งขบวนบนทางราบ ไม่ใช่น้ำหนักตู้เดียว สมรรถนะขึ้นกับเงื่อนไขการใช้งาน · เอกสารประกอบการบรรยายระบุว่าเป็นหัวรถจักรไฮโดรเจนกำลังสูงที่สุดในจีน"
+  },
+  {
+   "path": "src/content/th/batch-seven.json",
+   "key": "mining.regions",
+   "before": "พื้นที่ทดสอบ/นำร่องในเอกสารต้นฉบับ: เหลียวหนิง · มองโกเลียใน · เหอเป่ย์",
+   "after": "พื้นที่ทดสอบ/นำร่อง: เหลียวหนิง · มองโกเลียใน · เหอเป่ย์"
+  },
+  {
+   "path": "src/content/th/batch-seven.json",
+   "key": "mining.scope",
+   "before": "รายชื่อพื้นที่และค่าประเมินรายปีมาจากสไลด์ต้นฉบับ ไม่ได้ยืนยันการเดินรถเชิงพาณิชย์หรือผลต่อวงจรชีวิตทุกกรณี",
+   "after": "พื้นที่และค่าประเมินรายปีเป็นข้อมูลตามที่รายงาน ไม่ได้ยืนยันการเดินรถเชิงพาณิชย์หรือประโยชน์ตลอดวงจรชีวิตในทุกกรณี"
+  },
+  {
+   "path": "src/content/th/batch-seven.json",
+   "key": "deployment.cities",
+   "before": "เมืองที่ระบุในเอกสารต้นฉบับ",
+   "after": "เมืองที่กล่าวถึง"
+  },
+  {
+   "path": "src/content/th/batch-seven.json",
+   "key": "deployment.mapNote",
+   "before": "หมุดเมืองแสดงตำแหน่งเท่านั้น วงแหวนภูมิภาคเป็นตำแหน่งโดยประมาณ ไม่ใช่จุดโครงการหรือเส้นทางรถไฟจริง",
+   "after": "หมุดแสดงตำแหน่งเมือง วงแหวนแสดงภูมิภาคโดยประมาณ ไม่ใช่จุดโครงการหรือเส้นทางรถไฟจริง"
+  },
+  {
+   "path": "src/content/en/cold-chain-scene.json",
+   "key": "source",
+   "before": "Supplied presentation · source slide {{slide}}",
+   "after": "Source: Briefing material"
+  },
+  {
+   "path": "src/content/en/cold-chain-scene.json",
+   "key": "assetNote",
+   "before": "Vehicle images are illustrative renders, not verified production models.",
+   "after": "Conceptual vehicle renders · not specific production models"
+  },
+  {
+   "path": "src/content/en/cold-chain-scene.json",
+   "key": "scope",
+   "before": "Figures describe the supplied cold-chain scenario; actual results depend on vehicle, load, route and infrastructure.",
+   "after": "Figures describe an example cold-chain scenario; actual results depend on vehicle, load, route and infrastructure."
+  },
+  {
+   "path": "src/content/en/cold-chain-scene.json",
+   "key": "topics.range.fcevCallout",
+   "before": "Approximately 500–800 km in the supplied reference.",
+   "after": "Approximately 500–800 km, as reported."
+  },
+  {
+   "path": "src/content/th/cold-chain-scene.json",
+   "key": "source",
+   "before": "เอกสารประกอบ · สไลด์ต้นฉบับ {{slide}}",
+   "after": "ที่มา: เอกสารประกอบการบรรยาย"
+  },
+  {
+   "path": "src/content/th/cold-chain-scene.json",
+   "key": "assetNote",
+   "before": "ภาพรถเป็นเรนเดอร์ประกอบ ไม่ใช่รถรุ่นผลิตจริงที่ยืนยันแล้ว",
+   "after": "ภาพจำลองรถเชิงแนวคิด · ไม่อ้างอิงรุ่นที่ผลิตจริง"
+  },
+  {
+   "path": "src/content/th/cold-chain-scene.json",
+   "key": "scope",
+   "before": "ตัวเลขเป็นกรณีตัวอย่างในเอกสารต้นฉบับ ผลจริงขึ้นกับรุ่นรถ น้ำหนักบรรทุก เส้นทาง และโครงสร้างพื้นฐาน",
+   "after": "ตัวเลขเป็นกรณีตัวอย่างการขนส่งห้องเย็น ผลจริงขึ้นกับรุ่นรถ น้ำหนักบรรทุก เส้นทาง และโครงสร้างพื้นฐาน"
+  },
+  {
+   "path": "src/content/th/cold-chain-scene.json",
+   "key": "topics.range.fcevCallout",
+   "before": "ประมาณ 500–800 กม. ตามเอกสารต้นฉบับ",
+   "after": "ประมาณ 500–800 กม. ตามข้อมูลที่รายงาน"
+  },
+  {
+   "path": "src/content/en/batch-eight.json",
+   "key": "source",
+   "before": "Supplied presentation · source slide {{slide}}",
+   "after": "Source: Briefing material"
+  },
+  {
+   "path": "src/content/en/batch-eight.json",
+   "key": "purchase.scope",
+   "before": "Price gap from the supplied reference; it varies by vehicle segment.",
+   "after": "Reported price gap; it varies by vehicle segment."
+  },
+  {
+   "path": "src/content/en/batch-eight.json",
+   "key": "purchase.credit",
+   "before": "Concept vehicle · illustrative render",
+   "after": "Concept vehicle visualization"
+  },
+  {
+   "path": "src/content/en/batch-eight.json",
+   "key": "operating.scope",
+   "before": "No cost-per-100-km figure is given in the source.",
+   "after": "No cost-per-100-km figure is available in the briefing material."
+  },
+  {
+   "path": "src/content/th/batch-eight.json",
+   "key": "source",
+   "before": "เอกสารนำเสนอที่ได้รับ · สไลด์ต้นฉบับ {{slide}}",
+   "after": "ที่มา: เอกสารประกอบการบรรยาย"
+  },
+  {
+   "path": "src/content/th/batch-eight.json",
+   "key": "purchase.scope",
+   "before": "ส่วนต่างราคาตามเอกสารอ้างอิง ซึ่งแตกต่างกันไปตามประเภทรถ",
+   "after": "ส่วนต่างราคาตามข้อมูลที่รายงาน แตกต่างกันไปตามประเภทรถ"
+  },
+  {
+   "path": "src/content/th/batch-eight.json",
+   "key": "purchase.credit",
+   "before": "รถแนวคิด · ภาพเรนเดอร์ประกอบ",
+   "after": "ภาพจำลองรถแนวคิด"
+  },
+  {
+   "path": "src/content/th/batch-eight.json",
+   "key": "operating.scope",
+   "before": "เอกสารต้นฉบับไม่ได้ระบุตัวเลขต้นทุนต่อ 100 กม.",
+   "after": "เอกสารประกอบการบรรยายไม่มีข้อมูลต้นทุนต่อ 100 กม."
+  },
+  {
+   "path": "src/content/en/batch-nine.json",
+   "key": "source",
+   "before": "Source: supplied presentation material · qualitative industry perspective",
+   "after": "Source: Briefing material · Qualitative industry perspective"
+  },
+  {
+   "path": "src/content/en/batch-nine.json",
+   "key": "concept",
+   "before": "Conceptual system · not a specific installation",
+   "after": "Conceptual system diagram"
+  },
+  {
+   "path": "src/content/en/batch-nine.json",
+   "key": "vehicleConcept",
+   "before": "Concept vehicle · illustrative system overlay",
+   "after": "Conceptual vehicle and system overlay"
+  },
+  {
+   "path": "src/content/en/batch-nine.json",
+   "key": "industrialConcept",
+   "before": "Illustrative industrial setting · not a verified project",
+   "after": "Conceptual industrial setting · not a specific project"
+  },
+  {
+   "path": "src/content/en/batch-nine.json",
+   "key": "barriers.topics.4.note",
+   "before": "Early-2026 observations from the supplied material; not full-year results or a forecast.",
+   "after": "Early-2026 observations; not full-year results or a forecast."
+  },
+  {
+   "path": "src/content/th/batch-nine.json",
+   "key": "source",
+   "before": "ที่มา: เอกสารนำเสนอที่ได้รับ · มุมมองอุตสาหกรรมเชิงคุณภาพ",
+   "after": "ที่มา: เอกสารประกอบการบรรยาย · มุมมองเชิงคุณภาพของอุตสาหกรรม"
+  },
+  {
+   "path": "src/content/th/batch-nine.json",
+   "key": "concept",
+   "before": "แผนภาพแนวคิด · ไม่ใช่สถานที่ติดตั้งจริง",
+   "after": "แผนภาพระบบเชิงแนวคิด"
+  },
+  {
+   "path": "src/content/th/batch-nine.json",
+   "key": "vehicleConcept",
+   "before": "รถแนวคิด · แผนภาพระบบประกอบ",
+   "after": "ภาพจำลองรถและระบบเชิงแนวคิด"
+  },
+  {
+   "path": "src/content/th/batch-nine.json",
+   "key": "industrialConcept",
+   "before": "ภาพประกอบบริบทอุตสาหกรรม · ไม่ใช่โครงการที่ยืนยันแล้ว",
+   "after": "ภาพประกอบบริบทอุตสาหกรรมเชิงแนวคิด · ไม่ใช่โครงการเฉพาะ"
+  },
+  {
+   "path": "src/content/th/batch-nine.json",
+   "key": "barriers.topics.4.note",
+   "before": "ข้อสังเกตต้นปี 2026 ตามเอกสารที่ได้รับ ไม่ใช่ผลทั้งปีหรือการคาดการณ์",
+   "after": "ข้อสังเกตช่วงต้นปี 2026 ไม่ใช่ผลทั้งปีหรือการคาดการณ์"
+  },
+  {
+   "path": "src/content/en/regional-map.json",
+   "key": "overviewPanel.note",
+   "before": "Groupings follow the source presentation; they are not one official administrative classification, nor a complete list of projects.",
+   "after": "Groupings are for presentation purposes; they are not an official classification or a complete list of projects."
+  },
+  {
+   "path": "src/content/en/regional-map.json",
+   "key": "regions.gba.statNote",
+   "before": "Figure as given in the source presentation (slide 18) · reporting date not stated · covers the whole province, not only the Greater Bay Area",
+   "after": "Province-wide figure from the briefing material · reporting date not stated"
+  },
+  {
+   "path": "src/content/en/regional-map.json",
+   "key": "legend.city",
+   "before": "City named in source",
+   "after": "City referenced"
+  },
+  {
+   "path": "src/content/en/regional-map.json",
+   "key": "conceptImage",
+   "before": "Illustration · not a specific project",
+   "after": "Conceptual illustration"
+  },
+  {
+   "path": "src/content/en/regional-map.json",
+   "key": "source",
+   "before": "Source: supplied presentation, slide 18. Clusters are presentation groupings, not an official classification. Map: Natural Earth 1:50m (public domain); city coordinates: GeoNames (CC BY 4.0).",
+   "after": "Source: Briefing material · Clusters are presentation groupings, not an official classification · Map: Natural Earth 1:50m (public domain) · City coordinates: GeoNames (CC BY 4.0)"
+  },
+  {
+   "path": "src/content/th/regional-map.json",
+   "key": "overviewPanel.note",
+   "before": "การแบ่งกลุ่มเป็นไปตามเอกสารนำเสนอ ไม่ใช่การจำแนกทางการปกครองอย่างเป็นทางการ และไม่ใช่รายชื่อโครงการทั้งหมด",
+   "after": "การจัดกลุ่มเพื่อการนำเสนอ ไม่ใช่การจำแนกอย่างเป็นทางการ และไม่ใช่รายชื่อโครงการทั้งหมด"
+  },
+  {
+   "path": "src/content/th/regional-map.json",
+   "key": "regions.gba.statNote",
+   "before": "ตัวเลขตามเอกสารนำเสนอ (สไลด์ 18) · ไม่ระบุช่วงเวลาที่รายงาน · ครอบคลุมทั้งมณฑล ไม่เฉพาะเขตอ่าว",
+   "after": "ตัวเลขทั้งมณฑลตามเอกสารประกอบการบรรยาย · ไม่ระบุช่วงเวลาที่รายงาน"
+  },
+  {
+   "path": "src/content/th/regional-map.json",
+   "key": "legend.city",
+   "before": "เมืองที่ระบุในเอกสาร",
+   "after": "เมืองที่กล่าวถึง"
+  },
+  {
+   "path": "src/content/th/regional-map.json",
+   "key": "conceptImage",
+   "before": "ภาพประกอบ · ไม่ใช่โครงการเฉพาะ",
+   "after": "ภาพประกอบเชิงแนวคิด"
+  },
+  {
+   "path": "src/content/th/regional-map.json",
+   "key": "source",
+   "before": "ที่มา: เอกสารนำเสนอ สไลด์ 18 · การแบ่งกลุ่มใช้เพื่อการนำเสนอ ไม่ใช่การจำแนกอย่างเป็นทางการ · แผนที่: Natural Earth 1:50m (สาธารณสมบัติ) · พิกัดเมือง: GeoNames (CC BY 4.0)",
+   "after": "ที่มา: เอกสารประกอบการบรรยาย · การจัดกลุ่มเพื่อการนำเสนอ ไม่ใช่การจำแนกอย่างเป็นทางการ · แผนที่: Natural Earth 1:50m (สาธารณสมบัติ) · พิกัดเมือง: GeoNames (CC BY 4.0)"
+  },
+  {
+   "path": "src/content/en/batch-five.json",
+   "key": "performance.subtitle",
+   "before": "Operational capabilities described in the supplied material",
+   "after": "Operational capabilities as reported in the briefing material"
+  },
+  {
+   "path": "src/content/th/batch-five.json",
+   "key": "performance.subtitle",
+   "before": "สมรรถนะการใช้งานตามข้อมูลในเอกสารที่ได้รับ",
+   "after": "สมรรถนะการใช้งานตามเอกสารประกอบการบรรยาย"
+  },
+  {
+   "path": "src/content/en/batch-five.json",
+   "key": "suburban.refueling",
+   "before": "Supplied refueling figure",
+   "after": "Reported refueling time"
+  },
+  {
+   "path": "src/content/th/batch-five.json",
+   "key": "suburban.refueling",
+   "before": "เวลาเติมตามข้อมูลที่ได้รับ",
+   "after": "เวลาเติมตามที่รายงาน"
+  },
+  {
+   "path": "src/content/en/batch-nine.json",
+   "key": "barriers.topics.4.body",
+   "before": "The supplied presentation material indicates softer market conditions in parts of early 2026. The industry still faces the challenge of achieving competitive economics and sustainable business models with less subsidy dependence.",
+   "after": "The briefing material indicates softer market conditions in parts of early 2026. The industry still faces the challenge of achieving competitive economics and sustainable business models with less subsidy dependence."
+  },
+  {
+   "path": "src/content/en/batch-nine.json",
+   "key": "diagram.early2026",
+   "before": "Early 2026 · supplied observations",
+   "after": "Early 2026 · reported observations"
+  },
+  {
+   "path": "src/content/en/cold-chain-scene.json",
+   "key": "topics.time.bevLabel",
+   "before": "BEV charging in the supplied case",
+   "after": "BEV charging in the example case"
+  },
+  {
+   "path": "src/content/en/cold-chain-scene.json",
+   "key": "topics.time.fcevLabel",
+   "before": "Hydrogen refueling in the supplied case",
+   "after": "Hydrogen refueling in the example case"
+  },
+  {
+   "path": "src/content/en/cold-chain-scene.json",
+   "key": "topics.range.explanation",
+   "before": "The reported FCEV range can suit medium- and long-distance cold-chain work. No comparable BEV range is supplied.",
+   "after": "The reported FCEV range can suit medium- and long-distance cold-chain work. The briefing material gives no comparable BEV range."
+  }
+ ]
+}

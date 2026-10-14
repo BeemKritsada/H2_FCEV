@@ -1,0 +1,118 @@
+{
+  "sourceSlide": 18,
+  "sourceSectionId": "regional-deployment",
+  "geography": {
+    "provinces": "public/assets/maps/china-provinces-50m.geojson — Natural Earth 1:50m admin-1 (CHN) + admin-0 (HKG, MAC), public domain",
+    "cities": "GeoNames cities15000 (download.geonames.org/export/dump), CC BY 4.0; latitude/longitude copied to 2 decimals",
+    "groupings": "Presentation clusters from the supplied source, not one official administrative classification"
+  },
+  "regions": [
+    {
+      "id": "gba",
+      "color": "#1f6fd6",
+      "provinces": ["guangdong"],
+      "contextProvinces": ["hong-kong", "macao"],
+      "anchor": [113.6, 23.1],
+      "badgeOffset": [14, 16],
+      "focus": [109.4, 20.0, 117.6, 25.7],
+      "image": "rail/foshan.webp",
+      "imageKind": "photo",
+      "imageSource": "https://m.thepaper.cn/newsDetail_forward_5109775",
+      "applications": ["bus", "tram", "heavyTruck", "twoWheeler", "port"],
+      "statistic": {
+        "value": 69,
+        "countUp": true,
+        "scope": "Guangdong Province (whole province, not only the Greater Bay Area)",
+        "reportingPeriod": null,
+        "verification": "As supplied in source slide 18 ('69 stations across the province'). Reporting date not stated; not cross-checked against a dated official total."
+      },
+      "cities": [
+        { "id": "foshan", "geonameId": 1811103, "coordinates": [113.13, 23.03], "label": [-1, 0], "primary": true },
+        { "id": "guangzhou", "geonameId": 1809858, "coordinates": [113.25, 23.12], "label": [0, -1] },
+        { "id": "dongguan", "geonameId": 1812545, "coordinates": [113.75, 23.02], "label": [1, 0] },
+        { "id": "shenzhen", "geonameId": 1795565, "coordinates": [114.07, 22.55], "label": [1, 1] }
+      ],
+      "provinceLabels": [{ "id": "guangdong", "coordinates": [112.2, 24.5] }]
+    },
+    {
+      "id": "jjj",
+      "color": "#7a5bd6",
+      "provinces": ["beijing", "tianjin", "hebei"],
+      "anchor": [116.6, 39.5],
+      "badgeOffset": [16, -6],
+      "focus": [112.8, 35.6, 120.6, 42.8],
+      "image": "logistics/steel.webp",
+      "imageKind": "concept",
+      "applications": ["bus", "cleaning", "heavyTruck", "mining", "demonstration"],
+      "cities": [
+        { "id": "beijing", "geonameId": 1816670, "coordinates": [116.4, 39.91], "label": [-1, -1], "primary": true },
+        { "id": "tianjin", "geonameId": 1792947, "coordinates": [117.18, 39.14], "label": [1, 1] },
+        { "id": "zhangjiakou", "geonameId": 2033196, "coordinates": [114.87, 40.78], "label": [-1, 0] },
+        { "id": "tangshan", "geonameId": 1793346, "coordinates": [118.18, 39.64], "label": [1, -1] },
+        { "id": "handan", "geonameId": 1808963, "coordinates": [114.49, 36.61], "label": [1, 0] }
+      ],
+      "provinceLabels": [{ "id": "hebei", "coordinates": [115.6, 38.3] }]
+    },
+    {
+      "id": "yrd",
+      "color": "#0f9b8e",
+      "provinces": ["shanghai", "jiangsu", "zhejiang", "anhui"],
+      "anchor": [120.6, 31.0],
+      "badgeOffset": [16, 4],
+      "focus": [114.6, 27.0, 123.4, 38.6],
+      "image": "logistics/port.webp",
+      "imageKind": "concept",
+      "applications": ["port", "passengerCar", "urbanFreight", "heavyTruck"],
+      "cities": [
+        { "id": "shanghai", "geonameId": 1796236, "coordinates": [121.46, 31.22], "label": [1, 0], "primary": true },
+        { "id": "jiaxing", "geonameId": 1805953, "coordinates": [120.75, 30.75], "label": [-1, 0] },
+        { "id": "ningbo", "geonameId": 1799397, "coordinates": [121.55, 29.88], "label": [1, 1] },
+        { "id": "qingdao", "geonameId": 1797929, "coordinates": [120.38, 36.06], "label": [1, 1], "external": "shandong" },
+        { "id": "zibo", "geonameId": 1785286, "coordinates": [118.06, 36.79], "label": [-1, -1], "external": "shandong" }
+      ],
+      "provinceLabels": [
+        { "id": "jiangsu", "coordinates": [119.3, 33.4] },
+        { "id": "anhui", "coordinates": [117.0, 31.6] },
+        { "id": "zhejiang", "coordinates": [119.5, 28.7] },
+        { "id": "shandong", "coordinates": [116.5, 35.5], "external": true }
+      ]
+    },
+    {
+      "id": "cc",
+      "color": "#d9822b",
+      "provinces": ["sichuan", "chongqing"],
+      "anchor": [105.3, 30.1],
+      "badgeOffset": [-16, 8],
+      "focus": [100.2, 26.4, 110.6, 33.4],
+      "image": "cold-chain/fcev-refrigerated-truck.webp",
+      "imageKind": "concept",
+      "applications": ["bus", "coldChain", "intercity", "demonstration"],
+      "cities": [
+        { "id": "chengdu", "geonameId": 1815286, "coordinates": [104.07, 30.67], "label": [-1, 1], "primary": true },
+        { "id": "chongqing", "geonameId": 1814906, "coordinates": [106.56, 29.56], "label": [1, 1] }
+      ],
+      "provinceLabels": [{ "id": "sichuan", "coordinates": [102.0, 31.5] }]
+    },
+    {
+      "id": "other",
+      "color": "#7d8fa6",
+      "provinces": ["inner-mongol", "shanxi"],
+      "anchor": [111.3, 41.4],
+      "badgeOffset": [-16, -10],
+      "focus": [96.0, 21.0, 132.0, 50.5],
+      "image": "logistics/mine.webp",
+      "imageKind": "concept",
+      "applications": ["mining", "heavyTruck", "industrial", "pilots"],
+      "cities": [],
+      "provinceLabels": [
+        { "id": "inner-mongol", "coordinates": [110.8, 42.6] },
+        { "id": "shanxi", "coordinates": [112.3, 37.4] }
+      ],
+      "areaLabels": [
+        { "id": "northeast", "coordinates": [125.6, 45.4] },
+        { "id": "southwest", "coordinates": [102.2, 24.7] }
+      ],
+      "unresolvedPlaceNames": ["หนานนาน — ambiguous in source slide 18; not mapped"]
+    }
+  ]
+}

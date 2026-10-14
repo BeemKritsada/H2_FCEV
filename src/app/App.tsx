@@ -10,6 +10,8 @@ import { SceneContainer } from '../components/presentation/SceneContainer'
 import { presentationScenes } from '../scenes/scene-config'
 import { MotionProvider } from '../components/motion/MotionProvider'
 import { useMotion } from '../components/motion/motion-context'
+import { SceneNumberSequence } from '../components/motion/SceneNumberSequence'
+import { nextSceneImages } from '../components/presentation/batch5/assets'
 
 function PresentationFrame({ children }: { children: React.ReactNode }) {
   const { playing } = useMotion()
@@ -21,9 +23,23 @@ export default function App() {
   const [activeIndex, setActiveIndex] = useState(0)
   const [isOverviewOpen, setIsOverviewOpen] = useState(false)
   const [isFullscreen, setIsFullscreen] = useState(false)
+  const [visitedScenes] = useState(() => new Set<string>())
+  const [session, setSession] = useState(0)
   const language = i18n.resolvedLanguage?.startsWith('th') ? 'th' : 'en'
   const presentation = language === 'th' ? thaiPresentation : englishPresentation
   const activeScene = presentationScenes[activeIndex]
+
+  useEffect(() => {
+    const nextId = presentationScenes[activeIndex + 1]?.id
+    if (!nextId) return
+    const links = (nextSceneImages[nextId] ?? []).map((href) => {
+      const link = document.createElement('link')
+      link.rel = 'prefetch'; link.as = 'image'; link.href = href
+      document.head.append(link)
+      return link
+    })
+    return () => links.forEach((link) => link.remove())
+  }, [activeIndex])
 
   useEffect(() => {
     document.documentElement.lang = language
@@ -110,6 +126,7 @@ export default function App() {
       />
 
       <main className="presentation-main">
+        <SceneNumberSequence key={`${session}-${activeScene.id}`} sceneId={activeScene.id} visited={visitedScenes}>
         <SceneContainer
           key={activeScene.id}
           scene={activeScene}
@@ -117,11 +134,13 @@ export default function App() {
           sceneCount={presentationScenes.length}
           presentation={presentation}
         />
+        </SceneNumberSequence>
         <PresentationControls
           activeIndex={activeIndex}
           sceneCount={presentationScenes.length}
           onPrevious={() => selectScene(activeIndex - 1)}
           onNext={() => selectScene(activeIndex + 1)}
+          onRestart={() => { visitedScenes.clear(); setSession((value) => value + 1); selectScene(0) }}
         />
       </main>
     </PresentationFrame>

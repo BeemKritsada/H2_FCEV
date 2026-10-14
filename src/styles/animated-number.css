@@ -1,0 +1,6 @@
+.animated-number { display: inline-grid; position: relative; white-space: nowrap; font: inherit; color: inherit; letter-spacing: inherit; font-variant-numeric: tabular-nums; }
+.animated-number > .animated-number__width,
+.animated-number > .animated-number__tick { grid-area: 1 / 1; font: inherit !important; color: inherit !important; letter-spacing: inherit !important; line-height: inherit !important; }
+.animated-number__width { visibility: hidden; pointer-events: none; }
+.animated-number__tick { text-align: inherit; }
+.animated-number.animated-number { font: inherit !important; color: inherit !important; letter-spacing: inherit !important; margin: 0 !important; }

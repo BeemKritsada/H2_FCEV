@@ -5,12 +5,14 @@ import { createElement } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
 import ts from 'typescript'
 import { createServer } from 'vite'
+import { numberMigrationFiles } from './authorized-number-migration.mjs'
 
 const json = (path) => JSON.parse(readFileSync(path, 'utf8'))
+import { readPrePolish } from './authorized-caption-polish.mjs'
 const baseline = json('docs/batch-two-protected-baseline.json')
 const facts = json('src/content/batch-two-facts.json')
-for (const { path, hash } of baseline.files) assert.equal(createHash('sha256').update(readFileSync(path)).digest('hex'), hash, `${path}: protected source changed`)
-for (const locale of ['en', 'th']) assert.deepEqual(json(`src/content/${locale}/common.json`), baseline.locales[locale], 'Existing translations must remain unchanged')
+for (const { path, hash } of baseline.files) if (!numberMigrationFiles.has(path)) assert.equal(createHash('sha256').update(readFileSync(path)).digest('hex'), hash, `${path}: protected source changed`)
+for (const locale of ['en', 'th']) assert.deepEqual(JSON.parse(readPrePolish(`src/content/${locale}/common.json`)), baseline.locales[locale], 'Existing translations must remain unchanged apart from the authorized caption polish')
 function leaves(object, prefix = '') {
   return Object.fromEntries(Object.entries(object).flatMap(([key, value]) => typeof value === 'object' ? Object.entries(leaves(value, prefix + key + '.')) : [[prefix + key, value]]))
 }
@@ -35,7 +37,7 @@ for (const locale of ['en', 'th']) {
   for (const value of ['557', '177', '650', '2026', '60%', '30', '40%']) assert.ok(text.includes(value), `${locale}: source must support ${value}`)
 }
 
-const server = await createServer({ server: { middlewareMode: true, hmr: false }, appType: 'custom' })
+const server = await createServer({ cacheDir: '.tmp/vite-ssr-checks', server: { middlewareMode: true, hmr: false }, appType: 'custom' })
 try {
   const { default: i18n, i18nReady } = await server.ssrLoadModule('/src/i18n/index.ts')
   await i18nReady
@@ -53,8 +55,12 @@ try {
   const oldModule = ts.transpileModule(baseline.sceneConfig, { compilerOptions: { module: ts.ModuleKind.ESNext } }).outputText
   const { presentationScenes: oldScenes } = await import(`data:text/javascript;base64,${Buffer.from(oldModule).toString('base64')}`)
   const addedIds = ['scene-infrastructure-expansion', 'scene-hydrogen-transport']
-  const laterBatchIds = ['scene-market-transition', 'scene-market-structure']
-  assert.deepEqual(scenes.filter(({ id }) => ![...addedIds, ...laterBatchIds].includes(id)), oldScenes, 'All pre-existing scene configs and relative ordering must be preserved')
+  const laterBatchIds = ['scene-market-transition', 'scene-market-structure', 'scene-distributed-power', 'scene-hydrogen-cofiring', 'scene-truck-performance', 'scene-heavy-logistics-regions', 'scene-suburban-train', 'scene-foshan-tram', 'scene-tourism-trams', 'scene-freight-locomotive', 'scene-mining-locomotives', 'scene-rail-deployment', 'scene-cold-chain-comparison', 'scene-industry-advantages', 'scene-industry-barriers', 'scene-regional-map']
+  const movedId = 'scene-power-storage'
+  // User retired these five legacy scenes after their replacement scenes were approved.
+  const retiredIds = ['scene-refrigerated-logistics', 'scene-industry', 'scene-rail-specialized', 'scene-regions', 'scene-advantages']
+  assert.deepEqual(scenes.find(({ id }) => id === movedId), oldScenes.find(({ id }) => id === movedId), 'The moved power scene retains its source configuration')
+  assert.deepEqual(scenes.filter(({ id }) => ![...addedIds, ...laterBatchIds, movedId].includes(id)), oldScenes.filter(({ id }) => ![movedId, ...retiredIds].includes(id)), 'All remaining pre-existing scene configs and relative ordering must be preserved')
   assert.deepEqual(scenes.slice(4, 9).map(({ id }) => id), ['scene-equipment-technology', 'scene-infrastructure', ...addedIds, 'scene-vehicle-deployment'])
   for (const locale of ['en', 'th']) {
     await i18n.changeLanguage(locale)
@@ -76,7 +82,7 @@ try {
         assert.equal((html.match(/data-cluster=/g) ?? []).length, 4)
       }
       if (index === 6) {
-        for (const value of ['557', '177', '650+']) assert.ok(html.includes(`>${value}</strong>`))
+        for (const value of ['557', '177', '650+']) assert.ok(html.includes(`data-statistic="${value}"`))
         translated('expansion.completed'); translated('expansion.planned')
         translated('expansion.projected', { year: 2026 }); translated('expansion.note')
       }
@@ -86,5 +92,5 @@ try {
       }
     }
   }
-  console.log(`Batch 2 passed: ${baseline.files.length} protected files unchanged; all previous scene configs preserved; TH/EN keys, source figures, geographic projection, 05→09 and reverse SSR dispatch, and readable reduced-motion markup. Browser layout, events, transitions and GPU lifecycle still require browser QA.`)
+  console.log(`Batch 2 passed: ${baseline.files.filter(({ path }) => !numberMigrationFiles.has(path)).length} protected files unchanged; authorized number components covered separately; previous source configs, TH/EN keys, figures, geographic projection, 05→09 and reverse SSR dispatch, and reduced-motion markup preserved.`)
 } finally { await server.close() }

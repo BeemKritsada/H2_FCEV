@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import gsap from 'gsap'
 import facts from '../../../content/batch-three-facts.json'
 import { getVehicleCarouselPosition, type VehicleId } from './vehicle-carousel-layout'
+import { AnimatedNumber } from '../AnimatedNumber'
 
 const assetRoot = `${import.meta.env.BASE_URL}assets/images/vehicles`
 const truckImage = 'รถบรรทุกไฮโดรเจนสีขาวฟ้าล้ำสมัย.png'
@@ -57,10 +58,10 @@ export default function VehicleCarousel({ reducedMotion }: { reducedMotion: bool
   }, [])
 
   const figure = activeVehicleId === 'truck'
-    ? `${facts.heavyDuty.threshold}%+`
+    ? facts.heavyDuty.threshold
     : activeVehicleId === 'bus'
-      ? `${facts.commercial.threshold}%+`
-      : `<${facts.passenger.threshold}%`
+      ? facts.commercial.threshold
+      : facts.passenger.threshold
   const figureContextKey = activeVehicleId === 'truck'
     ? 'truck.figureContext'
     : activeVehicleId === 'bus'
@@ -105,14 +106,14 @@ export default function VehicleCarousel({ reducedMotion }: { reducedMotion: bool
       </div>
       <div className="vehicle-detail__figure">
         <span>{t(`batchThree.structure.carousel.${figureContextKey}`)}</span>
-        <strong>{figure}</strong>
+        <strong><AnimatedNumber value={figure} prefix={activeVehicleId === 'car' ? '<' : ''} suffix={activeVehicleId === 'car' ? '%' : '%+'} /></strong>
       </div>
     </section>
 
     <aside className="market-structure-overview" aria-label={t('batchThree.structure.carousel.overviewLabel')}>
       <h3>{t('batchThree.structure.carousel.overviewLabel')}</h3>
-      <div className="market-structure-overview__item"><strong>{facts.commercial.threshold}%+</strong><span>{t('batchThree.structure.carousel.overviewCommercial')}</span></div>
-      <div className="market-structure-overview__item"><strong>&lt;{facts.passenger.threshold}%</strong><span>{t('batchThree.structure.carousel.overviewPassenger')}</span></div>
+      <div className="market-structure-overview__item"><strong><AnimatedNumber value={facts.commercial.threshold} suffix="%+" /></strong><span>{t('batchThree.structure.carousel.overviewCommercial')}</span></div>
+      <div className="market-structure-overview__item"><strong><AnimatedNumber value={facts.passenger.threshold} prefix="<" suffix="%" /></strong><span>{t('batchThree.structure.carousel.overviewPassenger')}</span></div>
       <div className="market-structure-overview__item"><strong>{facts.heavyDuty.threshold}%+</strong><span>{t('batchThree.structure.carousel.overviewHeavyDuty')}</span></div>
     </aside>
   </div>
