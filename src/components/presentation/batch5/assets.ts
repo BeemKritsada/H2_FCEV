@@ -24,6 +24,7 @@ export const nextSceneImages: Record<string, string[]> = {
   'scene-industry-advantages': [performanceTruck, `${base}challenges/refueling-station.webp`, ...['mine', 'steel', 'port'].map(logisticsImage)],
   'scene-industry-barriers': [performanceTruck, `${base}challenges/refueling-station.webp`, `${base}challenges/fcev-sedan.webp`],
   'scene-challenges': ['fcev-sedan', 'refueling-station', 'hydrogen-nozzle'].map((id) => `${base}challenges/${id}.webp`),
+  'scene-market-structure': ['รถบรรทุกไฮโดรเจนสีขาวฟ้าล้ำสมัย', 'รถบัสไฮโดรเจนล้ำสมัยสีขาวมุก', 'รถซีดานไฮโดรเจนหรูสีขาวประกายเงิน'].map((name) => `${base}vehicles/${name}.webp`),
   'scene-closing': [`${base}speaker/thibodee-harnprasert.jpg`],
   'scene-regional-map': [railImage('foshan'), ...['steel', 'port', 'mine'].map(logisticsImage), coldChainImage('fcev')],
 }

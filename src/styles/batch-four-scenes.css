@@ -219,7 +219,7 @@
 
 /* Desktop: the scene owns exactly one screen; diagrams take the remaining height and scale to fit. */
 @media (min-width: 1101px) {
-  .reference-scene.batch-four-scene { box-sizing: border-box; height: calc(100svh - 164px); flex: 0 0 auto; }
+  .reference-scene.batch-four-scene { box-sizing: border-box; height: var(--scene-fit-height, calc(100svh - 164px)); --scene-fixed: 1; flex: 0 0 auto; }
   .energy-system, .cofiring-diagram { flex: 1 1 0; min-height: 0; display: block; }
   .energy-system__art, .cofiring-diagram svg { position: absolute; inset: 0; width: 100%; height: 100%; max-height: none; }
   .storage-controls { position: absolute; top: 10px; right: 10px; z-index: 1; box-shadow: 0 2px 10px #15395c14; background: #f4f8fbf2; }

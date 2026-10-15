@@ -78,7 +78,7 @@
 @keyframes batch-seven-camera { from { transform: scale(1.005) translateX(-.3%); } to { transform: scale(1.035) translateX(.3%); } }
 @keyframes batch-seven-pulse { 0%, 100% { opacity: .08; scale: .85; } 50% { opacity: .23; scale: 1.18; } }
 @media (min-width: 1101px) {
-  .reference-scene.batch-seven-scene { height: calc(100svh - 164px); flex: 0 0 auto; display: grid; grid-template-rows: auto auto minmax(0, 1fr) auto auto; }
+  .reference-scene.batch-seven-scene { height: var(--scene-fit-height, calc(100svh - 164px)); --scene-fixed: 1; flex: 0 0 auto; display: grid; grid-template-rows: auto auto minmax(0, 1fr) auto auto; }
   .reference-scene.batch-seven-scene.scene-mining { grid-template-rows: auto auto minmax(0, 1fr) auto auto auto; }
   .reference-scene.batch-seven-scene.scene-deployment { grid-template-rows: auto auto minmax(0, 1fr) auto; }
 }

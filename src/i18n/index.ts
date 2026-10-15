@@ -22,11 +22,13 @@ import enRegionalMap from '../content/en/regional-map.json'
 import thRegionalMap from '../content/th/regional-map.json'
 import enOpeningHero from '../content/en/opening-hero.json'
 import thOpeningHero from '../content/th/opening-hero.json'
+import enShell from '../content/en/shell.json'
+import thShell from '../content/th/shell.json'
 
 export const i18nReady = i18n.use(initReactI18next).init({
   resources: {
-    en: { common: { ...en, batchTwo: enBatchTwo, batchThree: enBatchThree, batchFour: enBatchFour, batchFive: enBatchFive, batchSeven: enBatchSeven, batchEight: enBatchEight, coldChainScene: enColdChainScene, batchNine: enBatchNine, regionalMap: enRegionalMap, openingHero: enOpeningHero } },
-    th: { common: { ...th, batchTwo: thBatchTwo, batchThree: thBatchThree, batchFour: thBatchFour, batchFive: thBatchFive, batchSeven: thBatchSeven, batchEight: thBatchEight, coldChainScene: thColdChainScene, batchNine: thBatchNine, regionalMap: thRegionalMap, openingHero: thOpeningHero } },
+    en: { common: { ...en, batchTwo: enBatchTwo, batchThree: enBatchThree, batchFour: enBatchFour, batchFive: enBatchFive, batchSeven: enBatchSeven, batchEight: enBatchEight, coldChainScene: enColdChainScene, batchNine: enBatchNine, regionalMap: enRegionalMap, openingHero: enOpeningHero, shell: enShell } },
+    th: { common: { ...th, batchTwo: thBatchTwo, batchThree: thBatchThree, batchFour: thBatchFour, batchFive: thBatchFive, batchSeven: thBatchSeven, batchEight: thBatchEight, coldChainScene: thColdChainScene, batchNine: thBatchNine, regionalMap: thRegionalMap, openingHero: thOpeningHero, shell: thShell } },
   },
   lng: 'en',
   fallbackLng: 'en',

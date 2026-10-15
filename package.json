@@ -27,7 +27,8 @@
     "batch-nine:browser": "node scripts/check-batch-nine-browser.mjs",
     "regional-map:browser": "node scripts/check-regional-map-browser.mjs",
     "speaker-closing:browser": "node scripts/check-speaker-closing-browser.mjs",
-    "executive-hero:browser": "node scripts/check-executive-hero-browser.mjs"
+    "executive-hero:browser": "node scripts/check-executive-hero-browser.mjs",
+    "presentation-shell:browser": "node scripts/check-presentation-shell-browser.mjs"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.9",

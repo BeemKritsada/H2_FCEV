@@ -1,0 +1,47 @@
+/* Presentation shell: one-screen stage, text-size control and fullscreen header behaviour. */
+.scene-stage { position: relative; display: flex; min-width: 0; flex-direction: column; }
+.scene-stage__content { display: flex; min-width: 0; min-height: var(--scene-fit-height, auto); flex: 1 0 auto; flex-direction: column; }
+
+@media (min-width: 1101px) {
+  /* The app is exactly one screen tall; the stage takes whatever the header and controls leave. */
+  .presentation-app.presentation-app--fit, .presentation-app.presentation-app--fit:fullscreen { height: 100svh; min-height: 0; overflow: hidden; }
+  .presentation-app--fit .presentation-main { min-height: 0; flex: 1 1 0; }
+  .presentation-app--fit .scene-stage { flex: 1 1 0; min-height: 0; overflow: hidden; }
+  .presentation-app--fit .scene-stage__content { flex: none; }
+  .presentation-app--fit .presentation-controls { position: relative; flex: none; }
+}
+
+/* Text size: compact A− 110% A+ group docked in the bottom bar, before the Next button. */
+.controls-dock { position: relative; flex: none; }
+.controls-dock__text-size { position: absolute; top: 50%; right: calc(var(--gutter) + 196px); transform: translateY(-50%); z-index: 5; }
+@media (max-width: 1240px) { .controls-dock__text-size { display: none; } }
+.text-size { display: inline-flex; align-items: center; padding: 3px; border-radius: 7px; background: #f2f6fa; }
+.text-size button { display: grid; width: 30px; min-height: 32px; place-items: center; border: 0; border-radius: 5px; background: transparent; color: var(--muted); font-weight: 700; line-height: 1; }
+.text-size button:hover:not(:disabled) { background: #fff; color: var(--accent); }
+.text-size button:disabled { opacity: .35; cursor: default; }
+.text-size button span { font-size: 11px; }
+.text-size button:last-child span { font-size: 15px; }
+.text-size__value { min-width: 44px; padding: 0 2px; border: 0; background: transparent; color: var(--accent); font: inherit; font-size: 11px; font-weight: 700; font-variant-numeric: tabular-nums; text-align: center; cursor: pointer; }
+.text-size__value:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+/* Fullscreen: header slides away; it returns when the pointer touches the top edge or keyboard focus enters it. */
+.fullscreen-hotzone { display: none; }
+.presentation-app:fullscreen .fullscreen-hotzone { position: absolute; top: 0; left: 0; right: 0; z-index: 6; display: block; height: 12px; }
+.presentation-app:fullscreen .top-navigation-shell { position: absolute; top: 0; left: 0; right: 0; z-index: 7; transform: translateY(-100%); box-shadow: 0 6px 24px #0a2a4a1f; transition: transform 240ms ease; }
+.presentation-app:fullscreen .top-navigation-shell[data-peek="true"], .presentation-app:fullscreen .top-navigation-shell:has(:focus-visible) { transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .presentation-app:fullscreen .top-navigation-shell { transition: none; }
+}
+@media (max-width: 760px) {
+  .text-size__value { min-width: 36px; }
+  .text-size button { width: 26px; }
+}
+/* Phones: no room in the header and pinch-zoom already exists; the chosen size still applies. */
+@media (max-width: 560px) {
+  .text-size { display: none; }
+}
+
+/* Scene 02: its width-driven map frame was taller than the screen; cap it so the text keeps its size. */
+@media (min-width: 1101px) {
+  .presentation-app--fit .living-map__canvas { max-height: calc(var(--scene-fit-height, 100svh) - 320px); }
+}

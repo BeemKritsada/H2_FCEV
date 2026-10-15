@@ -135,7 +135,8 @@ export function RegionalMapScene({ number, count }: { number: number; count: num
   const apply = useCallback(() => {
     const element = frame.current
     if (!element || !world.current || !overlay.current) return
-    const { width, height } = element.getBoundingClientRect()
+    // Layout size in the scene's own coordinates (stays correct when the stage is zoomed).
+    const width = element.clientWidth, height = element.clientHeight
     const reserved = inset.current?.offsetWidth ? inset.current.offsetWidth + 20 : 0
     const { x0, y0, x1, y1 } = camera.current
     const scale = Math.min((width - reserved) / (x1 - x0), height / (y1 - y0))

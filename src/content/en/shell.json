@@ -1,0 +1,7 @@
+{
+  "textSize": "Text size",
+  "textSmaller": "Smaller text (−)",
+  "textLarger": "Larger text (+)",
+  "textReset": "Reset text size (0)",
+  "textFitted": "Fitted to screen: {{value}}%"
+}

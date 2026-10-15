@@ -98,7 +98,7 @@
 .opening-reference-year { font-size: 18px; color: var(--muted); margin: 12px 0; }
 /* Budget the scene against both navigation bars. Content never sits behind the footer. */
 @media (min-width: 1101px) {
-  .reference-scene.batch-five-scene { box-sizing: border-box; height: calc(100svh - 164px); flex: 0 0 auto; display: grid; grid-template-rows: auto auto minmax(0, 1fr) auto; padding-top: clamp(16px, 2vh, 24px); padding-bottom: 16px; gap: 14px; }
+  .reference-scene.batch-five-scene { box-sizing: border-box; height: var(--scene-fit-height, calc(100svh - 164px)); --scene-fixed: 1; flex: 0 0 auto; display: grid; grid-template-rows: auto auto minmax(0, 1fr) auto; padding-top: clamp(16px, 2vh, 24px); padding-bottom: 16px; gap: 14px; }
   .reference-scene.batch-five-scene.scene-tourism { grid-template-rows: auto auto minmax(0, 1fr) auto auto; }
   .batch-five-scene .logistics-source { margin-top: 0; font-size: 15px; padding-top: 10px; }
   .batch-five-scene .logistics-source > span { max-width: 83%; }

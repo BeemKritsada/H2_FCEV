@@ -113,7 +113,7 @@
 .rmap-source { color: #60758b; font-size: 12px; line-height: 1.35; border-top: 1px solid #d9e6f0; padding-top: 6px; }
 
 @media (min-width: 1101px) {
-  .reference-scene.rmap-scene { height: calc(100svh - 164px); flex: 0 0 auto; display: grid; grid-template-rows: auto auto minmax(0, 1fr) auto; }
+  .reference-scene.rmap-scene { height: var(--scene-fit-height, calc(100svh - 164px)); --scene-fixed: 1; flex: 0 0 auto; display: grid; grid-template-rows: auto auto minmax(0, 1fr) auto; }
 }
 @media (min-width: 1101px) and (max-height: 820px) {
   .reference-scene.rmap-scene { gap: 8px; padding-top: 10px; }
